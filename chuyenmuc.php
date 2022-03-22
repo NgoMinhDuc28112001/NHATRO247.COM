@@ -6,6 +6,26 @@ $sql = "SELECT * FROM login";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 
+$q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
+$qsessionname = "___Q___";
+if (!isset($_REQUEST["q"])) {
+    $q = isset($_SESSION[$qsessionname]) ? $_SESSION[$qsessionname] : '';
+} else {
+    $_SESSION[$qsessionname] = $q;
+}
+
+$cond = "";
+if (empty($q)) {
+    $sqlcount = "select * from chi_tiet";
+    $result = select_list($sqlcount);
+} else {
+    $sq = sql_str($q);
+    $cond = "where ";
+    $cond .= " title like '%{$sq}%' ";
+    $sqlcount = "select * from chi_tiet {$cond}";
+    $result = select_list($sqlcount);
+    $search = select_one($sqlcount);
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -104,88 +124,28 @@ $data = mysqli_fetch_assoc($query);
         <!-- end header -->
         <!-- content -->
         <div class="content gird">
-            <div class="content__left">
-                <div class="content__title">
-                    Khu vực
-                </div>
-                <form action="" class="content__form">
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">Hà Nội</label>
-                    </div>
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">Hồ Chí Minh</label>
-                    </div>
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">Đã Nẵng</label>
-                    </div>
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">Thái Nguyên</label>
-                    </div>
-                </form>
-                <div class="content__title content__title--padding-top">
-                    Ưu đãi
-                </div>
-                <form action="" class="content__form">
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">10%</label>
-                    </div>
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">20%</label>
-                    </div>
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">30%</label>
-                    </div>
-                </form>
-                <div class="content__title content__title--padding-top">
-                    Tiền cọc
-                </div>
-                <form action="" class="content__form">
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">1 tháng</label>
-                    </div>
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">2 tháng</label>
-                    </div>
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">3 tháng</label>
-                    </div>
-                    <div class="content__form__input-label">
-                        <input type="checkbox" class="content__form__input">
-                        <label for="" class="content__form__label">4 tháng</label>
-                    </div>
-                </form>
-            </div>
             <div class="content__right">
                 <div class="content__title">
-                    <?php $sql = "SELECT * FROM theloai where id_theloai = $id"; ?>
-                    <?php $data = select_one($sql); ?>
-                    Lọc theo "<?php echo $data["name"]; ?>"
+                    <?php if (empty($search["title"])) { ?>
+                        Tìm kiếm theo: "Tất cả phòng trọ"
+                    <?php } else { ?>
+                        Tìm kiếm theo: "<?php echo $search["title"]; ?>"
+                    <?php } ?>
                 </div>
                 <div class="content__right__money__adress">
-                    <?php for ($sl = 0; $sl <= 9; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM chi_tiet where cid = $id LIMIT 1 OFFSET  $sl"; ?>
-                        <?php $data = select_one($sql); ?>
+
+                    <?php foreach ($result as $item) { ?>
                         <div class="content__right__border">
                             <div class="content__right__white">
-                                <a href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__right__white__link">
-                                    <img class="content__right__white__link__img" src="./images/<?php echo $data["img"]; ?>" alt="">
+                                <a href="trangchitiet.php?id=<?php echo $item["id_chitiet"]; ?>" class="content__right__white__link">
+                                    <img class="content__right__white__link__img" src="./images/<?php echo $item["img"]; ?>" alt="">
 
                                     <div class="content__right__white__money__adress">
                                         <span class="content__right__white__money__adress__span">
-                                            <?php echo $data["title"]; ?>
+                                            <?php echo $item["title"]; ?>
                                         </span>
                                         <span class="content__right__white__money__adress__span content__right__white__money__adress__span--red">
-                                            <?php echo $data["price"]; ?>đ
+                                            <?php echo $item["price"]; ?>đ
                                         </span>
                                     </div>
                                 </a>

@@ -1,5 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include("lib_db.php");
+include("connect.php");
+$sql = "SELECT * FROM login";
+$query = mysqli_query($conn, $sql);
+$data = mysqli_fetch_assoc($query);
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +27,7 @@
     <div class="container">
         <header class="header">
             <nav class="header__nav gird">
-                <img src="images/nt_logo2.png" alt="" class="header__nav__img">
+                <img src="./images/nt_logo2.png" alt="" class="header__nav__img">
                 <div class="header__nav__help">
                     Cần trọ giúp ?
                 </div>
