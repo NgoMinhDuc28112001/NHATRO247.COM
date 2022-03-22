@@ -87,7 +87,7 @@ function exec_update($sql){
 	logDebug( "<!-- sql=[$sql] -->");//de fix bug
 	connect();
 	global $link;
-	//$res = mysqli_query($link,$sql) ;
+	$res = mysqli_query($link,$sql) ;
 	$res = $link->query($sql);
 	$row = array();
 	//Lay loi sau khi thuc hien truy van
