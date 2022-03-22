@@ -113,8 +113,7 @@ $result = select_one($sql);
                     > Chất lượng cao
                 </span>
                 <span class="content__sequence__span">
-                    > Phòng trọ siêu xinh
-                    title
+                    > <?php echo $result["title"] ?>
                 </span>
             </div>
             <div class="content__while">
@@ -125,21 +124,14 @@ $result = select_one($sql);
                 </div>
                 <div class="content__while__right">
                     <span class="content__while__span">
-                        [Yêu thích] Nhà trọ vừa xây năm 2017.
-                        Diện tích ngang 10m dài 20m,
-                        dãy trọ có 1 tầng
-
-                        description
-
+                        <?php echo $result["description"] ?>
                     </span>
                     <div class="content__while__money">
                         <span class="content__while__money__span">
-                            đ 2010900
-
-                            price
+                            <?php echo $result["price"] ?>đ
                         </span>
                         <span class="content__while__money__span content__while__money__span__button">
-                            100% GIẢM
+                            10% GIẢM
                         </span>
                     </div>
                     <div class="content__while__endow">
@@ -151,7 +143,9 @@ $result = select_one($sql);
                         </span>
                     </div>
                     <div class="content__while__rented">
-                        <div class="content__while__rented__text">THUÊ TRỌ</div>
+                        <a href="./hopdong.php">
+                            <div class="content__while__rented__text">THUÊ TRỌ</div>
+                        </a>
                     </div>
                 </div>
             </div>

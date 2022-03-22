@@ -70,7 +70,7 @@ $data = mysqli_fetch_assoc($query);
 
                         <?php } else { ?>
                             <li class="header__nav__list__items">
-                                <a class="header__nav__list-link" href="./dang-xuat.php">Đăng xuất</a>
+                                <a class="header__nav__list-link" href="./dangxuat.php">Đăng xuất</a>
                             </li>
                         <?php } ?>
                     </ul>
@@ -146,7 +146,7 @@ $data = mysqli_fetch_assoc($query);
 
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
-                                            đ<?php echo $data["price"]; ?>k
+                                            <?php echo $data["price"]; ?>đ
                                         </span>
                                         <span class="content__money__number__span">
                                             Đã thuê: 9
@@ -176,7 +176,7 @@ $data = mysqli_fetch_assoc($query);
 
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
-                                            đ<?php echo $data["price"]; ?>k
+                                            <?php echo $data["price"]; ?>đ
                                         </span>
                                         <span class="content__money__number__span">
                                             Đã thuê: 9
@@ -201,7 +201,7 @@ $data = mysqli_fetch_assoc($query);
 
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
-                                            đ<?php echo $data["price"]; ?>k
+                                            <?php echo $data["price"]; ?>đ
                                         </span>
                                         <span class="content__money__number__span">
                                             Đã thuê: 9

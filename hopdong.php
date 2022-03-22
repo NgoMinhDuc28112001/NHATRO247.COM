@@ -8,22 +8,19 @@
     <title>Hợp đồng</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./CSS/base.css">
     <link rel="stylesheet" href="./CSS/hopdong.css">
     <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
             <nav class="header__nav gird">
-                <img src="../images/nt_logo2.png" alt="" class="header__nav__img">
+                <img src="images/nt_logo2.png" alt="" class="header__nav__img">
                 <div class="header__nav__help">
                     Cần trọ giúp ?
                 </div>
@@ -35,30 +32,38 @@
                 Hợp Đồng Thuê Trọ:
             </div>
             <div class="content__form">
-                <form action="" class="content__form-form">
+                <form action="hopdong.php" class="content__form-form">
+                    <?php if (empty($_POST['title']) or empty($_POST['code']) or empty($_POST['description'])) {
+                        $_POST['title'] = $_POST['code'] = $_POST['description'] = "";
+                    } ?>
                     <div class="content__form__label__input">
                         <label class="content__form__label" for="">Họ và tên:</label>
-                        <input type="text" class="content__form__input">
+                        <input type="text" class="content__form__input" name="title" value="<?php echo $_POST['title'] ?>">
                     </div>
                     <div class="content__form__label__input">
                         <label class="content__form__label" for="">Số CMT/CCCD:</label>
-                        <input type="text" class="content__form__input">
+                        <input type="text" class="content__form__input" name="code" value="<?php echo $_POST['code'] ?>">
                     </div>
                     <div class="content__form__label__input">
                         <label class="content__form__label" for="">Số điện thoại:</label>
-                        <input type="text" class="content__form__input">
+                        <input type="text" class="content__form__input" name="description" value="<?php echo $_POST['description'] ?>">
                     </div>
                     <div class="content__form__label__input">
                         <label class="content__form__label" for="">Tiền cọc:</label>
                         <label class="content__form__label" for="">2.500.000VND</label>
                     </div>
                     <div class="content__form__label__input content__form__label__input__mean">
-                        <label class="content__form__label" for="">Ảnh:</label>
+                        <label class="content__form__label" for="">Ảnh CMT/CCCD:</label>
+                        <div class="select-img"><input type="file" name="image"></div>
+                        <div class="select-img-two"><input type="file" name="image-two"></div>
                         <div class="content__form__label__input__img--input--submit">
                             <input type="file" class="content__form__input">
                             <div class="content__form__label__input-img">
-                                <img src="../images/" alt="" class="content__form__label__input__img">
-                                <img src="../images/" alt="" class="content__form__label__input__img">
+                                <?php if (empty($_FILES['image']['name']) or empty($_FILES['image-two']['name'])) {
+                                    $_FILES['image']['name'] = $_FILES['image-two']['name'] = "";
+                                } ?>
+                                <img src="images/<?php echo $_FILES['image']['name'] ?>" alt="" class="content__form__label__input__img">
+                                <img src="images/<?php echo $_FILES['image-two']['name'] ?>" alt="" class="content__form__label__input__img">
                             </div>
                             <button class="content__form__label__input__submit">
                                 Xác nhận
@@ -233,9 +238,7 @@
                             </div>
                         </label>
                     </div>
-                    <button class="content__form-form__button__submit">
-                        Xác nhận hợp đồng
-                    </button>
+
                 </form>
             </div>
         </div>
@@ -270,5 +273,13 @@
         </footer>
     </div>
 </body>
+<script>
+    $(Document).ready(function() {
+        $('.select-img').click(function() {
+            $(this).addClass('select-img-hidden');
+            $('.select-img-two').addClass('select-img-show')
+        });
+    })
+</script>
 
 </html>
