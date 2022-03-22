@@ -1,5 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include("lib_db.php");
+include("connect.php");
+$id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
+$sql = "SELECT * FROM chi_tiet WHERE id_chitiet=" . $id;
+$result = select_one($sql);
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +18,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./CSS/base.css">
-    <link rel="stylesheet" href="./CSS/trangchitiet.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/trangchitiet.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho
+                                thuê</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -55,7 +66,7 @@
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
                     <a href="" class="header__logo-search__link">
-                        <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
+                        <img src="images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
                 <div class="header__logo-search__search">
@@ -103,23 +114,29 @@
                 </span>
                 <span class="content__sequence__span">
                     > Phòng trọ siêu xinh
+                    title
                 </span>
             </div>
             <div class="content__while">
                 <div class="content__while__left">
                     <a href="" class="content__while__link">
-                        <img src="../images/nhatro1.jpg" alt="" class="content__while__img">
+                        <img src="images/nhatro1.jpg" alt="" class="content__while__img">
                     </a>
                 </div>
                 <div class="content__while__right">
                     <span class="content__while__span">
-                        [Yêu thích] Nhà trọ vừa xây năm 2017. 
-                        Diện tích ngang 10m dài 20m, 
+                        [Yêu thích] Nhà trọ vừa xây năm 2017.
+                        Diện tích ngang 10m dài 20m,
                         dãy trọ có 1 tầng
+
+                        description
+
                     </span>
                     <div class="content__while__money">
                         <span class="content__while__money__span">
                             đ 2010900
+
+                            price
                         </span>
                         <span class="content__while__money__span content__while__money__span__button">
                             100% GIẢM
@@ -134,7 +151,7 @@
                         </span>
                     </div>
                     <div class="content__while__rented">
-                        <div class="content__while__rented__text">THUÊ TRỌ</div>  
+                        <div class="content__while__rented__text">THUÊ TRỌ</div>
                     </div>
                 </div>
             </div>
@@ -143,16 +160,16 @@
                     MÔ TẢ PHÒNG TRỌ
                 </div>
                 <span class="content__while__column__span">
-                    Hiện tại bên mình cho thuê phòng trọ mới xây ngay – Phòng trọ (35-40m2) rộng rai. 
-                    Thoát mát ở được 4,5 người – Ban công, chỗ phơi đồ riêng biệt, wifi tốc độ cao, 
-                    hệ thống cửa vân tay riêng biệt – Vị trí thuận tiện đi lị các quận trung tâm. 
-                    Nguyễn Văn Quá, Cầu tham lương Trường Chinh , Quang Trung Gò Vấp , Chợ Hạnh Thông Tây, 
-                    Công Viên Phần mềm, ngay chợ Cầu. Gần các trường đại học Hoa Sen,FPT.. 
-                    (PHÙ HỢP CHO CÁC ANH CHỊ LÀM VĂN PHÒNG, SIHN VIÊN VÀ HỘ GIA ĐÌNH) – 
-                    Phòng mới đẹp có nội thất – Có giường và gác cao -Không giới hạn người ở – 
-                    Hầm xe rộng thoải mái – Khu vực an ninh, trật tự, bảo vệ 24/7 yên tỉnh , 
+                    Hiện tại bên mình cho thuê phòng trọ mới xây ngay – Phòng trọ (35-40m2) rộng rai.
+                    Thoát mát ở được 4,5 người – Ban công, chỗ phơi đồ riêng biệt, wifi tốc độ cao,
+                    hệ thống cửa vân tay riêng biệt – Vị trí thuận tiện đi lị các quận trung tâm.
+                    Nguyễn Văn Quá, Cầu tham lương Trường Chinh , Quang Trung Gò Vấp , Chợ Hạnh Thông Tây,
+                    Công Viên Phần mềm, ngay chợ Cầu. Gần các trường đại học Hoa Sen,FPT..
+                    (PHÙ HỢP CHO CÁC ANH CHỊ LÀM VĂN PHÒNG, SIHN VIÊN VÀ HỘ GIA ĐÌNH) –
+                    Phòng mới đẹp có nội thất – Có giường và gác cao -Không giới hạn người ở –
+                    Hầm xe rộng thoải mái – Khu vực an ninh, trật tự, bảo vệ 24/7 yên tỉnh ,
                     không chung chủ , giờ giấc tự do ĐẶC BIỆT: giảm giá phí dịch vụ cho hợp đồng 12 tháng –
-                    Cam kết không tăng giá lại trong suốt thời gian gia hợp đồng , ưu tiên khách hàng lịch sự, 
+                    Cam kết không tăng giá lại trong suốt thời gian gia hợp đồng , ưu tiên khách hàng lịch sự,
                     văn mình , hợp đồng lâu dài
                 </span>
             </div>
@@ -216,11 +233,14 @@
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà
+                    Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>
         </footer>
     </div>
+    </div>
 </body>
+
 </html>
