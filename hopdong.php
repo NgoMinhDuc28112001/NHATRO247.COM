@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include("lib_db.php");
 include("connect.php");
@@ -8,6 +9,10 @@ $data = mysqli_fetch_assoc($query);
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+>>>>>>> 1c543c55832c81c3b9c0ea84d8711ca1bfa816cc
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,7 +44,7 @@ $data = mysqli_fetch_assoc($query);
                 Hợp Đồng Thuê Trọ:
             </div>
             <div class="content__form">
-                <form action="hopdong.php" class="content__form-form">
+                <form action="./hopdong.php" class="content__form-form" method="POST" enctype="multipart/form-data">
                     <?php if (empty($_POST['title']) or empty($_POST['code']) or empty($_POST['description'])) {
                         $_POST['title'] = $_POST['code'] = $_POST['description'] = "";
                     } ?>
@@ -61,18 +66,19 @@ $data = mysqli_fetch_assoc($query);
                     </div>
                     <div class="content__form__label__input content__form__label__input__mean">
                         <label class="content__form__label" for="">Ảnh CMT/CCCD:</label>
-                        <div class="select-img"><input type="file" name="image"></div>
-                        <div class="select-img-two"><input type="file" name="image-two"></div>
                         <div class="content__form__label__input__img--input--submit">
-                            <input type="file" class="content__form__input">
+                            <input type="file" class="content__form__input content__form__input--file" name = "img-one">
+                            <input type="file" class="content__form__input content__form__input--file content__form__input--hiden" name="img-two">
                             <div class="content__form__label__input-img">
-                                <?php if (empty($_FILES['image']['name']) or empty($_FILES['image-two']['name'])) {
-                                    $_FILES['image']['name'] = $_FILES['image-two']['name'] = "";
-                                } ?>
-                                <img src="images/<?php echo $_FILES['image']['name'] ?>" alt="" class="content__form__label__input__img">
-                                <img src="images/<?php echo $_FILES['image-two']['name'] ?>" alt="" class="content__form__label__input__img">
-                            </div>
-                            <button class="content__form__label__input__submit">
+                                <?php
+                                    if(!isset($_POST['submit']) || empty($_FILES['img-one']['name']) || empty($_FILES['img-two']['name'])){
+                                        $_FILES['img-one']['name'] = $_FILES['img-two']['name'] = "";
+                                    }
+                                ?>  
+                                <img src="./images/<?php echo $_FILES['img-one']['name']?>" alt="" class="content__form__label__input__img">
+                                <img src="./images/<?php echo $_FILES['img-two']['name']?>" alt="" class="content__form__label__input__img">
+                            </div>                            
+                            <button name='submit' class="content__form__label__input__submit">
                                 Xác nhận
                             </button>
                         </div>
@@ -245,7 +251,9 @@ $data = mysqli_fetch_assoc($query);
                             </div>
                         </label>
                     </div>
-
+                    <button class="content__form-form__button__submit">
+                        Xác nhận hợp đồng
+                    </button>
                 </form>
             </div>
         </div>
@@ -282,9 +290,13 @@ $data = mysqli_fetch_assoc($query);
 </body>
 <script>
     $(Document).ready(function() {
-        $('.select-img').click(function() {
-            $(this).addClass('select-img-hidden');
-            $('.select-img-two').addClass('select-img-show')
+        $('.content__form__input--file:nth-child(1)').click(function(){
+            $(this).addClass('content__form__input--hiden');
+            $('.content__form__input--file:nth-child(2)').removeClass('content__form__input--hiden')
+        });
+        $('.content__form__input--file:nth-child(2)').click(function(){
+            $(this).addClass('content__form__input--hiden');
+            $('.content__form__input--file:nth-child(1)').removeClass('content__form__input--hiden')
         });
     })
 </script>

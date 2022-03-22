@@ -408,6 +408,7 @@
 22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
 22.03.2022 03:16:42 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
 22.03.2022 03:23:36 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+<<<<<<< HEAD
 22.03.2022 04:18:20 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
 22.03.2022 04:18:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
 22.03.2022 04:18:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
@@ -1167,3 +1168,8 @@
 22.03.2022 06:31:53 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
 22.03.2022 06:31:53 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
 22.03.2022 06:31:53 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+=======
+22.03.2022 03:52:18 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=0] 
+22.03.2022 03:52:29 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+22.03.2022 03:52:42 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+>>>>>>> 1c543c55832c81c3b9c0ea84d8711ca1bfa816cc

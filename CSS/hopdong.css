@@ -103,6 +103,9 @@ b{
     left: 50%;
     margin-left: -60px;
 }
+.content__form__input--hiden{
+    display: none;
+}
 /* footer */
 .footer{
     /* border: 2px solid red; */
