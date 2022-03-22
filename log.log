@@ -257,3 +257,7 @@
 22.03.2022 09:41:03 sql=[SELECT * FROM `grab_content` WHERE id=1] 
 22.03.2022 09:41:03 Khong the select duoc,ERROR=[Table 'btl.grab_content' doesn't exist] 
 22.03.2022 09:41:03 COUNT=[0] 
+22.03.2022 11:20:57 <!-- sql=[insert into login (email, password) values('admin1234@gmail.com', '12345678')] --> 
+22.03.2022 11:22:03 <!-- sql=[insert into login (email, password) values('admin1234@gmail.com', '12345678')] --> 
+22.03.2022 11:25:54 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=0] 
+22.03.2022 11:27:32 <!-- sql=[truncate table login;] --> 

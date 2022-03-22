@@ -198,9 +198,6 @@ $result = select_one($sql);
                             <a href="" class="content__also__link">Nhà khung BT chắc chắn</a>
                         </li>
                         <li class="content__also__items">
-                            <a href="" class="content__also__link">Áo Bomber Jacket Dù</a>
-                        </li>
-                        <li class="content__also__items">
                             <a href="" class="content__also__link">Nhà quay hướng đông nam</a>
                         </li>
                         <li class="content__also__items">
