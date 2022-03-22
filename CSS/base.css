@@ -1,0 +1,26 @@
+.container{
+    background-color: #EFEFEF;
+}
+*{
+    box-sizing: inherit;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.gird{
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+.gird_money_adress{
+    max-width: 600px;
+    margin: auto;
+}
+.gird_content{
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
