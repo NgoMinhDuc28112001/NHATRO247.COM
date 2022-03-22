@@ -190,7 +190,7 @@
     background-color: #DBCDCD;
 }
 .footer__top{
-    padding: 50px 0;
+    padding: 20px 0;
 }
 .footer__list{
     list-style: none;
@@ -205,11 +205,11 @@
 .footer__link{
     text-decoration: none;
     color: black;
+    font-size: 1.1rem;
 }
 .footer__center{
     width: 100%;
     text-align: center;
-    padding: 10px 0;
 }
 .footer__bottom{
     text-align: center;
@@ -217,3 +217,7 @@
     padding: 10px 0;
     line-height: 20px;
 }
+.footer__bottom__span{
+    font-size: 1.0rem;
+}
+
