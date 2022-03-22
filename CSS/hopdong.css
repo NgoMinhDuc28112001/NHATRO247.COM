@@ -4,6 +4,7 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 2;
 }
 .header__nav{
     display: flex;
@@ -21,6 +22,9 @@
     margin-top: 74px;
     background-color: white;
     padding: 30px;
+    padding-right: 130px;
+    position: relative;
+    padding-bottom: 100px;
 }
 .content__title{
     font-size: 2.5rem;
@@ -33,11 +37,12 @@
 .content__form__label__input{
     display: flex;
     align-items: center;
-    line-height: 50px;
+    padding-bottom: 20px;
+    /* border: 2px solid black; */
 }
 .content__form__label{
     color: #257cdf;
-    width: 150px;
+    min-width: 150px;
     font-size: 1.4rem;
 }
 .content__form__input{
@@ -48,6 +53,55 @@
 }
 .content__form__input:focus{
     outline: none;
+}
+.content__form__label__input__img--input--submit{
+    /* border: 2px solid red; */
+}
+.content__form__label__input__submit{
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+.content__form__label__input-img{
+    display: flex;
+}
+.content__form__label__input__img{
+    width: 50%;
+    padding: 10px;
+}
+.content__form__label__input__submit,
+.content__form-form__button__submit{
+    padding: 10px;
+    background-color: #24c6eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content__form__label__input__mean{
+    display: flex;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+}
+b{
+    font-size: 1.4rem;
+}
+.back{
+    padding-left: 10px;
+    padding-top: 5px;
+    line-height: 20px;
+    font-size: 1.4rem;
+}
+.back__block{
+    line-height: 20px;
+    font-size: 1.4rem;
+}
+.content__form__label__color-back{
+    color: black;
+}
+.content__form-form__button__submit{
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
 }
 /* footer */
 .footer{
