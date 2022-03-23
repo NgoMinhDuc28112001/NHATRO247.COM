@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 23.03.2022 09:41:03 <!-- sql=[insert into login (email, password) values('admin@gmail.com', '123')] --> 
 23.03.2022 09:43:14 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
 23.03.2022 10:03:17 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
@@ -8,3 +9,1584 @@
 23.03.2022 11:13:00 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
 23.03.2022 11:32:11 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
 23.03.2022 11:53:24 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+=======
+22.03.2022 05:26:20 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:31:01 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:31:18 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:31:20 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:31:40 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:31:43 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:31:48 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:33:35 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:33:49 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:36:27 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:39:18 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:39:23 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:39:26 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:39:29 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:39:33 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:48:01 <!-- sql=[truncate table login;] --> 
+22.03.2022 05:48:35 <!-- sql=[truncate table login;] --> 
+22.03.2022 05:48:49 <!-- sql=[truncate table login;] --> 
+22.03.2022 05:52:23 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:56:30 <!-- sql=[truncate table login;] --> 
+22.03.2022 05:56:33 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:56:35 <!-- sql=[truncate table login;] --> 
+22.03.2022 05:57:42 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 05:59:45 <!-- sql=[truncate table login;] --> 
+22.03.2022 06:10:58 sql=[SELECT *
+                    FROM users
+                    WHERE email like 'nguyen@gmail.com'
+            ] 
+22.03.2022 06:10:58 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', 'nguyen@gmail.com')] --> 
+22.03.2022 06:11:30 sql=[SELECT *
+                    FROM users
+                    WHERE email like 'nguyenduc0996@gmail.com'
+            ] 
+22.03.2022 06:11:30 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', 'nguyenduc0996@gmail.com')] --> 
+22.03.2022 06:11:31 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:31 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:32 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:32 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:32 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:32 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:33 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:33 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:34 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:34 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:35 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:35 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:35 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:35 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:46 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:46 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:47 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:47 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('', '', '')] --> 
+22.03.2022 06:11:48 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:48 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:48 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:48 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:49 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:49 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:50 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:50 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:50 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:50 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:11:51 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 06:11:51 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '', '')] --> 
+22.03.2022 06:12:19 sql=[SELECT *
+                    FROM users
+                    WHERE email like 'nguyenduc0996@gmail.com'
+            ] 
+22.03.2022 06:12:19 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('duc', '123', 'nguyenduc0996@gmail.com')] --> 
+22.03.2022 06:12:41 sql=[SELECT *
+                    FROM users
+                    WHERE email like 'nguyenduc0996@gmail.com'
+            ] 
+22.03.2022 06:12:41 <!-- sql=[
+                INSERT INTO `users` (`username `, `password`, `email`) 
+                VALUES ('nguyenduc0996@gmail.com', '123', 'nguyenduc0996@gmail.com')] --> 
+22.03.2022 06:13:41 sql=[SELECT *
+                    FROM users
+                    WHERE email like 'nhatro@gmail.com'
+            ] 
+22.03.2022 06:15:39 sql=[SELECT *
+                    FROM users
+                    WHERE email like 'nguyenduc0996@gmail.com'
+            ] 
+22.03.2022 06:15:39 <!-- sql=[
+                INSERT INTO users (username, password, email) 
+                VALUES ('nguyenduc0996@gmail.com', '123', 'nguyenduc0996@gmail.com')] --> 
+22.03.2022 06:15:43 <!-- sql=[insert into login (email, password) values('nguyenduc0996@gmail.com', '123')] --> 
+22.03.2022 08:51:37 <!-- sql=[truncate table login;] --> 
+22.03.2022 08:59:52 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 08:59:52 <!-- sql=[
+                INSERT INTO users (username, password, email) 
+                VALUES ('', '', '')] --> 
+22.03.2022 08:59:56 sql=[SELECT *
+                    FROM users
+                    WHERE email like ''
+            ] 
+22.03.2022 09:10:04 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 09:10:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:10:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:10:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:10:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:10:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:10:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:10:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:10:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:10:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:10:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:11:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:11:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:11:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:11:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:11:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:12:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:12:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:12:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:12:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:12:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:19:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:19:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:19:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:19:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:19:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:20:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:20:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:20:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:20:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:20:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:23:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:23:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:23:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:23:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:23:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:23:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 09:23:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 09:23:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 09:23:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 09:25:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:25:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:25:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:25:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:25:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:25:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 09:25:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 09:25:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 09:25:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 09:26:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:26:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:26:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:26:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:26:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:26:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 09:26:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 09:26:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 09:26:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 09:30:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 09:30:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 09:30:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 09:30:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 09:30:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 09:30:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 09:41:03 sql=[SELECT * FROM `grab_content` WHERE id=1] 
+22.03.2022 09:41:03 Khong the select duoc,ERROR=[Table 'btl.grab_content' doesn't exist] 
+22.03.2022 09:41:03 COUNT=[0] 
+<<<<<<< HEAD
+22.03.2022 11:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 11:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 11:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 11:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 11:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 11:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 11:12:37 <!-- sql=[truncate table login;] --> 
+22.03.2022 11:12:41 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 11:12:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 11:12:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 11:12:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 11:12:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 11:12:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 11:12:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 11:12:50 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+=======
+22.03.2022 11:20:57 <!-- sql=[insert into login (email, password) values('admin1234@gmail.com', '12345678')] --> 
+22.03.2022 11:22:03 <!-- sql=[insert into login (email, password) values('admin1234@gmail.com', '12345678')] --> 
+22.03.2022 11:25:54 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=0] 
+22.03.2022 11:27:32 <!-- sql=[truncate table login;] --> 
+>>>>>>> 7d94d3e49e33c3495956754596a2d11704a08e58
+22.03.2022 03:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 03:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 03:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 03:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 03:12:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 03:12:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 03:13:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 03:13:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 03:13:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 03:13:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 03:13:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 03:13:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 03:14:10 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 03:14:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 03:14:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 03:14:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 03:14:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 03:14:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 03:14:10 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 03:15:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 03:15:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 03:15:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 03:15:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 03:15:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 03:15:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 03:15:23 <!-- sql=[truncate table login;] --> 
+22.03.2022 03:15:42 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 03:15:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 03:15:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 03:15:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 03:15:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 03:15:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 03:15:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 03:16:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 03:16:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 03:16:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 03:16:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 03:16:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 03:16:25 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 03:16:42 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+22.03.2022 03:23:36 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+<<<<<<< HEAD
+22.03.2022 04:18:20 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+22.03.2022 04:18:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 04:18:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 04:18:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 04:18:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 04:18:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 04:18:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 04:18:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 04:18:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 04:18:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 04:18:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 04:18:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 04:18:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 04:18:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 04:18:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 04:18:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 04:18:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 04:18:32 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 04:25:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 04:25:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 04:25:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 04:25:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 04:25:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 04:25:28 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 04:25:28 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 04:26:49 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 04:26:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 04:26:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 04:26:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 04:26:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 04:26:50 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 04:26:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:03 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:03 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:07 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:07 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:13 sql=[SELECT * FROM theloai where id_theloai = 2] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:13 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:19 sql=[SELECT * FROM theloai where id_theloai = 3] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:19 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:21 sql=[SELECT * FROM theloai where id_theloai = 4] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:21 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:23 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:23 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:27 sql=[SELECT * FROM theloai where id_theloai = 2] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:37 sql=[SELECT * FROM theloai where id_theloai = 4] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:37 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:39 sql=[SELECT * FROM theloai where id_theloai = 5] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:39 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:41 sql=[SELECT * FROM theloai where id_theloai = 3] 
+22.03.2022 05:07:41 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:41 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:41 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:41 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:41 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:41 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:41 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:42 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:42 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:42 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:44 sql=[SELECT * FROM theloai where id_theloai = 2] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:44 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:50 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:50 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:55 sql=[SELECT * FROM theloai where id_theloai = 2] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:55 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+22.03.2022 05:07:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:58 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 05:07:58 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 05:08:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:08:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:08:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:08:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:08:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:08:00 sql=[SELECT * FROM theloai where id_theloai = 2] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+22.03.2022 05:08:00 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+22.03.2022 05:11:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:11:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:11:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:11:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:11:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:11:12 sql=[SELECT * FROM theloai where id_theloai = 2] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+22.03.2022 05:11:12 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+22.03.2022 05:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:12:27 sql=[SELECT * FROM theloai where id_theloai = 2] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+22.03.2022 05:12:27 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+22.03.2022 05:12:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:12:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:12:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:12:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:12:42 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 05:12:42 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 05:12:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:12:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:12:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:12:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:12:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 05:12:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 05:14:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:14:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:14:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:14:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:14:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:14:19 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 05:14:19 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 05:14:39 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+22.03.2022 05:14:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:14:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:14:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:14:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:14:39 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:15:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:15:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:15:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:15:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:15:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:15:29 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 05:15:29 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 05:15:31 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+22.03.2022 05:15:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:15:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:15:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:15:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:15:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:15:35 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+22.03.2022 05:15:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:15:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:15:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:15:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:15:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:15:38 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=9] 
+22.03.2022 05:15:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:15:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:15:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:15:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:15:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:15:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:15:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:15:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:15:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:15:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 05:15:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 05:16:03 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=11] 
+22.03.2022 05:16:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:16:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:16:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:16:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:16:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:17:48 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=11] 
+22.03.2022 05:17:48 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:17:48 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:17:48 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:17:48 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:17:48 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:17:51 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=11] 
+22.03.2022 05:17:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:17:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:17:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:17:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:17:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:20:02 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=11] 
+22.03.2022 05:20:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:20:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:20:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:20:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:20:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:20:11 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+22.03.2022 05:20:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:20:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:20:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:20:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:20:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:20:18 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+22.03.2022 05:20:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:20:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:20:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:20:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:20:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:39:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 05:39:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 05:39:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 05:39:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 05:39:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 05:39:12 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 05:39:12 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 06:00:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:00:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:00:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:00:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:00:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 06:00:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 06:01:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:01:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:01:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:01:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:01:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 06:01:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 06:01:27 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:01:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:01:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:01:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:01:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:01:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:02:26 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:02:26 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:02:26 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:02:26 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:02:26 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:02:26 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:02:51 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:02:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:02:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:02:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:02:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:02:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:02:55 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:02:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:02:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:02:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:02:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:02:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:03:37 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:03:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:03:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:03:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:03:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:03:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:08:46 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:08:46 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:08:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:08:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:08:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:08:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:08:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:08:57 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=24] 
+22.03.2022 06:08:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:08:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:08:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:08:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:08:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:09:02 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=14] 
+22.03.2022 06:09:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:09:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:09:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:09:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:09:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:20 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 06:11:20 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 06:11:32 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+22.03.2022 06:11:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:33 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 06:11:33 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 06:11:47 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:11:47 sql=[select * from chi_tiet where  title like '%Nhà trọ mới xây%' ] 
+22.03.2022 06:11:47 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:47 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:47 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:47 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:47 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:55 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=7] 
+22.03.2022 06:11:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:57 sql=[SELECT * FROM theloai where id_theloai = 4] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  5] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  6] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  7] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  8] 
+22.03.2022 06:11:57 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  9] 
+22.03.2022 06:11:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:59 sql=[SELECT * FROM theloai where id_theloai = 5] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  0] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  1] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  2] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  3] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  4] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  5] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  6] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  7] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  8] 
+22.03.2022 06:11:59 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  9] 
+22.03.2022 06:12:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:12:01 sql=[SELECT * FROM theloai where id_theloai = 3] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  4] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  5] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  6] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  7] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  8] 
+22.03.2022 06:12:01 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  9] 
+22.03.2022 06:12:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:12:03 sql=[SELECT * FROM theloai where id_theloai = 2] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+22.03.2022 06:12:03 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+22.03.2022 06:12:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:04 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:12:04 sql=[SELECT * FROM theloai where id_theloai = 1] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+22.03.2022 06:12:04 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+22.03.2022 06:12:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 06:12:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 06:12:27 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+22.03.2022 06:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:12:27 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:31:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:31:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:31:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:31:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:31:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+22.03.2022 06:31:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+22.03.2022 06:31:53 sql=[select * from chi_tiet where  title like '%tivi%' ] 
+22.03.2022 06:31:53 sql=[select * from chi_tiet where  title like '%tivi%' ] 
+22.03.2022 06:31:53 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:31:53 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:31:53 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:31:53 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:31:53 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+=======
+22.03.2022 03:52:18 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=0] 
+22.03.2022 03:52:29 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+22.03.2022 03:52:42 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+>>>>>>> 1c543c55832c81c3b9c0ea84d8711ca1bfa816cc
+22.03.2022 06:35:46 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+22.03.2022 06:35:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+22.03.2022 06:35:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+22.03.2022 06:35:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+22.03.2022 06:35:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+22.03.2022 06:35:46 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 09:04:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 09:04:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 09:04:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 09:04:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 09:04:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 09:04:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 09:04:34 <!-- sql=[truncate table login;] --> 
+23.03.2022 09:04:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 09:04:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 09:04:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 09:04:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 09:04:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 09:04:59 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 09:05:03 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 09:05:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 09:05:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 09:05:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 09:05:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 09:05:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 09:05:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 09:05:05 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+23.03.2022 09:05:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 09:05:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 09:05:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 09:05:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 09:05:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 09:20:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 09:20:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 09:20:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 09:20:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 09:20:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 09:20:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 09:21:40 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 09:21:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 09:21:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 09:21:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 09:21:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 09:21:40 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 09:33:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 09:33:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 09:33:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 09:33:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 09:33:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 09:33:02 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 09:52:35 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:52:44 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:52:48 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:52:48 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:52:51 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:53:46 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:53:49 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:53:51 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:18 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:21 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:23 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:25 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:26 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:26 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:27 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:27 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:28 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:29 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:29 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:30 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:31 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:32 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:32 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:33 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:34 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:34 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:35 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:36 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:37 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:38 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:39 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:41 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:41 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:42 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:43 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:45 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:46 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:47 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:48 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:49 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:54:50 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:09 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:10 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:12 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:12 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:13 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:14 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:14 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:15 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:16 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:37 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:39 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:40 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:40 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:55:41 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:03 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:05 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:05 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:06 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:07 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:07 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:08 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:09 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:10 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:10 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:12 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:12 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:13 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:13 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:13 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:13 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:13 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:14 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:14 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:56:59 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:57:01 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:57:02 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:57:02 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:57:03 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:57:04 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:57:05 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:57:05 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:19 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:25 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:27 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:29 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:29 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:30 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:31 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:32 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:32 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:33 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:34 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 09:58:35 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:00:55 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:00:55 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:00:56 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:00:58 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:00:58 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:00:59 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:00 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:33 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:34 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:35 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:35 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:36 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:37 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:38 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:39 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:40 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:41 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:42 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:43 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:01:44 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:06:28 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:06:28 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:05 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:05 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:07 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:07 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:08 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:08 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:08 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:08 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:09 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:09 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:10 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:10 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:11 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:12 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:12 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:12 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:12 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:29 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:29 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:29 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:29 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:30 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:30 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:31 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:31 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:32 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:32 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:32 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:32 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:34 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:34 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:35 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:35 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:35 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:35 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:13:36 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:13:36 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:14:30 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:14:30 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:14:31 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:14:31 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:14:32 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:14:32 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:14:33 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:14:33 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:15:01 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:15:01 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:15:02 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:15:02 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:15:03 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:15:03 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:15:05 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:15:05 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:15:08 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:15:08 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:15:10 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:15:10 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:15:11 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:15:11 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:15:12 sql=[SELECT id_user FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:15:12 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:16:52 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:16:52 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:16:54 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:16:54 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:17:56 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:17:56 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:17:59 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:17:59 <!-- sql=[UPDATE grab_content SET  cid =  'NULL', avatar = '' , name = '' , discount = '' , percent = '' , size =  '' , color =  '' , gift = '' , payment_type = '' , category_name = ''  WHERE id =] --> 
+23.03.2022 10:49:08 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:49:08 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values 
+    ('df','123','123','','','0', '2')] --> 
+23.03.2022 10:49:27 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 10:49:27 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values 
+    ('df','123','123','','','0', '2')] --> 
+23.03.2022 11:04:14 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:04:14 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:04:23 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:04:23 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:04:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:04:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:06:42 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:06:42 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:06:53 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:06:53 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:06:57 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:06:57 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:07:01 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:07:01 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:07:05 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:07:05 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:07:07 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:07:07 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:07:37 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:07:37 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:08:08 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:08:08 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:36 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:36 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:41 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:42 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:42 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:43 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:43 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:43 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:43 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:44 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:44 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:45 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:45 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:45 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:45 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:09:46 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:09:46 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:09 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:09 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:10 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:11 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:11 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:12 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:12 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:36 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:36 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:36 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:36 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:37 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:37 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:38 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:39 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:39 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:40 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:41 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:10:42 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:10:42 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:11:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 11:11:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 11:11:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 11:11:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 11:11:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 11:11:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 11:11:29 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+23.03.2022 11:11:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 11:11:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 11:11:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 11:11:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 11:11:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 11:11:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:11:32 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:11:37 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:11:37 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 11:11:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 11:11:40 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+>>>>>>> b88fbb63bde7dd19a6a869e8161a0142939a8a68
+23.03.2022 12:01:50 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 

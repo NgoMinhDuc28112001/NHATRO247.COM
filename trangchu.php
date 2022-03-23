@@ -4,6 +4,8 @@ include("connect.php");
 $sql = "SELECT * FROM login";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
+$q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
+$qsessionname = "___Q___";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -79,13 +81,13 @@ $data = mysqli_fetch_assoc($query);
             <!-- end nav -->
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
-                    <a href="" class="header__logo-search__link">
-                        <img src="images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
+                    <a href="./trangchu.php" class="header__logo-search__link">
+                        <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="" class="header__logo-search__form">
-                        <input type="text" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
+                    <form action="chuyenmuc.php" class="header__logo-search__form" method="GET">
+                        <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -100,7 +102,7 @@ $data = mysqli_fetch_assoc($query);
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangchitiet.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>

@@ -4,6 +4,9 @@ include("connect.php");
 $id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
 $sql = "SELECT * FROM chi_tiet WHERE id_chitiet=" . $id;
 $result = select_one($sql);
+$sql = "SELECT * FROM login";
+$query = mysqli_query($conn, $sql);
+$data = mysqli_fetch_assoc($query);
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -53,20 +56,28 @@ $result = select_one($sql);
                             </a>
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
-                        <li class="header__nav__list__items">
-                            <a class="header__nav__list-link" href="">Đăng ký</a>
-                        </li>
-                        <li class="header__nav__list__items">
-                            <a class="header__nav__list-link" href="">Đăng nhập</a>
-                        </li>
+                        <?php if (empty($data['email'])) { ?>
+
+                            <li class="header__nav__list__items">
+                                <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
+                            </li>
+                            <li class="header__nav__list__items">
+                                <a class="header__nav__list-link" href="./dangnhap.php">Đăng nhập</a>
+                            </li>
+
+                        <?php } else { ?>
+                            <li class="header__nav__list__items">
+                                <a class="header__nav__list-link" href="./dangxuat.php">Đăng xuất</a>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </nav>
             <!-- end nav -->
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
-                    <a href="" class="header__logo-search__link">
-                        <img src="images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
+                    <a href="./trangchu.php" class="header__logo-search__link">
+                        <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
                 <div class="header__logo-search__search">
@@ -81,21 +92,15 @@ $result = select_one($sql);
             <!-- end search -->
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
-                    <li class="header__adress__money__items">
-                        <a href="" class="header__adress__money__link">Hà Nội</a>
-                    </li>
-                    <li class="header__adress__money__items">
-                        <a href="" class="header__adress__money__link">Hồ Chí Minh</a>
-                    </li>
-                    <li class="header__adress__money__items">
-                        <a href="" class="header__adress__money__link">1-3 triệu</a>
-                    </li>
-                    <li class="header__adress__money__items">
-                        <a href="" class="header__adress__money__link">3-5 triệu</a>
-                    </li>
-                    <li class="header__adress__money__items">
-                        <a href="" class="header__adress__money__link">5-7 triệu</a>
-                    </li>
+                    <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
+                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $datas = select_list($sql); ?>
+                        <li class="header__adress__money__items">
+                            <?php foreach ($datas as $data) { ?>
+                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                            <?php } ?>
+                        </li>
+                    <?php } ?>
                 </ul>
             </div>
             <!-- end adress money -->
@@ -116,39 +121,40 @@ $result = select_one($sql);
                     > <?php echo $result["title"] ?>
                 </span>
             </div>
-            <div class="content__while">
-                <div class="content__while__left">
-                    <a href="" class="content__while__link">
-                        <img src="images/nhatro1.jpg" alt="" class="content__while__img">
-                    </a>
-                </div>
-                <div class="content__while__right">
-                    <span class="content__while__span">
-                        <?php echo $result["description"] ?>
-                    </span>
-                    <div class="content__while__money">
-                        <span class="content__while__money__span">
-                            <?php echo $result["price"] ?>đ
-                        </span>
-                        <span class="content__while__money__span content__while__money__span__button">
-                            10% GIẢM
-                        </span>
-                    </div>
-                    <div class="content__while__endow">
-                        <span class="content__while__endow__span">
-                            Ưu điểm:
-                        </span>
-                        <span class="content__while__endow__span">
-                            Miễn phí điện nước 15 ngày. Giảm 10% tháng đầu
-                        </span>
-                    </div>
-                    <div class="content__while__rented">
-                        <a href="./hopdong.php">
-                            <div class="content__while__rented__text">THUÊ TRỌ</div>
+            <form action="hopdong.php" method="POST">
+                <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
+                <div class="content__while">
+                    <div class="content__while__left">
+                        <a href="" class="content__while__link">
+                            <img src="./images/<?php echo $result["img_chitiet"] ?>" alt="" class="content__while__img">
                         </a>
                     </div>
+                    <div class="content__while__right">
+                        <span class="content__while__span">
+                            <?php echo $result["description"] ?>
+                        </span>
+                        <div class="content__while__money">
+                            <span class="content__while__money__span">
+                                <?php echo $result["price"] ?>đ
+                            </span>
+                            <span class="content__while__money__span content__while__money__span__button">
+                                10% GIẢM
+                            </span>
+                        </div>
+                        <div class="content__while__endow">
+                            <span class="content__while__endow__span">
+                                Ưu điểm:
+                            </span>
+                            <span class="content__while__endow__span">
+                                Miễn phí điện nước 15 ngày. Giảm 10% tháng đầu
+                            </span>
+                        </div>
+                        <div class="content__while__rented">
+                            <button type="submit" class="content__while__rented__text">THUÊ TRỌ</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </form>
             <div class="content__while__column">
                 <div class="content__while__column__title">
                     MÔ TẢ PHÒNG TRỌ
