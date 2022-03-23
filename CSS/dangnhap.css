@@ -46,7 +46,7 @@
     font-weight: bold;
 }
 .content__form__label__pass{
-    margin-top: 20px;
+    margin-top: 35px;
 }
 .content__form__input{
     padding: 5px 5px;
@@ -58,7 +58,7 @@
     outline: none;
 }
 .content__form__link{
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 5px;
     color: #0501E0;
     text-decoration: none;
