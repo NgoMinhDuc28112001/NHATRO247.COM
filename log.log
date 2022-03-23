@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+23.03.2022 09:41:03 <!-- sql=[insert into login (email, password) values('admin@gmail.com', '123')] --> 
+23.03.2022 09:43:14 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 10:03:17 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 10:03:21 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 10:03:41 <!-- sql=[insert into login (email, password) values('admin@gmail.com', '123')] --> 
+23.03.2022 10:04:27 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 10:11:21 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 11:13:00 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 11:32:11 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 11:53:24 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+=======
 22.03.2022 05:26:20 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
 22.03.2022 05:31:01 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
 22.03.2022 05:31:18 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
@@ -1576,6 +1588,7 @@
 23.03.2022 11:11:37 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
 23.03.2022 11:11:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
 23.03.2022 11:11:40 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+<<<<<<< HEAD
 23.03.2022 02:17:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
 23.03.2022 02:17:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
 23.03.2022 02:17:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
@@ -3256,3 +3269,7 @@
 23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
 23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
 23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+=======
+>>>>>>> b88fbb63bde7dd19a6a869e8161a0142939a8a68
+23.03.2022 12:01:50 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+>>>>>>> 8227150005d02cbb128e4e80975a6f44adf843c2
