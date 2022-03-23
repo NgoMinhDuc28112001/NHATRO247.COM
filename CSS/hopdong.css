@@ -54,9 +54,9 @@
 .content__form__input:focus{
     outline: none;
 }
-.content__form__label__input__img--input--submit{
-    /* border: 2px solid red; */
-}
+/* .content__form__label__input__img--input--submit{
+     border: 2px solid red; 
+} */
 .content__form__label__input__submit{
     transform: translateX(-50%);
     margin-left: 50%;

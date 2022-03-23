@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 include("lib_db.php");
 include("connect.php");
@@ -9,10 +8,6 @@ $data = mysqli_fetch_assoc($query);
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-=======
-<!DOCTYPE html>
-<html lang="en">
->>>>>>> 1c543c55832c81c3b9c0ea84d8711ca1bfa816cc
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,17 +62,17 @@ $data = mysqli_fetch_assoc($query);
                     <div class="content__form__label__input content__form__label__input__mean">
                         <label class="content__form__label" for="">Ảnh CMT/CCCD:</label>
                         <div class="content__form__label__input__img--input--submit">
-                            <input type="file" class="content__form__input content__form__input--file" name = "img-one">
+                            <input type="file" class="content__form__input content__form__input--file" name="img-one">
                             <input type="file" class="content__form__input content__form__input--file content__form__input--hiden" name="img-two">
                             <div class="content__form__label__input-img">
                                 <?php
-                                    if(!isset($_POST['submit']) || empty($_FILES['img-one']['name']) || empty($_FILES['img-two']['name'])){
-                                        $_FILES['img-one']['name'] = $_FILES['img-two']['name'] = "";
-                                    }
-                                ?>  
-                                <img src="./images/<?php echo $_FILES['img-one']['name']?>" alt="" class="content__form__label__input__img">
-                                <img src="./images/<?php echo $_FILES['img-two']['name']?>" alt="" class="content__form__label__input__img">
-                            </div>                            
+                                if (!isset($_POST['submit']) || empty($_FILES['img-one']['name']) || empty($_FILES['img-two']['name'])) {
+                                    $_FILES['img-one']['name'] = $_FILES['img-two']['name'] = "";
+                                }
+                                ?>
+                                <img src="./images/<?php echo $_FILES['img-one']['name'] ?>" alt="" class="content__form__label__input__img">
+                                <img src="./images/<?php echo $_FILES['img-two']['name'] ?>" alt="" class="content__form__label__input__img">
+                            </div>
                             <button name='submit' class="content__form__label__input__submit">
                                 Xác nhận
                             </button>
@@ -290,11 +285,11 @@ $data = mysqli_fetch_assoc($query);
 </body>
 <script>
     $(Document).ready(function() {
-        $('.content__form__input--file:nth-child(1)').click(function(){
+        $('.content__form__input--file:nth-child(1)').click(function() {
             $(this).addClass('content__form__input--hiden');
             $('.content__form__input--file:nth-child(2)').removeClass('content__form__input--hiden')
         });
-        $('.content__form__input--file:nth-child(2)').click(function(){
+        $('.content__form__input--file:nth-child(2)').click(function() {
             $(this).addClass('content__form__input--hiden');
             $('.content__form__input--file:nth-child(1)').removeClass('content__form__input--hiden')
         });
