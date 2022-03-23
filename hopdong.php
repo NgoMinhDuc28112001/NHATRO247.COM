@@ -4,6 +4,32 @@ include("connect.php");
 $sql = "SELECT * FROM login";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
+$sql = "SELECT * FROM users where email = '$data[email]' ";
+$id_user = select_one($sql);
+
+//get input
+$id_phong = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
+$fullname = isset($_REQUEST["fullname"]) ? $_REQUEST["fullname"] : "";
+$cmt = isset($_REQUEST["cmt"]) ? $_REQUEST["cmt"] : "";
+$sdt = isset($_REQUEST["sdt"]) ? $_REQUEST["sdt"] : 0;
+$mattruoc = isset($_REQUEST["img-one"]) ? $_REQUEST["img-one"] : "";
+$matsau = isset($_REQUEST["img-two"]) ? $_REQUEST["img-two"] : "";
+
+echo $id_phong;
+echo $fullname;
+echo $cmt;
+echo $sdt;
+echo $mattruoc;
+echo $matsau;
+//tao sql
+if (!isset($id_phong) and !isset($fullname) and !isset($cmt) and !isset($sdt) and !isset($mattruoc) and !isset($matsau)) {
+    $sql = "insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values 
+    ('{$fullname}','{$cmt}','{$sdt}','{$mattruoc}','{$matsau}','{$id_phong}', '{$id_user["id_user"]}')";
+}
+
+$ret = exec_update($sql);
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -40,20 +66,20 @@ $data = mysqli_fetch_assoc($query);
             </div>
             <div class="content__form">
                 <form action="./hopdong.php" class="content__form-form" method="POST" enctype="multipart/form-data">
-                    <?php if (empty($_POST['title']) or empty($_POST['code']) or empty($_POST['description'])) {
-                        $_POST['title'] = $_POST['code'] = $_POST['description'] = "";
+                    <?php if (empty($_POST['fullname']) or empty($_POST['cmt']) or empty($_POST['sdt'])) {
+                        $_POST['fullname'] = $_POST['cmt'] = $_POST['sdt'] = "";
                     } ?>
                     <div class="content__form__label__input">
                         <label class="content__form__label" for="">Họ và tên:</label>
-                        <input type="text" class="content__form__input" name="title" value="<?php echo $_POST['title'] ?>">
+                        <input type="text" class="content__form__input" name="fullname" value="<?php echo $_POST['fullname'] ?>">
                     </div>
                     <div class="content__form__label__input">
                         <label class="content__form__label" for="">Số CMT/CCCD:</label>
-                        <input type="text" class="content__form__input" name="code" value="<?php echo $_POST['code'] ?>">
+                        <input type="text" class="content__form__input" name="cmt" value="<?php echo $_POST['cmt'] ?>">
                     </div>
                     <div class="content__form__label__input">
                         <label class="content__form__label" for="">Số điện thoại:</label>
-                        <input type="text" class="content__form__input" name="description" value="<?php echo $_POST['description'] ?>">
+                        <input type="text" class="content__form__input" name="sdt" value="<?php echo $_POST['sdt'] ?>">
                     </div>
                     <div class="content__form__label__input">
                         <label class="content__form__label" for="">Tiền cọc:</label>
@@ -66,7 +92,7 @@ $data = mysqli_fetch_assoc($query);
                             <input type="file" class="content__form__input content__form__input--file content__form__input--hiden" name="img-two">
                             <div class="content__form__label__input-img">
                                 <?php
-                                if (!isset($_POST['submit']) || empty($_FILES['img-one']['name']) || empty($_FILES['img-two']['name'])) {
+                                if (!isset($_POST['submit']) or empty($_FILES['img-one']['name']) or empty($_FILES['img-two']['name'])) {
                                     $_FILES['img-one']['name'] = $_FILES['img-two']['name'] = "";
                                 }
                                 ?>
@@ -247,7 +273,18 @@ $data = mysqli_fetch_assoc($query);
                         </label>
                     </div>
                     <button class="content__form-form__button__submit">
-                        Xác nhận hợp đồng
+                        <?php if (empty($_POST['fullname']) or empty($_POST['cmt']) or empty($_POST['sdt']) or empty($_FILES['img-one']['name']) or empty($_FILES['img-two']['name'])) {
+                            $_POST['title'] = $_POST['code'] = $_POST['description'] = ""; ?>
+
+                            <p class="style-title-text-button"><a href="./hopdong.php" class="">
+                                    <h4 class="style-title-text-button">Xác nhận hợp đồng</h4>
+
+                                </a></p>
+                        <?php } else { ?>
+                            <p class="style-title-text-button"><a href="./trangchu.php" class="">
+                                    <h4 class="style-title-text-button">Xác nhận hợp đồng</h4>
+                                <?php } ?>
+
                     </button>
                 </form>
             </div>

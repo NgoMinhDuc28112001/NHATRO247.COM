@@ -103,6 +103,7 @@ INSERT INTO users ( username, password, email) VALUES
 INSERT INTO users ( username, password, email, level) VALUES
 ('admin', '123', 'admin@gmail.com', 0);
 
+SELECT id_user FROM users where email = 'nhatro@gmail.com';
 -- --------------------------------------------------------
 
 CREATE TABLE login (
@@ -115,6 +116,7 @@ truncate table login;
 delete from login;
 
 drop table hop_dong;
+
 CREATE TABLE hop_dong (
   id_hopdong int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   fullname varchar(1000) NOT NULL,
@@ -125,7 +127,8 @@ CREATE TABLE hop_dong (
   id_chitiet int(11) NOT NULL,
   CONSTRAINT fk_HopDong_ChiTiet foreign key (id_chitiet) REFERENCES  chi_tiet(id_chitiet),
   id_user int(11) NOT NULL,
-  CONSTRAINT fk_HopDong_User foreign key (id_user) REFERENCES users(id_user)
+  CONSTRAINT fk_HopDong_User foreign key (id_user) REFERENCES users(id_user),
+  active int(11) DEFAULT '0'
 )
 
 
