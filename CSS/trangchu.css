@@ -198,6 +198,7 @@
 .content__money__number__span{
     flex: 1;
     text-align: center;
+    color: black;
 }.content__money__number__span:nth-child(1){
     color: red;
 }
@@ -231,6 +232,9 @@
     color: white;
     min-width: 300px;
     text-align: center;
+}
+.content__money__number__while__link{
+    text-decoration: none;
 }
 /* footer */
 .footer{
