@@ -1588,8 +1588,1691 @@
 23.03.2022 11:11:37 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
 23.03.2022 11:11:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
 23.03.2022 11:11:40 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+<<<<<<< HEAD
+23.03.2022 02:17:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:17:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:17:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:17:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:17:12 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 02:17:12 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 02:18:44 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 02:18:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:18:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:18:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:18:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:18:44 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:18:45 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:18:45 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:19:25 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:19:25 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:19:27 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:19:27 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:19:28 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:19:28 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:19:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:19:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:19:30 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:19:30 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:19:31 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:19:31 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:23:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:23:32 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:25:43 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:25:43 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:26:11 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:26:11 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values 
+    ('','','','','','', '2')] --> 
+23.03.2022 02:26:13 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:26:13 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values 
+    ('','','','','','', '2')] --> 
+23.03.2022 02:31:21 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:31:21 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:32:22 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:32:22 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:32:24 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:32:24 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:32:54 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:32:54 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:32:55 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:32:55 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:33:22 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:33:22 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:33:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:33:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:33:31 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:33:31 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:33:34 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:33:34 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:33:37 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:33:37 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:33:39 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:33:39 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:34:18 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:34:18 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:34:21 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:34:21 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:37:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:37:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:37:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:37:32 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:37:42 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:37:42 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:38:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:38:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:38:34 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:38:34 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:38:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:38:38 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:17 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:17 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:18 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:18 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:36 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:36 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:40 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:41 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:43 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:43 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:49 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:49 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:39:51 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:39:51 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:40:17 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:40:17 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:40:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:40:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:41:08 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:41:08 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:41:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:41:38 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:41:55 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:41:55 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 02:42:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 02:42:07 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=6] 
+23.03.2022 02:42:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:42:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:42:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:42:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:42:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:42:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:42:10 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:42:13 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:42:13 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:42:25 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:42:25 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:42:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:42:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:42:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:42:32 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:42:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:42:41 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:42:42 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:42:42 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:42:42 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:42:42 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:43:08 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:43:08 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:45:57 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:45:57 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:46:17 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:46:17 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:46:21 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:46:21 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:46:25 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:46:25 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:46:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:46:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:46:35 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:46:35 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:46:54 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:46:54 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:12 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:50:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:50:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:50:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:50:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 02:50:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 02:50:25 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=6] 
+23.03.2022 02:50:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:50:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:50:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:50:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:50:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:50:27 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:27 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:38 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:41 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:45 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:45 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:49 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:49 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:52 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:52 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:54 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:54 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:50:56 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:50:56 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:52:02 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:52:02 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:52:07 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:52:07 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:52:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:52:12 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:52:14 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:52:14 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:52:17 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:52:17 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:52:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:52:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:52:31 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:52:31 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:53:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:53:10 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:53:23 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:53:23 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:53:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:53:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:53:57 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:53:57 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:54:09 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:54:09 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:54:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:54:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:54:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:54:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:54:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 02:54:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 02:54:37 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 02:54:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:54:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:54:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:54:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:54:37 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:54:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:54:38 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:54:48 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:54:48 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:54:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:54:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:54:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:54:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:54:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 02:54:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 02:54:58 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 02:54:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 02:54:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 02:54:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 02:54:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 02:54:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 02:54:59 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:54:59 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:55:01 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:55:01 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:55:03 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:55:03 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:55:06 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:55:06 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:57:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:57:32 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:57:43 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:57:43 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:57:47 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:57:47 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:57:49 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:57:49 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:58:01 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:58:01 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 02:58:03 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 02:58:03 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:04:36 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:04:36 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:04:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:04:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:04:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:04:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:04:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:04:55 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:06:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:06:10 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:06:22 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:06:22 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:06:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:06:38 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:06:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:06:41 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:06:47 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:06:47 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:06:49 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:06:49 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:06:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:06:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:06:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:06:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:06:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:06:54 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:06:55 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+23.03.2022 03:06:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:06:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:06:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:06:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:06:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:07:01 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=8] 
+23.03.2022 03:07:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:07:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:07:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:07:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:07:01 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:07:03 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:03 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:14 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:14 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:19 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:19 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:23 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:23 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:32 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:35 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:35 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:38 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:40 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:43 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:43 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:47 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:47 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:50 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:50 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:54 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:54 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:07:56 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:07:56 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:08:06 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:08:06 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:08:08 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:08:08 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:08:16 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:08:16 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:08:19 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:08:19 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:08:20 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:08:20 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:11:04 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:11:04 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:11:18 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:11:18 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:11:20 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:11:20 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:11:24 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:11:24 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:11:33 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:11:33 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:12:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:12:29 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values
+    ('duc','123','456','mattruoc.png','matsau.png','0', '2')] --> 
+23.03.2022 03:12:37 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:12:37 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values
+    ('','','0','','','0', '2')] --> 
+23.03.2022 03:12:46 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:12:46 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values
+    ('duc','123','456','','','0', '2')] --> 
+23.03.2022 03:12:49 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:12:49 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
+    values
+    ('duc','123','456','18.jpg','20.jpg','0', '2')] --> 
+23.03.2022 03:15:34 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:34 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:15:35 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:35 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:15:37 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:37 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:15:39 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:39 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:15:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:40 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:15:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:41 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:15:42 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:42 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:15:44 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:44 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:15:59 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:15:59 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:00 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:00 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:01 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:01 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:02 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:02 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:03 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:03 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:05 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:05 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:06 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:06 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:07 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:07 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:08 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:08 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:09 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:09 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:10 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:10 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:11 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:11 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:12 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:12 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:13 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:13 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:14 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:14 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:14 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:14 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:15 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:15 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:16 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:16 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:16 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:16 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:17 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:17 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:19 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:19 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:19 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:19 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:20 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:20 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:21 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:21 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:22 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:22 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:23 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:23 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:24 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:24 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:16:25 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:16:25 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:17:13 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:17:13 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:17:23 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:17:23 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','','','0', '2')] --> 
+23.03.2022 03:17:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:17:26 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','0', '2')] --> 
+23.03.2022 03:17:57 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:17:57 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','0', '2')] --> 
+23.03.2022 03:18:07 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:18:07 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','0', '2')] --> 
+23.03.2022 03:18:28 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:18:28 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','0', '2')] --> 
+23.03.2022 03:18:49 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:18:49 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','0', '2')] --> 
+23.03.2022 03:18:59 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:18:59 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','0', '2')] --> 
+23.03.2022 03:19:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:19:10 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','0', '2')] --> 
+23.03.2022 03:19:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:19:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:19:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:19:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:19:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:19:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:19:55 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=8] 
+23.03.2022 03:19:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:19:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:19:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:19:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:19:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:19:56 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:19:56 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','8', '2')] --> 
+23.03.2022 03:20:14 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:20:14 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','','','8', '2')] --> 
+23.03.2022 03:26:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:26:26 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:26:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:26:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:26:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:26:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:26:52 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:26:52 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:26:55 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=4] 
+23.03.2022 03:26:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:26:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:26:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:26:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:26:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:27:04 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:27:04 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','4', '2')] --> 
+23.03.2022 03:29:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:29:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:29:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:29:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:29:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:29:23 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:29:25 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=4] 
+23.03.2022 03:29:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:29:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:29:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:29:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:29:25 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:29:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:29:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:29:45 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:29:45 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:29:57 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:29:57 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:31:37 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:31:37 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:31:48 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:31:48 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('','','0','','','0', '2')] --> 
+23.03.2022 03:34:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:34:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:34:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:34:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:34:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:34:28 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:34:30 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=8] 
+23.03.2022 03:34:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:34:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:34:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:34:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:34:30 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:34:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:34:32 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:34:49 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:34:49 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:34:58 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:34:58 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','mattruoc.png','matsau.png','8', '2')] --> 
+23.03.2022 03:36:02 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:36:02 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:36:38 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:36:41 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=7] 
+23.03.2022 03:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:36:42 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:36:42 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:37:00 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:37:00 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:38:35 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:38:35 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:38:57 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:38:57 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:39:22 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:39:22 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:39:24 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:39:24 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:39:25 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:39:25 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:39:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:39:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:39:27 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:39:27 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:39:39 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:39:39 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:39:44 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:39:44 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:41:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:41:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:41:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:41:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:41:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:41:07 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:41:11 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=7] 
+23.03.2022 03:41:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:41:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:41:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:41:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:41:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:41:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:41:12 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:41:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:41:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:41:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:41:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:41:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:41:32 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:41:33 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:41:33 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:42:29 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:42:29 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:42:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:42:41 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:42:46 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:42:46 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:42:49 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:42:49 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:42:53 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:42:53 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:42:55 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:42:55 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:42:58 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:42:58 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:01 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:01 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:14 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:14 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:17 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:17 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:19 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:19 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:23 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:23 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:26 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:26 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:38 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:39 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:39 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:43 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:43 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:43:57 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:43:57 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:44:02 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:44:02 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:44:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:44:10 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:44:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:44:12 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:44:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:44:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:44:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:44:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:44:35 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:44:35 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:44:38 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+23.03.2022 03:44:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:44:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:44:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:44:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:44:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:44:39 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:44:39 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:44:50 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:44:50 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:44:51 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:44:51 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','20.jpg','3', '2')] --> 
+23.03.2022 03:44:54 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:44:54 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','20.jpg','3', '2')] --> 
+23.03.2022 03:44:58 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:44:58 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','20.jpg','3', '2')] --> 
+23.03.2022 03:45:21 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=6] 
+23.03.2022 03:45:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:45:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:45:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:45:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:45:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:45:23 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:45:23 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:45:33 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:45:33 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:45:34 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:45:34 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','13.jpg','6', '2')] --> 
+23.03.2022 03:46:03 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=6] 
+23.03.2022 03:46:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:46:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:46:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:46:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:46:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:46:05 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:46:05 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:46:15 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:46:15 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:46:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:46:40 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','17.jpg','10.jpg','6', '2')] --> 
+23.03.2022 03:47:59 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=5] 
+23.03.2022 03:47:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:47:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:47:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:47:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:47:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:48:00 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:48:00 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:48:02 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:48:02 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:48:15 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:48:15 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:49:46 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:49:46 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:49:48 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:49:48 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:01 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:01 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:04 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:04 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:07 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:07 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:10 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:22 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:22 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:33 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:33 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:40 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:40 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:50 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:50 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:50:54 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:50:54 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:51:01 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:51:01 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:51:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:51:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:51:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:51:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:51:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:51:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:51:07 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=7] 
+23.03.2022 03:51:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:51:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:51:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:51:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:51:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:51:09 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:51:09 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:51:21 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:51:21 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:51:24 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:51:25 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','17.jpg','12.jpg','7', '2')] --> 
+23.03.2022 03:51:28 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:51:28 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','17.jpg','12.jpg','7', '2')] --> 
+23.03.2022 03:51:32 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:51:32 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','17.jpg','12.jpg','7', '2')] --> 
+23.03.2022 03:51:36 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:51:36 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','17.jpg','12.jpg','7', '2')] --> 
+23.03.2022 03:52:16 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:52:16 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:52:16 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:52:16 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:52:16 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:52:16 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:52:18 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=4] 
+23.03.2022 03:52:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:52:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:52:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:52:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:52:18 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:52:19 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:52:19 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:52:31 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:52:31 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:52:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:52:38 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','17.jpg','12.jpg','4', '2')] --> 
+23.03.2022 03:55:21 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:55:21 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:55:45 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:55:45 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:55:48 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:55:48 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:56:03 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:56:03 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:56:12 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:56:12 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:56:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:56:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:56:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:56:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:56:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:56:43 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:56:45 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+23.03.2022 03:56:45 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:56:45 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:56:45 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:56:45 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:56:45 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:56:46 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:56:46 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:57:00 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:57:00 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:57:05 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:57:05 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','234','123','18.jpg','17.jpg','1', '2')] --> 
+23.03.2022 03:58:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:58:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:58:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:58:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:58:58 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 03:58:58 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 03:59:00 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=8] 
+23.03.2022 03:59:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 03:59:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 03:59:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 03:59:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 03:59:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 03:59:02 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:59:02 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:59:18 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:59:18 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 03:59:27 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 03:59:27 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','9.jpg','8', '2')] --> 
+23.03.2022 04:10:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:10:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:10:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:10:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:10:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:10:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:10:10 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=5] 
+23.03.2022 04:10:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:10:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:10:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:10:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:10:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:10:13 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:10:13 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:10:31 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:10:31 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:10:35 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:10:35 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','11.jpg','19.jpg','5', '2')] --> 
+23.03.2022 04:13:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:13:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:13:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:13:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:13:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:13:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:13:13 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+23.03.2022 04:13:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:13:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:13:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:13:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:13:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:13:14 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:13:14 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:13:25 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:13:25 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:13:28 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:13:28 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','17.jpg','3', '2')] --> 
+23.03.2022 04:15:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:15:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:15:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:15:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:15:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:15:08 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:15:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:15:10 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=1] 
+23.03.2022 04:15:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:15:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:15:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:15:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:15:10 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:15:13 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:15:13 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:15:23 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:15:23 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:15:27 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:15:27 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','1', '2')] --> 
+23.03.2022 04:20:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:20:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:20:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:20:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:20:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:20:21 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:20:23 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=8] 
+23.03.2022 04:20:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:20:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:20:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:20:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:20:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:20:24 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:20:24 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:20:41 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:20:41 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:20:44 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:20:44 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','8', '2')] --> 
+23.03.2022 04:20:51 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:20:51 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','18.jpg','19.jpg','8', '2')] --> 
+23.03.2022 04:22:03 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:22:03 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:22:07 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:22:07 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:22:10 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:22:10 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:22:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:22:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:22:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:22:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:22:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:22:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:22:24 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=4] 
+23.03.2022 04:22:24 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:22:24 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:22:24 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:22:24 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:22:24 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:22:25 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:22:25 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:22:36 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:22:36 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:22:38 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:22:38 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','19.jpg','18.jpg','4', '2')] --> 
+23.03.2022 04:22:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:22:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:22:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:22:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:22:50 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:22:50 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:26:00 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=7] 
+23.03.2022 04:26:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:26:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:26:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:26:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:26:00 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:26:02 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:26:02 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:26:06 <!-- sql=[truncate table login;] --> 
+23.03.2022 04:26:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:26:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:26:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:26:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:26:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:26:11 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:26:14 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:26:14 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:26:14 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:26:14 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:26:14 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:26:14 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:26:15 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:26:15 <!-- sql=[SELECT * FROM users where email = '' ] --> 
+23.03.2022 04:26:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:26:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:26:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:26:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:26:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:26:32 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:26:34 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:26:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:26:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:26:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:26:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:26:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:26:36 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:26:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:26:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:26:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:26:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:26:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:26:38 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:26:38 <!-- sql=[SELECT * FROM users where email = '' ] --> 
+23.03.2022 04:27:36 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+23.03.2022 04:27:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:27:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:27:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:27:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:27:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:27:37 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:27:37 <!-- sql=[SELECT * FROM users where email = '' ] --> 
+23.03.2022 04:27:41 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+23.03.2022 04:27:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:27:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:27:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:27:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:27:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:27:45 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:27:45 <!-- sql=[SELECT * FROM users where email = '' ] --> 
+23.03.2022 04:28:00 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:28:00 <!-- sql=[SELECT * FROM users where email = '' ] --> 
+23.03.2022 04:28:05 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:28:05 <!-- sql=[insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc','123','456','9.jpg','19.jpg','3', '')] --> 
+23.03.2022 04:29:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:29:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:29:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:29:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:29:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:29:05 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:30:29 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:30:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:30:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:30:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:30:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:30:29 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:35:19 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:35:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:35:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:35:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:35:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:35:19 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:35:21 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:35:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:35:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:35:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:35:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:35:21 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:35:23 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:35:23 <!-- sql=[SELECT * FROM users where email = '' ] --> 
+23.03.2022 04:35:28 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:35:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:35:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:35:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:35:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:35:28 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:35:29 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:35:29 <!-- sql=[SELECT * FROM users where email = '' ] --> 
+23.03.2022 04:36:05 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:36:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:06 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:36:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:07 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:36:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:07 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:10 sql=[SELECT * FROM users where email = '' ] 
+23.03.2022 04:36:10 <!-- sql=[SELECT * FROM users where email = '' ] --> 
+23.03.2022 04:36:23 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=2] 
+23.03.2022 04:36:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:30 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 04:36:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:31 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:36:31 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:36:32 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+23.03.2022 04:36:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:32 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:36 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 04:36:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:36:36 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:36:38 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=7] 
+23.03.2022 04:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:38 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:41 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 04:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:36:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:37:03 <!-- sql=[truncate table login;] --> 
+23.03.2022 04:37:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:37:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:37:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:37:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:37:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:37:09 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:37:11 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=8] 
+23.03.2022 04:37:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:37:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:37:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:37:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:37:11 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:37:15 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 04:37:15 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:37:15 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:37:15 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:37:15 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:37:15 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:37:15 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:38:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:38:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:38:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:38:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:38:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:38:51 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:38:54 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+23.03.2022 04:38:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:38:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:38:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:38:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:38:54 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:38:57 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 04:38:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:38:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:38:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:38:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:38:57 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:38:57 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:38:59 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=4] 
+23.03.2022 04:38:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:38:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:38:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:38:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:38:59 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:02 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 04:39:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:02 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:03 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:39:03 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:39:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:22 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:39:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:39:23 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+23.03.2022 04:39:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:23 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:25 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:39:25 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:39:28 <!-- sql=[truncate table login;] --> 
+23.03.2022 04:39:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:34 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:39:34 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:39:36 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=3] 
+23.03.2022 04:39:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:36 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:41 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+23.03.2022 04:39:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:41 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:39:41 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:39:43 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=4] 
+23.03.2022 04:39:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:39:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:39:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:39:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:39:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:39:44 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:39:44 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:40:17 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:40:17 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:40:17 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:40:17 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:40:17 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:40:17 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+23.03.2022 04:41:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:41:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:41:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:41:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:41:51 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:41:51 sql=[SELECT * FROM theloai where id_theloai = 1] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  0] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  1] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  2] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  3] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  4] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  5] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  6] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  7] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  8] 
+23.03.2022 04:41:51 sql=[SELECT * FROM chi_tiet where cid = 1 LIMIT 1 OFFSET  9] 
+23.03.2022 04:41:55 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=7] 
+23.03.2022 04:41:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:41:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:41:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:41:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:41:55 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:41:56 sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] 
+23.03.2022 04:41:56 <!-- sql=[SELECT * FROM users where email = 'nhatro@gmail.com' ] --> 
+23.03.2022 04:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:05 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:05 sql=[SELECT * FROM theloai where id_theloai = 2] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  5] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  6] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  7] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  8] 
+23.03.2022 04:42:05 sql=[SELECT * FROM chi_tiet where cid = 2 LIMIT 1 OFFSET  9] 
+23.03.2022 04:42:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:06 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:06 sql=[SELECT * FROM theloai where id_theloai = 3] 
+23.03.2022 04:42:06 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:06 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:06 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:06 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:06 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:07 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  5] 
+23.03.2022 04:42:07 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  6] 
+23.03.2022 04:42:07 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  7] 
+23.03.2022 04:42:07 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  8] 
+23.03.2022 04:42:07 sql=[SELECT * FROM chi_tiet where cid = 3 LIMIT 1 OFFSET  9] 
+23.03.2022 04:42:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:08 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:08 sql=[SELECT * FROM theloai where id_theloai = 4] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  5] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  6] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  7] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  8] 
+23.03.2022 04:42:08 sql=[SELECT * FROM chi_tiet where cid = 4 LIMIT 1 OFFSET  9] 
+23.03.2022 04:42:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:09 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:09 sql=[SELECT * FROM theloai where id_theloai = 5] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  5] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  6] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  7] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  8] 
+23.03.2022 04:42:09 sql=[SELECT * FROM chi_tiet where cid = 5 LIMIT 1 OFFSET  9] 
+23.03.2022 04:42:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:13 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  0] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  1] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  2] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  3] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  4] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  5] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  6] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  7] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  8] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
+23.03.2022 04:42:13 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+=======
 >>>>>>> b88fbb63bde7dd19a6a869e8161a0142939a8a68
 23.03.2022 12:01:50 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
+<<<<<<< HEAD
 23.03.2022 02:06:25 <!-- sql=[insert into login (email, password) values('admin@gmail.com', '123')] --> 
 23.03.2022 02:15:30 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
 23.03.2022 02:15:30 <!-- sql=[insert into login (email, password) values('nhatro@gmail.com', '123')] --> 
@@ -1750,3 +3433,6 @@
 23.03.2022 04:52:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
 23.03.2022 04:52:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
 23.03.2022 04:52:22 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+=======
+>>>>>>> 8227150005d02cbb128e4e80975a6f44adf843c2
+>>>>>>> 919c7faddbde8a9637f7002591a96728f40c345b

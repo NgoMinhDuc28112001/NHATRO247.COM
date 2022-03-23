@@ -38,6 +38,29 @@ CREATE TABLE `chi_tiet` (
   `body` varchar(10000) NOT NULL,
   `price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+<<<<<<< HEAD
+=======
+=======
+drop table hop_dong;
+select * from hop_dong;
+CREATE TABLE hop_dong (
+  id_hopdong int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  fullname varchar(1000) NOT NULL,
+  cmt int(12) NOT NULL,
+  sdt int(12) NOT NULL,
+  mattruoc text NOT NULL,
+  matsau text NOT NULL,
+  id_chitiet int(11) NOT NULL,
+  id_user int(11) NOT NULL,
+  primary key(id_chitiet, id_user),
+  active int(11) DEFAULT '0'
+<<<<<<< HEAD
+);
+insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc', '111', '222','19.jpg', '20.jpg', '4', '1' )
+=======
+)
+>>>>>>> b88fbb63bde7dd19a6a869e8161a0142939a8a68
+>>>>>>> 919c7faddbde8a9637f7002591a96728f40c345b
 
 --
 -- Đang đổ dữ liệu cho bảng `chi_tiet`
@@ -634,6 +657,7 @@ ALTER TABLE `pma__column_info`
 --
 ALTER TABLE `pma__export_templates`
   MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;
+>>>>>>> 8227150005d02cbb128e4e80975a6f44adf843c2
 
 --
 -- AUTO_INCREMENT cho bảng `pma__history`

@@ -8,26 +8,18 @@ $sql = "SELECT * FROM users where email = '$data[email]' ";
 $id_user = select_one($sql);
 
 //get input
-$id_phong = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
+$id_phong = isset($_REQUEST["id"]) ? $_REQUEST["id"] : "";
 $fullname = isset($_REQUEST["fullname"]) ? $_REQUEST["fullname"] : "";
 $cmt = isset($_REQUEST["cmt"]) ? $_REQUEST["cmt"] : "";
-$sdt = isset($_REQUEST["sdt"]) ? $_REQUEST["sdt"] : 0;
-$mattruoc = isset($_REQUEST["img-one"]) ? $_REQUEST["img-one"] : "";
-$matsau = isset($_REQUEST["img-two"]) ? $_REQUEST["img-two"] : "";
+$sdt = isset($_REQUEST["sdt"]) ? $_REQUEST["sdt"] : "";
+$mattruoc = isset($_REQUEST["mattruoc"]) ? $_REQUEST["mattruoc"] : "";
+$matsau = isset($_REQUEST["matsau"]) ? $_REQUEST["matsau"] : "";
 
-echo $id_phong;
-echo $fullname;
-echo $cmt;
-echo $sdt;
-echo $mattruoc;
-echo $matsau;
+
 //tao sql
-if (!isset($id_phong) and !isset($fullname) and !isset($cmt) and !isset($sdt) and !isset($mattruoc) and !isset($matsau)) {
-    $sql = "insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) 
-    values 
-    ('{$fullname}','{$cmt}','{$sdt}','{$mattruoc}','{$matsau}','{$id_phong}', '{$id_user["id_user"]}')";
+if (!empty($id_phong) and !empty($fullname) and !empty($cmt) and !empty($sdt) and !empty($mattruoc) and !empty($matsau)) {
+    $sql = "insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('{$fullname}','{$cmt}','{$sdt}','{$mattruoc}','{$matsau}','{$id_phong}', '{$id_user["id_user"]}')";
 }
-
 $ret = exec_update($sql);
 
 ?>
@@ -53,7 +45,7 @@ $ret = exec_update($sql);
     <div class="container">
         <header class="header">
             <nav class="header__nav gird">
-                <img src="./images/nt_logo2.png" alt="" class="header__nav__img">
+                <a href="./trangchu.php"><img src="./images/nt_logo2.png" alt="" class="header__nav__img"></a>
                 <div class="header__nav__help">
                     Cần trọ giúp ?
                 </div>
@@ -66,6 +58,7 @@ $ret = exec_update($sql);
             </div>
             <div class="content__form">
                 <form action="./hopdong.php" class="content__form-form" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="<?php echo $id_phong ?>" />
                     <?php if (empty($_POST['fullname']) or empty($_POST['cmt']) or empty($_POST['sdt'])) {
                         $_POST['fullname'] = $_POST['cmt'] = $_POST['sdt'] = "";
                     } ?>
@@ -94,12 +87,16 @@ $ret = exec_update($sql);
                                 <?php
                                 if (!isset($_POST['submit']) or empty($_FILES['img-one']['name']) or empty($_FILES['img-two']['name'])) {
                                     $_FILES['img-one']['name'] = $_FILES['img-two']['name'] = "";
-                                }
-                                ?>
-                                <img src="./images/<?php echo $_FILES['img-one']['name'] ?>" alt="" class="content__form__label__input__img">
-                                <img src="./images/<?php echo $_FILES['img-two']['name'] ?>" alt="" class="content__form__label__input__img">
+                                } else { ?>
+                                    <?php $mattruoc =  $_FILES['img-one']['name'] ?>
+                                    <?php $matsau =  $_FILES['img-two']['name'] ?>
+                                <?php } ?>
+                                <input type="hidden" name="mattruoc" value="<?php echo $mattruoc ?>" />
+                                <input type="hidden" name="matsau" value="<?php echo $matsau ?>" />
+                                <img src="./images/<?php echo $mattruoc ?>" alt="" class="content__form__label__input__img">
+                                <img src="./images/<?php echo $matsau ?>" alt="" class="content__form__label__input__img">
                             </div>
-                            <button name='submit' class="content__form__label__input__submit">
+                            <button type="submit" name='submit' class="content__form__label__input__submit">
                                 Xác nhận
                             </button>
                         </div>
@@ -272,21 +269,23 @@ $ret = exec_update($sql);
                             </div>
                         </label>
                     </div>
-                    <button class="content__form-form__button__submit">
-                        <?php if (empty($_POST['fullname']) or empty($_POST['cmt']) or empty($_POST['sdt']) or empty($_FILES['img-one']['name']) or empty($_FILES['img-two']['name'])) {
-                            $_POST['title'] = $_POST['code'] = $_POST['description'] = ""; ?>
-
-                            <p class="style-title-text-button"><a href="./hopdong.php" class="">
-                                    <h4 class="style-title-text-button">Xác nhận hợp đồng</h4>
-
-                                </a></p>
-                        <?php } else { ?>
-                            <p class="style-title-text-button"><a href="./trangchu.php" class="">
-                                    <h4 class="style-title-text-button">Xác nhận hợp đồng</h4>
-                                <?php } ?>
-
-                    </button>
                 </form>
+                <button class="content__form-form__button__submit">
+                    <?php if (empty($_POST['fullname']) or empty($_POST['cmt']) or empty($_POST['sdt']) or empty($mattruoc) or empty($matsau)) {
+                        $_POST['title'] = $_POST['code'] = $_POST['description'] = ""; ?>
+
+                        <p class="style-title-text-button">
+                            <a href="./hopdong.php" class="">
+                                <h4 class="style-title-text-button">Xác nhận hợp đồng</h4>
+                            </a>
+                        </p>
+                    <?php } else { ?>
+                        <p class="style-title-text-button">
+                            <a href="./xac-nhan-hop-dong.php" class="">
+                                <h4 class="style-title-text-button">Xác nhận hợp đồng</h4>
+                            </a>
+                        </p>
+                    <?php } ?>
             </div>
         </div>
         <!-- end content -->
