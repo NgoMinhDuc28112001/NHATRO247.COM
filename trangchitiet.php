@@ -51,7 +51,7 @@ $data = mysqli_fetch_assoc($query);
                             <a class="header__nav__list-link" href="">Thông báo</a>
                         </li>
                         <li class="header__nav__list__items">
-                            <a class="header__nav__list-link" href="">
+                            <a class="header__nav__list-link" href="./trangchu.php">
                                 <i class="fa-solid fa-circle-question"></i>
                             </a>
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
@@ -121,40 +121,81 @@ $data = mysqli_fetch_assoc($query);
                     > <?php echo $result["title"] ?>
                 </span>
             </div>
-            <form action="hopdong.php" method="POST">
-                <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
-                <div class="content__while">
-                    <div class="content__while__left">
-                        <a href="" class="content__while__link">
-                            <img src="./images/<?php echo $result["img_chitiet"] ?>" alt="" class="content__while__img">
-                        </a>
+            <?php $sql = "SELECT * FROM login";
+            $query = mysqli_query($conn, $sql);
+            $data = mysqli_fetch_assoc($query); ?>
+            <?php if (!empty($data['email'])) { ?>
+                <form action="hopdong.php" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
+                    <div class="content__while">
+                        <div class="content__while__left">
+                            <a href="" class="content__while__link">
+                                <img src="./images/<?php echo $result["img_chitiet"] ?>" alt="" class="content__while__img">
+                            </a>
+                        </div>
+                        <div class="content__while__right">
+                            <span class="content__while__span">
+                                <?php echo $result["description"] ?>
+                            </span>
+                            <div class="content__while__money">
+                                <span class="content__while__money__span">
+                                    <?php echo $result["price"] ?>đ
+                                </span>
+                                <span class="content__while__money__span content__while__money__span__button">
+                                    10% GIẢM
+                                </span>
+                            </div>
+                            <div class="content__while__endow">
+                                <span class="content__while__endow__span">
+                                    Ưu điểm:
+                                </span>
+                                <span class="content__while__endow__span">
+                                    Miễn phí điện nước 15 ngày. Giảm 10% tháng đầu
+                                </span>
+                            </div>
+                            <div class="content__while__rented">
+                                <button type="submit" class="content__while__rented__text">THUÊ TRỌ</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content__while__right">
-                        <span class="content__while__span">
-                            <?php echo $result["description"] ?>
-                        </span>
-                        <div class="content__while__money">
-                            <span class="content__while__money__span">
-                                <?php echo $result["price"] ?>đ
-                            </span>
-                            <span class="content__while__money__span content__while__money__span__button">
-                                10% GIẢM
-                            </span>
+                </form>
+            <?php } else { ?>
+                <form action="dangnhap.php" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
+                    <div class="content__while">
+                        <div class="content__while__left">
+                            <a href="" class="content__while__link">
+                                <img src="./images/<?php echo $result["img_chitiet"] ?>" alt="" class="content__while__img">
+                            </a>
                         </div>
-                        <div class="content__while__endow">
-                            <span class="content__while__endow__span">
-                                Ưu điểm:
+                        <div class="content__while__right">
+                            <span class="content__while__span">
+                                <?php echo $result["description"] ?>
                             </span>
-                            <span class="content__while__endow__span">
-                                Miễn phí điện nước 15 ngày. Giảm 10% tháng đầu
-                            </span>
-                        </div>
-                        <div class="content__while__rented">
-                            <button type="submit" class="content__while__rented__text">THUÊ TRỌ</button>
+                            <div class="content__while__money">
+                                <span class="content__while__money__span">
+                                    <?php echo $result["price"] ?>đ
+                                </span>
+                                <span class="content__while__money__span content__while__money__span__button">
+                                    10% GIẢM
+                                </span>
+                            </div>
+                            <div class="content__while__endow">
+                                <span class="content__while__endow__span">
+                                    Ưu điểm:
+                                </span>
+                                <span class="content__while__endow__span">
+                                    Miễn phí điện nước 15 ngày. Giảm 10% tháng đầu
+                                </span>
+                            </div>
+                            <div class="content__while__rented">
+                                <button type="submit" class="content__while__rented__text">THUÊ TRỌ</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            <?php } ?>
+
             <div class="content__while__column">
                 <div class="content__while__column__title">
                     MÔ TẢ PHÒNG TRỌ

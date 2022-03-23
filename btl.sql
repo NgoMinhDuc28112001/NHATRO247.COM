@@ -116,7 +116,7 @@ truncate table login;
 delete from login;
 
 drop table hop_dong;
-
+select * from hop_dong;
 CREATE TABLE hop_dong (
   id_hopdong int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   fullname varchar(1000) NOT NULL,
@@ -125,12 +125,11 @@ CREATE TABLE hop_dong (
   mattruoc text NOT NULL,
   matsau text NOT NULL,
   id_chitiet int(11) NOT NULL,
-  CONSTRAINT fk_HopDong_ChiTiet foreign key (id_chitiet) REFERENCES  chi_tiet(id_chitiet),
   id_user int(11) NOT NULL,
-  CONSTRAINT fk_HopDong_User foreign key (id_user) REFERENCES users(id_user),
+  primary key(id_chitiet, id_user),
   active int(11) DEFAULT '0'
-)
-
+);
+insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc', '111', '222','19.jpg', '20.jpg', '4', '1' )
 
 
 
