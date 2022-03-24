@@ -232,6 +232,11 @@
     font-weight: 500;
     color: red;
 }
+.content__title__h3__mid{
+    margin: auto;
+    padding-left: 0px;
+    width: 315px;
+}
 .content__money__number--hidden , .content__button__hidden{
     display: none !important;
 }
@@ -310,4 +315,32 @@
 }
 .footer__bottom__span{
     font-size: 1.0rem;
+}
+.chutro_thongbao{
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 30px;
+}
+.chutro_thongbao p{
+    align-items: center;
+    font-size: 20px;
+    margin: 88px 35px;
+}
+.chutro_xacnhan{
+    margin: 30px auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+}
+.chutro_xacnhan button{
+    width: 200px;
+    height: 40px;
+    background-color: #6895EB;
+    border: none;
+}
+.chutro_xacnhan a{
+    color: white;
+    font-size: 14px;
 }

@@ -7,13 +7,14 @@ $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin hủy thuê phòng</title>
+    <title>Nhà trọ 247</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
 
     </script>
@@ -22,7 +23,7 @@ $qsessionname = "___Q___";
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="CSS/base.css">
-    <link rel="stylesheet" href="CSS/admin_huy.css">
+    <link rel="stylesheet" href="CSS/trangchu.css">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -30,30 +31,31 @@ $qsessionname = "___Q___";
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào chủ trọ!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
-                            <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a class="header__nav__list-link" href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a class="header__nav__list-link" href=""><i class="fa-brands fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="header__nav__list-right">
                     <ul class="header__nav__list__list">
                         <li class="header__nav__list__items">
-                            <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--right" href="">
+                            <a class="header__nav__list-link" href="">
                                 <i class="fa-solid fa-bell"></i>
                             </a>
                             <a class="header__nav__list-link" href="">Thông báo</a>
                         </li>
                         <li class="header__nav__list__items">
-                            <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--right" href="">
+                            <a class="header__nav__list-link" href="">
                                 <i class="fa-solid fa-circle-question"></i>
                             </a>
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
@@ -128,38 +130,98 @@ $qsessionname = "___Q___";
                 </div>
             </div>
         </div>
-        <!-- content -->
         <div class="content gird">
-            <div class="content__top">
-                <span class="content__top__span">
-                    Hợp đồng đang chờ xác nhận
-                </span>
+            <div class="content__title">
+                <h3 class="content__title__h3 content__title__h3__mid">
+                    Cập nhật thông tin nhà trọ cho thuê
+                </h3>
             </div>
-            <div class="content__bottom">
-                <div class="content__bottom__border">
-                    <div class="content__bottom__border__white">
-                        <div class="content__bottom__border__img">
-                            <img src="./images/nhatro2_trangchu.jpg" alt="" class="content__bottom__img">
-                            <div class="content__bottom__border__img__blur">
-                            </div>
-                            <span class="content__bottom__border__img__span">
-                                Nhà trọ 247
-                            </span>
-                        </div>
-                        <div class="content__bottom__detail__delete">
-                            <a href="" class="content__bottom__detail">
-                                Chi tiết
-                            </a>
-                            <a href="" class="content__bottom__delete">
-                                Hủy thuê phòng
-                            </a>
+            <div class="content__money__number">
+                <?php for ($sl = 0; $sl <= 3; $sl++) { ?>
+                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                    <?php $datas = select_list($sql); ?>
+                    <div class="content__money__number__border">
+                        <div class="content__money__number__while">
+                            <?php foreach ($datas as $data) { ?>
+                                <a href="chutro_edit.php" class="content__money__number__link">
+                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+
+                                    <div class="content__money__number__text">
+                                        <span class="content__money__number__span">
+                                            <?php echo $data["price"]; ?>đ
+                                        </span>
+                                        <span class="content__money__number__span">
+                                            Đã thuê: 9
+                                        </span>
+                                    </div>
+                                </a>
+                            <?php } ?>
                         </div>
                     </div>
-                </div>
+                <?php } ?>
+            </div>
+
+            <!-- <div class="content__title">
+                <h3 class="content__title__h3">
+                    Bài đăng gợi ý
+                </h3>
+            </div> -->
+            <div class="content__money__number">
+                <?php for ($sl = 4; $sl <= 7; $sl++) { ?>
+                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                    <?php $datas = select_list($sql); ?>
+                    <div class="content__money__number__border">
+                        <div class="content__money__number__while">
+                            <?php foreach ($datas as $data) { ?>
+                                <a href="chutro_edit.php" class="content__money__number__link">
+                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+
+                                    <div class="content__money__number__text">
+                                        <span class="content__money__number__span">
+                                            <?php echo $data["price"]; ?>đ
+                                        </span>
+                                        <span class="content__money__number__span">
+                                            Đã thuê: 9
+                                        </span>
+                                    </div>
+                                </a>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+            <!-- Nội dung hiển thị thêm -->
+            <div class="content__money__number content__money__number--hidden content__money__number--tweenmax">
+                <?php for ($sl = 8; $sl <= 11; $sl++) { ?>
+                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                    <?php $datas = select_list($sql); ?>
+                    <div class="content__money__number__border">
+                        <div class="content__money__number__while">
+                            <?php foreach ($datas as $data) { ?>
+                                <a href="chutro_edit.php" class="content__money__number__link">
+                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+
+                                    <div class="content__money__number__text">
+                                        <span class="content__money__number__span">
+                                            <?php echo $data["price"]; ?>đ
+                                        </span>
+                                        <span class="content__money__number__span">
+                                            Đã thuê: 9
+                                        </span>
+                                    </div>
+                                </a>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+            <!-- nut hien thi them -->
+            <div class="content__button__show">
+                <div class="content__button__show__text">XEM THÊM</div>
+                <div class="content__button__show__text content__button__hidden">ẨN BỚT</div>
             </div>
         </div>
         <!-- end content -->
-        <!-- footer -->
         <footer class="footer">
             <div class="footer__top gird">
                 <ul class="footer__list">
@@ -182,7 +244,7 @@ $qsessionname = "___Q___";
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.hotro.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>
@@ -199,6 +261,21 @@ $qsessionname = "___Q___";
             prevArrow: '<button type = "button" class = "slick-prev slick-arrow"><i class="fa-solid fa-angle-left"></i></button>',
             nextArrow: '<button type = "button" class = "slick-next slick-arrow"><i class="fa-solid fa-angle-right"></i></button>',
         });
+        $('.content__button__show__text:nth-child(1)').click(function() {
+            $(this).addClass('content__button__hidden');
+            $('.content__money__number--hidden').removeClass('content__money__number--hidden')
+            TweenMax.staggerFrom($('.content__money__number--tweenmax .content__money__number__border'), 1, {
+                marginTop: 100,
+                opacity: 0
+            }, 0.4)
+            $('.content__button__show__text:nth-child(2)').removeClass('content__button__hidden');
+        });
+        $('.content__button__show__text:nth-child(2)').click(function() {
+            $(this).addClass('content__button__hidden');
+            $('.content__money__number--tweenmax').addClass('content__money__number--hidden')
+            $('.content__button__show__text:nth-child(1)').removeClass('content__button__hidden');
+        })
     })
 </script>
+
 </html>
