@@ -1,6 +1,9 @@
 <?php
 include("lib_db.php");
 include("connect.php");
+$id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
+$sql = "SELECT * FROM chi_tiet WHERE id_chitiet=" . $id;
+$result = select_one($sql);
 $sql = "SELECT * FROM login";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
@@ -9,6 +12,7 @@ $qsessionname = "___Q___";
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +34,7 @@ $qsessionname = "___Q___";
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -136,38 +141,36 @@ $qsessionname = "___Q___";
                 </span>
             </div>
             <div class="content__bottom">
-                <form action="" class="content__bottom__form">
+                <form action="chutro_xacnhan.php" class="content__bottom__form" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
                     <div class="content__bottom__label__input">
                         <label for="" class="content__bottom__label">
                             Tiêu đề bài đăng:
                         </label>
-                        <input type="text" class="content__bottom__input">
+                        <input type="text" class="content__bottom__input" name="title" value="<?php echo $result["title"] ?>">
                     </div>
                     <div class="content__bottom__label__input">
                         <label for="" class="content__bottom__label">
                             Giá phòng:
                         </label>
-                        <input type="text" class="content__bottom__input">
+                        <input type="text" class="content__bottom__input" name="price" value="<?php echo $result["price"] ?>">
                     </div>
                     <div class="content__bottom__label__input content__bottom__label__input--img--text">
                         <label for="" class="content__bottom__label">
                             Ảnh:
                         </label>
-                        <img src="" alt="" class="content__bottom__img">
+                        <img src="./images/<?php echo $result["img"] ?>" alt="" class="content__bottom__img">
                     </div>
                     <div class="content__bottom__label__input content__bottom__label__input--img--text">
                         <label for="" class="content__bottom__label">
                             Mô tả:
                         </label>
                         <div class="content__bottom__text">
-                        Phòng tầng 5 mới xây sạch sẽ, thoáng mát. Phòng khép kín. An ninh tốt
-                        Đầy đủ các đồ dùng chỉ việc dọn đồ đến ở.
-                        Cam kết không tăng giá, không phát sinh chi phí.
-                        Cọc 6 tháng
+                            <input type="text" class="content__bottom__input" name="description" value="<?php echo $result["description"] ?>">
                         </div>
                     </div>
                     <div class="content__bottom__button__access">
-                        <button class="content__bottom__button">
+                        <button type="submit" class="content__bottom__button">
                             Xác nhận
                         </button>
                     </div>
@@ -216,4 +219,5 @@ $qsessionname = "___Q___";
         });
     })
 </script>
+
 </html>

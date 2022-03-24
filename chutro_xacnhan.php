@@ -4,8 +4,18 @@ include("connect.php");
 $sql = "SELECT * FROM login";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
-$q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
-$qsessionname = "___Q___";
+
+$id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
+$title = isset($_REQUEST["title"]) ? $_REQUEST["title"] : "";
+$price = isset($_REQUEST["price"]) ? $_REQUEST["price"] : "";
+$description = isset($_REQUEST["description"]) ? $_REQUEST["description"] : "";
+
+
+
+//tao sql
+$sql = "UPDATE chi_tiet SET title = '$title' , price = '$price' , description = '$description'  WHERE id_chitiet =$id";
+$ret = exec_update($sql);
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -133,7 +143,7 @@ $qsessionname = "___Q___";
 
         <div class="chutro_thongbao">
             <p>
-                Thông tin của bạn cung cấp đã được gửi đến admin. Vui lòng chờ admin xác nhận!
+                Bạn đã sửa đổi thông tin nhà trọ thành công!
             </p>
         </div>
         <div class="chutro_xacnhan">

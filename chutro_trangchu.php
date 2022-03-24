@@ -81,7 +81,7 @@ $qsessionname = "___Q___";
             <!-- end nav -->
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
-                    <a href="./trangchu.php" class="header__logo-search__link">
+                    <a href="./chutro_trangchu.php" class="header__logo-search__link">
                         <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
@@ -143,9 +143,8 @@ $qsessionname = "___Q___";
                     <div class="content__money__number__border">
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="chutro_edit.php" class="content__money__number__link">
+                                <a href="chutro_capnhat.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
                                     <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
                                             <?php echo $data["price"]; ?>đ
@@ -173,7 +172,7 @@ $qsessionname = "___Q___";
                     <div class="content__money__number__border">
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="chutro_edit.php" class="content__money__number__link">
+                                <a href="chutro_capnhat.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
                                     <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
 
                                     <div class="content__money__number__text">
@@ -198,7 +197,7 @@ $qsessionname = "___Q___";
                     <div class="content__money__number__border">
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="chutro_edit.php" class="content__money__number__link">
+                                <a href="chutro_capnhat.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
                                     <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
 
                                     <div class="content__money__number__text">

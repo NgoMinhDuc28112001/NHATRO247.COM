@@ -4,11 +4,11 @@ include("connect.php");
 $sql = "SELECT * FROM login";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
-$q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
-$qsessionname = "___Q___";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +30,7 @@ $qsessionname = "___Q___";
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -140,131 +141,77 @@ $qsessionname = "___Q___";
                     </form>
                 </div>
             </div>
+
             <div class="content__bottom">
                 <div class="content__bottom__img__fix">
-                    <div class="content__bottom__img__fix__border">
-                        <div class="content__bottom__img__fix__white">
-                            <a href="" class="content__bottom__img__link">
-                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
-                            </a>
-                            <div class="content__bottom__fix">
-                                <a href="" class="content__bottom__fix__link">
-                                    Sửa
-                                </a>
-                                <a href="" class="content__bottom__fix__link">
-                                    Xóa
-                                </a>
+                    <?php for ($sl = 0; $sl <= 3; $sl++) { ?>
+                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $datas = select_list($sql); ?>
+                        <div class="content__bottom__img__fix__border">
+                            <div class="content__bottom__img__fix__white">
+                                <?php foreach ($datas as $data) { ?>
+                                    <a href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__img__link">
+                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
+                                    </a>
+                                    <div class="content__bottom__fix">
+                                        <a href="" class="content__bottom__fix__link">
+                                            Sửa
+                                        </a>
+                                        <a href="" class="content__bottom__fix__link">
+                                            Xóa
+                                        </a>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
-                    </div>
-                    <div class="content__bottom__img__fix__border">
-                        <div class="content__bottom__img__fix__white">
-                            <a href="" class="content__bottom__img__link">
-                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
-                            </a>
-                            <div class="content__bottom__fix">
-                                <a href="" class="content__bottom__fix__link">
-                                    Sửa
-                                </a>
-                                <a href="" class="content__bottom__fix__link">
-                                    Xóa
-                                </a>
+                    <?php } ?>
+                </div>
+                <div class="content__bottom__img__fix">
+                    <?php for ($sl = 4; $sl <= 7; $sl++) { ?>
+                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $datas = select_list($sql); ?>
+                        <div class="content__bottom__img__fix__border">
+                            <div class="content__bottom__img__fix__white">
+                                <?php foreach ($datas as $data) { ?>
+                                    <a href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__img__link">
+                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
+                                    </a>
+                                    <div class="content__bottom__fix">
+                                        <a href="" class="content__bottom__fix__link">
+                                            Sửa
+                                        </a>
+                                        <a href="" class="content__bottom__fix__link">
+                                            Xóa
+                                        </a>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
-                    </div>
-                    <div class="content__bottom__img__fix__border">
-                        <div class="content__bottom__img__fix__white">
-                            <a href="" class="content__bottom__img__link">
-                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
-                            </a>
-                            <div class="content__bottom__fix">
-                                <a href="" class="content__bottom__fix__link">
-                                    Sửa
-                                </a>
-                                <a href="" class="content__bottom__fix__link">
-                                    Xóa
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__bottom__img__fix__border">
-                        <div class="content__bottom__img__fix__white">
-                            <a href="" class="content__bottom__img__link">
-                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
-                            </a>
-                            <div class="content__bottom__fix">
-                                <a href="" class="content__bottom__fix__link">
-                                    Sửa
-                                </a>
-                                <a href="" class="content__bottom__fix__link">
-                                    Xóa
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
                 <!-- Nội dung hiển thị thêm -->
                 <div class="content__bottom__img__fix content__bottom__img__fix--hidden content__bottom__img__green-sock">
-                    <div class="content__bottom__img__fix__border">
-                        <div class="content__bottom__img__fix__white">
-                            <a href="" class="content__bottom__img__link">
-                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
-                            </a>
-                            <div class="content__bottom__fix">
-                                <a href="" class="content__bottom__fix__link">
-                                    Sửa
-                                </a>
-                                <a href="" class="content__bottom__fix__link">
-                                    Xóa
-                                </a>
+                    <?php for ($sl = 8; $sl <= 11; $sl++) { ?>
+                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $datas = select_list($sql); ?>
+                        <div class="content__bottom__img__fix__border">
+                            <div class="content__bottom__img__fix__white">
+                                <?php foreach ($datas as $data) { ?>
+                                    <a href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__img__link">
+                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
+                                    </a>
+                                    <div class="content__bottom__fix">
+                                        <a href="" class="content__bottom__fix__link">
+                                            Sửa
+                                        </a>
+                                        <a href="" class="content__bottom__fix__link">
+                                            Xóa
+                                        </a>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
-                    </div>
-                    <div class="content__bottom__img__fix__border">
-                        <div class="content__bottom__img__fix__white">
-                            <a href="" class="content__bottom__img__link">
-                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
-                            </a>
-                            <div class="content__bottom__fix">
-                                <a href="" class="content__bottom__fix__link">
-                                    Sửa
-                                </a>
-                                <a href="" class="content__bottom__fix__link">
-                                    Xóa
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__bottom__img__fix__border">
-                        <div class="content__bottom__img__fix__white">
-                            <a href="" class="content__bottom__img__link">
-                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
-                            </a>
-                            <div class="content__bottom__fix">
-                                <a href="" class="content__bottom__fix__link">
-                                    Sửa
-                                </a>
-                                <a href="" class="content__bottom__fix__link">
-                                    Xóa
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__bottom__img__fix__border">
-                        <div class="content__bottom__img__fix__white">
-                            <a href="" class="content__bottom__img__link">
-                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
-                            </a>
-                            <div class="content__bottom__fix">
-                                <a href="" class="content__bottom__fix__link">
-                                    Sửa
-                                </a>
-                                <a href="" class="content__bottom__fix__link">
-                                    Xóa
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
                 <!-- Nút hiển thị thêm -->
                 <div class="content__bottom__button-show">
@@ -276,6 +223,8 @@ $qsessionname = "___Q___";
                     </div>
                 </div>
             </div>
+
+
         </div>
         <!-- end content -->
         <footer class="footer">
@@ -317,7 +266,7 @@ $qsessionname = "___Q___";
             prevArrow: '<button type = "button" class = "slick-prev slick-arrow"><i class="fa-solid fa-angle-left"></i></button>',
             nextArrow: '<button type = "button" class = "slick-next slick-arrow"><i class="fa-solid fa-angle-right"></i></button>',
         });
-        $('.content__bottom__button:nth-child(1)').click(function () {
+        $('.content__bottom__button:nth-child(1)').click(function() {
             $(this).addClass('content__bottom__button--hidden');
             $('.content__bottom__img__green-sock').removeClass('content__bottom__img__fix--hidden');
             TweenMax.staggerFrom($('.content__bottom__img__green-sock .content__bottom__img__fix__border'), 1, {
@@ -326,11 +275,12 @@ $qsessionname = "___Q___";
             }, 0.4);
             $('.content__bottom__button:nth-child(2)').removeClass('content__bottom__button--hidden');
         })
-        $('.content__bottom__button:nth-child(2)').click(function(){
+        $('.content__bottom__button:nth-child(2)').click(function() {
             $(this).addClass('content__bottom__button--hidden');
             $('.content__bottom__img__green-sock').addClass('content__bottom__img__fix--hidden');
             $('.content__bottom__button:nth-child(1)').removeClass('content__bottom__button--hidden');
         })
     })
 </script>
+
 </html>
