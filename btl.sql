@@ -99,11 +99,13 @@ CREATE TABLE users (
 )
 
 select * from users;
-INSERT INTO users ( username, password, email) VALUES
-('nhatro', '123', 'nhatro@gmail.com');
+
 
 INSERT INTO users ( username, password, email, level) VALUES
 ('admin', '123', 'admin@gmail.com', 0);
+
+INSERT INTO users ( username, password, email) VALUES
+('nhatro', '123', 'nhatro@gmail.com');
 
 INSERT INTO users ( username, password, email, level) VALUES
 ('chutro', '123', 'chutro@gmail.com', 2);
@@ -131,13 +133,15 @@ CREATE TABLE hop_dong (
   id_chitiet int(11) NOT NULL,
   id_user int(11) NOT NULL,
   primary key(id_chitiet, id_user),
-  active int(11) DEFAULT '0'
+  active int(11) DEFAULT '0',
+  wait int(11) DEFAULT '1'
 );
-insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc', '111', '222','19.jpg', '20.jpg', '4', '1' )
+insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc', '111', '222','19.jpg', '20.jpg', '4', '2' );
+select * from chi_tiet left join hop_dong on hop_dong.id_chitiet = chi_tiet.id_chitiet left join users on hop_dong.id_user = users.id_user where users.id_user = (select id_user from users where email = 'nhatro@gmail.com');
 
+select id_user from users where email = 'nhatro@gmail.com';
 
-
-
+delete from hop_dong where id_user=1 and id_chitiet=4;
 
 
 

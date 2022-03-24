@@ -7,14 +7,14 @@ $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhà trọ 247</title>
+    <title>Admin hủy thuê phòng</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
 
     </script>
@@ -23,7 +23,7 @@ $qsessionname = "___Q___";
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="CSS/base.css">
-    <link rel="stylesheet" href="CSS/trangchu.css">
+    <link rel="stylesheet" href="CSS/admin_huy.css">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@ $qsessionname = "___Q___";
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -93,9 +93,6 @@ $qsessionname = "___Q___";
                         </button>
                     </form>
                 </div>
-                <div class="my__hotel">
-                    <a href="./cho_xac_nhan.php">Phòng trọ của bạn</a>
-                </div>
             </div>
             <!-- end search -->
             <div class="header__adress__money gird_money_adress">
@@ -133,107 +130,38 @@ $qsessionname = "___Q___";
                 </div>
             </div>
         </div>
+        <!-- content -->
         <div class="content gird">
-            <div class="content__title">
-                <h3 class="content__title__h3">
-                    Đang sale
-                </h3>
+            <div class="content__top">
+                <span class="content__top__span">
+                    Hợp đồng đang chờ xác nhận
+                </span>
             </div>
-            <div class="content__money__number">
-                <?php for ($sl = 0; $sl <= 3; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                    <?php $datas = select_list($sql); ?>
-                    <div class="content__money__number__border">
-                        <div class="content__money__number__while">
-                            <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
-                                    <div class="content__money__number__text">
-                                        <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
-                                        </span>
-                                        <span class="content__money__number__span">
-                                            Đã thuê: 9
-                                        </span>
-                                    </div>
-                                </a>
-                            <?php } ?>
+            <div class="content__bottom">
+                <div class="content__bottom__border">
+                    <div class="content__bottom__border__white">
+                        <div class="content__bottom__border__img">
+                            <img src="./images/nhatro2_trangchu.jpg" alt="" class="content__bottom__img">
+                            <div class="content__bottom__border__img__blur">
+                            </div>
+                            <span class="content__bottom__border__img__span">
+                                Nhà trọ 247
+                            </span>
                         </div>
-                        <div class="content__money__number__block__title">
-                            NHÀ TRỌ 247
+                        <div class="content__bottom__detail__delete">
+                            <a href="" class="content__bottom__detail">
+                                Chi tiết
+                            </a>
+                            <a href="" class="content__bottom__delete">
+                                Hủy thuê phòng
+                            </a>
                         </div>
                     </div>
-                <?php } ?>
-            </div>
-
-            <div class="content__title">
-                <h3 class="content__title__h3">
-                    Bài đăng gợi ý
-                </h3>
-            </div>
-            <div class="content__money__number">
-                <?php for ($sl = 4; $sl <= 7; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                    <?php $datas = select_list($sql); ?>
-                    <div class="content__money__number__border">
-                        <div class="content__money__number__while">
-                            <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
-                                    <div class="content__money__number__text">
-                                        <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
-                                        </span>
-                                        <span class="content__money__number__span">
-                                            Đã thuê: 9
-                                        </span>
-                                    </div>
-                                </a>
-                            <?php } ?>
-                        </div>
-                        <div class="content__money__number__block__title">
-                            NHÀ TRỌ 247
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
-            <!-- Nội dung hiển thị thêm -->
-            <div class="content__money__number content__money__number--hidden content__money__number--tweenmax">
-                <?php for ($sl = 8; $sl <= 11; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                    <?php $datas = select_list($sql); ?>
-                    <div class="content__money__number__border">
-                        <div class="content__money__number__while">
-                            <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
-                                    <div class="content__money__number__text">
-                                        <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
-                                        </span>
-                                        <span class="content__money__number__span">
-                                            Đã thuê: 9
-                                        </span>
-                                    </div>
-                                </a>
-                            <?php } ?>
-                        </div>
-                        <div class="content__money__number__block__title">
-                            NHÀ TRỌ 247
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
-            <!-- nut hien thi them -->
-            <div class="content__button__show">
-                <div class="content__button__show__text">XEM THÊM</div>
-                <div class="content__button__show__text content__button__hidden">ẨN BỚT</div>
+                </div>
             </div>
         </div>
         <!-- end content -->
+        <!-- footer -->
         <footer class="footer">
             <div class="footer__top gird">
                 <ul class="footer__list">
@@ -273,20 +201,6 @@ $qsessionname = "___Q___";
             prevArrow: '<button type = "button" class = "slick-prev slick-arrow"><i class="fa-solid fa-angle-left"></i></button>',
             nextArrow: '<button type = "button" class = "slick-next slick-arrow"><i class="fa-solid fa-angle-right"></i></button>',
         });
-        $('.content__button__show__text:nth-child(1)').click(function() {
-            $(this).addClass('content__button__hidden');
-            $('.content__money__number--hidden').removeClass('content__money__number--hidden')
-            TweenMax.staggerFrom($('.content__money__number--tweenmax .content__money__number__border'), 1, {
-                marginTop: 100,
-                opacity: 0
-            }, 0.4)
-            $('.content__button__show__text:nth-child(2)').removeClass('content__button__hidden');
-        });
-        $('.content__button__show__text:nth-child(2)').click(function() {
-            $(this).addClass('content__button__hidden');
-            $('.content__money__number--tweenmax').addClass('content__money__number--hidden')
-            $('.content__button__show__text:nth-child(1)').removeClass('content__button__hidden');
-        })
     })
 </script>
 
