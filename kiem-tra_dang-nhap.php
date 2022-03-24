@@ -32,7 +32,7 @@
         if ($data['level'] == 0) {
             echo "
                 <script type='text/javascript'>
-                    window.location.href='./admin.php';
+                    window.location.href='./admintrangchu.php';
                 </script>
             ";
         } else if ($data['level'] == 1) {
