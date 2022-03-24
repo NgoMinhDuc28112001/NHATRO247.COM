@@ -6,6 +6,24 @@ $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
+
+
+$cid = isset($_REQUEST["cid"]) ? $_REQUEST["cid"] : 0;
+$anh_trangchu = isset($_REQUEST["anh_trangchu"]) ? $_REQUEST["anh_trangchu"] : "";
+$anh_chitiet = isset($_REQUEST["anh_chitiet"]) ? $_REQUEST["anh_chitiet"] : "";
+$tieu_de = isset($_REQUEST["tieu_de"]) ? $_REQUEST["tieu_de"] : "";
+$gioi_thieu = isset($_REQUEST["gioi_thieu"]) ? $_REQUEST["gioi_thieu"] : "";
+$mo_ta = isset($_REQUEST["mo_ta"]) ? $_REQUEST["mo_ta"] : "";
+$gia_phong = isset($_REQUEST["gia_phong"]) ? $_REQUEST["gia_phong"] : "";
+//tao sql
+if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($tieu_de) and !empty($gioi_thieu) and !empty($mo_ta) and !empty($gia_phong)) {
+    $sql = "insert into chi_tiet 
+	(cid, img, img_chitiet, title, code, description, body, price) 
+    values 
+    ('{$cid}','{$anh_trangchu}','{$anh_chitiet}','{$tieu_de}','','{$gioi_thieu}','','{$mo_ta}','{$gia_phong}')";
+    $ret = exec_update($sql);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +32,7 @@ $qsessionname = "___Q___";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin trang chủ</title>
+    <title>Admin thêm</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
 
     </script>
@@ -23,7 +41,7 @@ $qsessionname = "___Q___";
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="CSS/base.css">
-    <link rel="stylesheet" href="CSS/admintrangchu.css">
+    <link rel="stylesheet" href="CSS/admin_suadoi.css">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -38,7 +56,7 @@ $qsessionname = "___Q___";
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -81,12 +99,12 @@ $qsessionname = "___Q___";
             <!-- end nav -->
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
-                    <a href="./trangchu.php" class="header__logo-search__link">
+                    <a href="./admin_trangchu.php" class="header__logo-search__link">
                         <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="admin_timkiem.php" class="header__logo-search__form" method="GET">
+                    <form action="chuyenmuc.php" class="header__logo-search__form" method="GET">
                         <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -102,7 +120,7 @@ $qsessionname = "___Q___";
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="./admin_loc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -131,103 +149,74 @@ $qsessionname = "___Q___";
             </div>
         </div>
         <!-- content -->
-        <div class="content gird">
+        <div class="content gird_content">
             <div class="content__top">
-                <label for="" class="content__top__label">
-                    Danh sách bài viết:
-                </label>
-                <div class="content__top__form-add">
-                    <form action="admin_them.php" class="content__top__form">
-                        <button class="content__top__button">Thêm bài viết</button>
-                    </form>
-                </div>
+                <h3 class="content__top__h3">
+                    Thêm bài đăng
+                </h3>
             </div>
-
             <div class="content__bottom">
-                <div class="content__bottom__img__fix">
-                    <?php for ($sl = 0; $sl <= 3; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                        <?php $datas = select_list($sql); ?>
-                        <div class="content__bottom__img__fix__border">
-                            <div class="content__bottom__img__fix__white">
-                                <?php foreach ($datas as $data) { ?>
-                                    <a class="content__bottom__img__link">
-                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
-                                    </a>
-                                    <div class="content__bottom__fix">
-                                        <a href="./admin_sua.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
-                                            Sửa
-                                        </a>
-                                        <a href="./admin_xoa.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
-                                            Xóa
-                                        </a>
-                                    </div>
-                                <?php } ?>
-                            </div>
-                        </div>
-                    <?php } ?>
-                </div>
-                <div class="content__bottom__img__fix">
-                    <?php for ($sl = 4; $sl <= 7; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                        <?php $datas = select_list($sql); ?>
-                        <div class="content__bottom__img__fix__border">
-                            <div class="content__bottom__img__fix__white">
-                                <?php foreach ($datas as $data) { ?>
-                                    <a class="content__bottom__img__link">
-                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
-                                    </a>
-                                    <div class="content__bottom__fix">
-                                        <a href="./admin_sua.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
-                                            Sửa
-                                        </a>
-                                        <a href="./admin_xoa.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
-                                            Xóa
-                                        </a>
-                                    </div>
-                                <?php } ?>
-                            </div>
-                        </div>
-                    <?php } ?>
-                </div>
-                <!-- Nội dung hiển thị thêm -->
-                <div class="content__bottom__img__fix content__bottom__img__fix--hidden content__bottom__img__green-sock">
-                    <?php for ($sl = 8; $sl <= 11; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                        <?php $datas = select_list($sql); ?>
-                        <div class="content__bottom__img__fix__border">
-                            <div class="content__bottom__img__fix__white">
-                                <?php foreach ($datas as $data) { ?>
-                                    <a class="content__bottom__img__link">
-                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
-                                    </a>
-                                    <div class="content__bottom__fix">
-                                        <a href="./admin_sua.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
-                                            Sửa
-                                        </a>
-                                        <a href="./admin_xoa.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
-                                            Xóa
-                                        </a>
-                                    </div>
-                                <?php } ?>
-                            </div>
-                        </div>
-                    <?php } ?>
-                </div>
-                <!-- Nút hiển thị thêm -->
-                <div class="content__bottom__button-show">
-                    <div class="content__bottom__button">
-                        Xem thêm
+                <form action="admin_them.php" method="POST" class="content__bottom__form">
+                    <div class="content__bottom__label__input">
+                        <label for="" class="content__bottom__label">
+                            cid:
+                        </label>
+
+                        <?php
+                        $sql = "select * from theloai";
+                        $cates = exec_select($sql);
+                        ?>
+                        <select name="cid">
+                            <option value="">Cho chuyên mục</option>
+                            <?php foreach ($cates as $item) { ?>
+                                <option name="cid" value="<?php echo $item["id_theloai"] ?>"><?php echo $item["name"] ?></option>
+                            <?php } ?>
+                        </select>
+
                     </div>
-                    <div class="content__bottom__button content__bottom__button--hidden">
-                        Ẩn bớt
+                    <div class="content__bottom__label__input">
+                        <label for="" class="content__bottom__label">
+                            Ảnh:
+                        </label>
+                        <input type="file" class="content__bottom__input" name="anh_trangchu">
                     </div>
-                </div>
+                    <div class="content__bottom__label__input">
+                        <label for="" class="content__bottom__label">
+                            Ảnh chi tiết:
+                        </label>
+                        <input type="file" class="content__bottom__input" name="anh_chitiet">
+                    </div>
+                    <div class="content__bottom__label__input">
+                        <label for="" class="content__bottom__label">
+                            Tiêu đề:
+                        </label>
+                        <input type="text" class="content__bottom__input" name="tieu_de">
+                    </div>
+                    <div class="content__bottom__label__input">
+                        <label for="" class="content__bottom__label">
+                            Giới thiệu:
+                        </label>
+                        <input type="text" class="content__bottom__input" name="gioi_thieu">
+                    </div>
+                    <div class="content__bottom__label__input">
+                        <label for="" class="content__bottom__label">
+                            Mô tả:
+                        </label>
+                        <input type="text" class="content__bottom__input" name="mo_ta">
+                    </div>
+                    <div class="content__bottom__label__input">
+                        <label for="" class="content__bottom__label">
+                            Giá phòng:
+                        </label>
+                        <input type="text" class="content__bottom__input" name="gia_phong">
+                    </div>
+                    <button type="submit" class="content__bottom__button">
+                        Xác nhận thêm phòng
+                    </button>
+                </form>
             </div>
-
-
         </div>
-        <!-- end content -->
+        <!-- footer -->
         <footer class="footer">
             <div class="footer__top gird">
                 <ul class="footer__list">
@@ -267,20 +256,6 @@ $qsessionname = "___Q___";
             prevArrow: '<button type = "button" class = "slick-prev slick-arrow"><i class="fa-solid fa-angle-left"></i></button>',
             nextArrow: '<button type = "button" class = "slick-next slick-arrow"><i class="fa-solid fa-angle-right"></i></button>',
         });
-        $('.content__bottom__button:nth-child(1)').click(function() {
-            $(this).addClass('content__bottom__button--hidden');
-            $('.content__bottom__img__green-sock').removeClass('content__bottom__img__fix--hidden');
-            TweenMax.staggerFrom($('.content__bottom__img__green-sock .content__bottom__img__fix__border'), 1, {
-                marginTop: 100,
-                opacity: 0
-            }, 0.4);
-            $('.content__bottom__button:nth-child(2)').removeClass('content__bottom__button--hidden');
-        })
-        $('.content__bottom__button:nth-child(2)').click(function() {
-            $(this).addClass('content__bottom__button--hidden');
-            $('.content__bottom__img__green-sock').addClass('content__bottom__img__fix--hidden');
-            $('.content__bottom__button:nth-child(1)').removeClass('content__bottom__button--hidden');
-        })
     })
 </script>
 

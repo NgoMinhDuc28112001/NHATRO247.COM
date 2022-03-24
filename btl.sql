@@ -14,6 +14,7 @@ CREATE TABLE chi_tiet (
   price int(11) NOT NULL
 );
 select * from chi_tiet;
+delete from chi_tiet where id_chitiet = 52;
 update chi_tiet set cid = 1, title = "Phòng trọ siêu xinh" where id_chitiet =1 ;
 INSERT INTO chi_tiet ( cid, img, img_chitiet, title, code, description, body, price) VALUES
 (1, 'nhatro1_trangchu.jpg', 'nhatro1_chitiet.jpg', 'Phòng trọ siêu xinh', NULL, 'Nhà trọ vừa xây năm 2017 . Diện tích ngang 10m dài 20m , dãy trọ có 1 tầng', '<p style=\"text-align: justify;\">Hiện tại bên mình cho thuê phòng trọ mới xây ngay\r\n– Phòng trọ (35-40m2) rộng rai. Thoát mát ở được 4,5 người\r\n– Ban công, chỗ phơi đồ riêng biệt, wifi tốc độ cao, hệ thống cửa vân tay riêng biệt\r\n– Vị trí thuận tiện đi lỊ các quận trung tâm. Nguyễn Văn Quá, Cầu tham lương Trường Chinh , Quang Trung Gò Vấp , Chợ Hạnh Thông Tây, Công Viên Phần mềm, ngay chợ Cầu. Gần các trường đại học Hoa Sen,FPT.. (PHÙ HỢP CHO CÁC ANH CHỊ LÀM VĂN PHÒNG, SINH VIÊN VÀ HỘ GIA ĐÌNH)\r\n– Phòng mới đẹp có nội thất\r\n– Có giường và gác cao\r\n-Không giới hạn người ở\r\n– Hầm xe rộng thoải mái\r\n– Khu vực an ninh, trật tự, bảo vệ 24/7 yên tỉnh , không chung chủ , giờ giấc tự do\r\nĐẶC BIỆT: giảm giá phí dịch vụ cho hợp đồng 12 tháng\r\n– Cam kết không tăng giá lại trong suốt thời gian gia hợp đồng , ưu tiên khách hàng lịch sự, văn mình , hợp đồng lâu dài</p>', 2010900),
