@@ -7,14 +7,13 @@ $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhà trọ 247</title>
+    <title>Admin trang chủ</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
 
     </script>
@@ -23,7 +22,7 @@ $qsessionname = "___Q___";
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="CSS/base.css">
-    <link rel="stylesheet" href="CSS/trangchu.css">
+    <link rel="stylesheet" href="CSS/admintrangchu.css">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -31,14 +30,13 @@ $qsessionname = "___Q___";
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
-
 <body>
     <div class="container">
         <header class="header">
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -130,104 +128,153 @@ $qsessionname = "___Q___";
                 </div>
             </div>
         </div>
+        <!-- content -->
         <div class="content gird">
-            <div class="content__title">
-                <h3 class="content__title__h3">
-                    Đang sale
-                </h3>
+            <div class="content__top">
+                <label for="" class="content__top__label">
+                    Danh sách bài viết:
+                </label>
+                <div class="content__top__form-add">
+                    <form action="" class="content__top__form">
+                        <button class="content__top__button">Thêm bài viết</button>
+                    </form>
+                </div>
             </div>
-            <div class="content__money__number">
-                <?php for ($sl = 0; $sl <= 3; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                    <?php $datas = select_list($sql); ?>
-                    <div class="content__money__number__border">
-                        <div class="content__money__number__while">
-                            <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
-                                    <div class="content__money__number__text">
-                                        <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
-                                        </span>
-                                        <span class="content__money__number__span">
-                                            Đã thuê: 9
-                                        </span>
-                                    </div>
+            <div class="content__bottom">
+                <div class="content__bottom__img__fix">
+                    <div class="content__bottom__img__fix__border">
+                        <div class="content__bottom__img__fix__white">
+                            <a href="" class="content__bottom__img__link">
+                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
+                            </a>
+                            <div class="content__bottom__fix">
+                                <a href="" class="content__bottom__fix__link">
+                                    Sửa
                                 </a>
-                            <?php } ?>
-                        </div>
-                        <div class="content__money__number__block__title">
-                            NHÀ TRỌ 247
+                                <a href="" class="content__bottom__fix__link">
+                                    Xóa
+                                </a>
+                            </div>
                         </div>
                     </div>
-                <?php } ?>
-            </div>
-
-            <div class="content__title">
-                <h3 class="content__title__h3">
-                    Bài đăng gợi ý
-                </h3>
-            </div>
-            <div class="content__money__number">
-                <?php for ($sl = 4; $sl <= 7; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                    <?php $datas = select_list($sql); ?>
-                    <div class="content__money__number__border">
-                        <div class="content__money__number__while">
-                            <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
-                                    <div class="content__money__number__text">
-                                        <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
-                                        </span>
-                                        <span class="content__money__number__span">
-                                            Đã thuê: 9
-                                        </span>
-                                    </div>
+                    <div class="content__bottom__img__fix__border">
+                        <div class="content__bottom__img__fix__white">
+                            <a href="" class="content__bottom__img__link">
+                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
+                            </a>
+                            <div class="content__bottom__fix">
+                                <a href="" class="content__bottom__fix__link">
+                                    Sửa
                                 </a>
-                            <?php } ?>
-                        </div>
-                        <div class="content__money__number__block__title">
-                            NHÀ TRỌ 247
+                                <a href="" class="content__bottom__fix__link">
+                                    Xóa
+                                </a>
+                            </div>
                         </div>
                     </div>
-                <?php } ?>
-            </div>
-            <!-- Nội dung hiển thị thêm -->
-            <div class="content__money__number content__money__number--hidden content__money__number--tweenmax">
-                <?php for ($sl = 8; $sl <= 11; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
-                    <?php $datas = select_list($sql); ?>
-                    <div class="content__money__number__border">
-                        <div class="content__money__number__while">
-                            <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
-                                    <div class="content__money__number__text">
-                                        <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
-                                        </span>
-                                        <span class="content__money__number__span">
-                                            Đã thuê: 9
-                                        </span>
-                                    </div>
+                    <div class="content__bottom__img__fix__border">
+                        <div class="content__bottom__img__fix__white">
+                            <a href="" class="content__bottom__img__link">
+                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
+                            </a>
+                            <div class="content__bottom__fix">
+                                <a href="" class="content__bottom__fix__link">
+                                    Sửa
                                 </a>
-                            <?php } ?>
-                        </div>
-                        <div class="content__money__number__block__title">
-                            NHÀ TRỌ 247
+                                <a href="" class="content__bottom__fix__link">
+                                    Xóa
+                                </a>
+                            </div>
                         </div>
                     </div>
-                <?php } ?>
-            </div>
-            <!-- nut hien thi them -->
-            <div class="content__button__show">
-                <div class="content__button__show__text">XEM THÊM</div>
-                <div class="content__button__show__text content__button__hidden">ẨN BỚT</div>
+                    <div class="content__bottom__img__fix__border">
+                        <div class="content__bottom__img__fix__white">
+                            <a href="" class="content__bottom__img__link">
+                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
+                            </a>
+                            <div class="content__bottom__fix">
+                                <a href="" class="content__bottom__fix__link">
+                                    Sửa
+                                </a>
+                                <a href="" class="content__bottom__fix__link">
+                                    Xóa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nội dung hiển thị thêm -->
+                <div class="content__bottom__img__fix content__bottom__img__fix--hidden content__bottom__img__green-sock">
+                    <div class="content__bottom__img__fix__border">
+                        <div class="content__bottom__img__fix__white">
+                            <a href="" class="content__bottom__img__link">
+                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
+                            </a>
+                            <div class="content__bottom__fix">
+                                <a href="" class="content__bottom__fix__link">
+                                    Sửa
+                                </a>
+                                <a href="" class="content__bottom__fix__link">
+                                    Xóa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__bottom__img__fix__border">
+                        <div class="content__bottom__img__fix__white">
+                            <a href="" class="content__bottom__img__link">
+                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
+                            </a>
+                            <div class="content__bottom__fix">
+                                <a href="" class="content__bottom__fix__link">
+                                    Sửa
+                                </a>
+                                <a href="" class="content__bottom__fix__link">
+                                    Xóa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__bottom__img__fix__border">
+                        <div class="content__bottom__img__fix__white">
+                            <a href="" class="content__bottom__img__link">
+                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
+                            </a>
+                            <div class="content__bottom__fix">
+                                <a href="" class="content__bottom__fix__link">
+                                    Sửa
+                                </a>
+                                <a href="" class="content__bottom__fix__link">
+                                    Xóa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__bottom__img__fix__border">
+                        <div class="content__bottom__img__fix__white">
+                            <a href="" class="content__bottom__img__link">
+                                <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__bottom__img">
+                            </a>
+                            <div class="content__bottom__fix">
+                                <a href="" class="content__bottom__fix__link">
+                                    Sửa
+                                </a>
+                                <a href="" class="content__bottom__fix__link">
+                                    Xóa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nút hiển thị thêm -->
+                <div class="content__bottom__button-show">
+                    <div class="content__bottom__button">
+                        Xem thêm
+                    </div>
+                    <div class="content__bottom__button content__bottom__button--hidden">
+                        Ẩn bớt
+                    </div>
+                </div>
             </div>
         </div>
         <!-- end content -->
@@ -270,21 +317,20 @@ $qsessionname = "___Q___";
             prevArrow: '<button type = "button" class = "slick-prev slick-arrow"><i class="fa-solid fa-angle-left"></i></button>',
             nextArrow: '<button type = "button" class = "slick-next slick-arrow"><i class="fa-solid fa-angle-right"></i></button>',
         });
-        $('.content__button__show__text:nth-child(1)').click(function() {
-            $(this).addClass('content__button__hidden');
-            $('.content__money__number--hidden').removeClass('content__money__number--hidden')
-            TweenMax.staggerFrom($('.content__money__number--tweenmax .content__money__number__border'), 1, {
+        $('.content__bottom__button:nth-child(1)').click(function () {
+            $(this).addClass('content__bottom__button--hidden');
+            $('.content__bottom__img__green-sock').removeClass('content__bottom__img__fix--hidden');
+            TweenMax.staggerFrom($('.content__bottom__img__green-sock .content__bottom__img__fix__border'), 1, {
                 marginTop: 100,
                 opacity: 0
-            }, 0.4)
-            $('.content__button__show__text:nth-child(2)').removeClass('content__button__hidden');
-        });
-        $('.content__button__show__text:nth-child(2)').click(function() {
-            $(this).addClass('content__button__hidden');
-            $('.content__money__number--tweenmax').addClass('content__money__number--hidden')
-            $('.content__button__show__text:nth-child(1)').removeClass('content__button__hidden');
+            }, 0.4);
+            $('.content__bottom__button:nth-child(2)').removeClass('content__bottom__button--hidden');
+        })
+        $('.content__bottom__button:nth-child(2)').click(function(){
+            $(this).addClass('content__bottom__button--hidden');
+            $('.content__bottom__img__green-sock').addClass('content__bottom__img__fix--hidden');
+            $('.content__bottom__button:nth-child(1)').removeClass('content__bottom__button--hidden');
         })
     })
 </script>
-
 </html>
