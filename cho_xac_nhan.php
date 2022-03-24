@@ -11,7 +11,7 @@ $result = select_list($sql);
 $id_user  = isset($_REQUEST["id_user"]) ? $_REQUEST["id_user"] : 0;
 $id_chitiet = isset($_REQUEST["id_chitiet"]) ? $_REQUEST["id_chitiet"] : 0;
 if (!empty($id_user) and !empty($id_chitiet)) {
-    $sql = "UPDATE hop_dong SET wait = 0 where id_user = $id_user and id_chitiet =$id_chitiet";
+    $sql = "UPDATE hop_dong SET wait = 1 where id_user = $id_user and id_chitiet =$id_chitiet";
     $ret = exec_update($sql);
 }
 ?>

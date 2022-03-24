@@ -134,7 +134,7 @@ CREATE TABLE hop_dong (
   id_user int(11) NOT NULL,
   primary key(id_chitiet, id_user),
   active int(11) DEFAULT '0',
-  wait int(11) DEFAULT '1'
+  wait int(11) DEFAULT '0'
 );
 insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('duc', '111', '222','19.jpg', '20.jpg', '4', '2' );
 select * from chi_tiet left join hop_dong on hop_dong.id_chitiet = chi_tiet.id_chitiet left join users on hop_dong.id_user = users.id_user where users.id_user = (select id_user from users where email = 'nhatro@gmail.com');

@@ -93,6 +93,9 @@ $qsessionname = "___Q___";
                         </button>
                     </form>
                 </div>
+                <div class="my__hotel">
+                    <a href="./admin_xacnhan.php">Hợp đồng chờ xác nhận</a>
+                </div>
             </div>
             <!-- end search -->
             <div class="header__adress__money gird_money_adress">
