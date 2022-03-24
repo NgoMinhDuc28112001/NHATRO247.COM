@@ -35,10 +35,16 @@
                     window.location.href='./admin.php';
                 </script>
             ";
-        } else {
+        } else if ($data['level'] == 1) {
             echo "
                 <script type='text/javascript'>
                     window.location.href='./trangchu.php';
+                </script>
+            ";
+        } else {
+            echo "
+                <script type='text/javascript'>
+                    window.location.href='./chutro_trangchu.php';
                 </script>
             ";
         }
