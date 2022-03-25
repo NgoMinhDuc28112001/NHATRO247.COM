@@ -34,7 +34,7 @@
             <a href="./trangchu.php">Trở lại trang chủ</a>
         </div>
         <!-- end content -->
-        <footer class="footer">
+        <footer class="footer footer_thieu">
             <div class="footer__top gird">
                 <ul class="footer__list">
                     <li class="footer__items">
@@ -57,7 +57,7 @@
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
                     Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà
-                    Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</br>
+                    Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>

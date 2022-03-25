@@ -24,7 +24,7 @@ $ret = exec_update($sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhà trọ 247</title>
+    <title>Chủ trọ xác nhận</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
 
     </script>
@@ -48,7 +48,7 @@ $ret = exec_update($sql);
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào chủ trọ!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -95,9 +95,9 @@ $ret = exec_update($sql);
                         <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
-                <div class="header__logo-search__search">
-                    <form action="chuyenmuc.php" class="header__logo-search__form" method="GET">
-                        <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
+                <div class="header__logo-search__search_chutro">
+                    <form action="" class="header__logo-search__form" method="GET">
+                        <input type="text" name="q" id="" value="" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -148,13 +148,13 @@ $ret = exec_update($sql);
         </div>
         <div class="chutro_xacnhan">
             <button>
-                <a href="./chutro_trangchu.php">
+                <a class="back" href="./chutro_trangchu.php">
                     Trở về trang chủ
                 </a>
             </button>
         </div>
         <!-- end content -->
-        <footer class="footer">
+        <footer class="footer footer_thieu">
             <div class="footer__top gird">
                 <ul class="footer__list">
                     <li class="footer__items">
@@ -176,7 +176,7 @@ $ret = exec_update($sql);
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>

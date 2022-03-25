@@ -25,6 +25,12 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
     $sql = "UPDATE chi_tiet SET
 	cid = '$cid' , img = '$anh_trangchu', img_chitiet = '$anh_chitiet', title = '$tieu_de', code = '', description = '$gioi_thieu', body = '$mo_ta', price = '$gia_phong' where id_chitiet = $id";
     $ret = exec_update($sql);
+    echo "
+        <script type='text/javascript'>
+            window.alert('Bạn đã sửa phòng trọ thành công!');
+            window.location.href='./admin_trangchu.php';
+        </script>
+        ";
 }
 
 ?>
@@ -35,7 +41,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin thêm</title>
+    <title>Admin sửa</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
 
     </script>
@@ -107,7 +113,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="chuyenmuc.php" class="header__logo-search__form" method="GET">
+                    <form action="admin_timkiem.php" class="header__logo-search__form" method="GET">
                         <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -123,7 +129,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -243,7 +249,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.hotro.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>
