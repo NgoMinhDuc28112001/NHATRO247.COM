@@ -71,7 +71,7 @@
 .content__form__label__input__submit,
 .content__form-form__button__submit{
     padding: 10px;
-    background-color: #24c6eb;
+    background-color:#257cdf;
     color: white;
     border: none;
     border-radius: 5px;
@@ -102,6 +102,10 @@ b{
     position: absolute;
     left: 50%;
     margin-left: -60px;
+}
+.content__form-form__button__submit a{
+    text-decoration: none;
+    color: white;
 }
 .content__form__input--hiden{
     display: none;
