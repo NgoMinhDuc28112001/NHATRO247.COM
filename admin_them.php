@@ -20,8 +20,14 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
     $sql = "insert into chi_tiet 
 	(cid, img, img_chitiet, title, code, description, body, price) 
     values 
-    ('{$cid}','{$anh_trangchu}','{$anh_chitiet}','{$tieu_de}','','{$gioi_thieu}','','{$mo_ta}','{$gia_phong}')";
+    ('{$cid}','{$anh_trangchu}','{$anh_chitiet}','{$tieu_de}','','{$gioi_thieu}','{$mo_ta}','{$gia_phong}')";
     $ret = exec_update($sql);
+    echo "
+        <script type='text/javascript'>
+            window.alert('Bạn đã thêm phòng trọ thành công!');
+            window.location.href='./admin_trangchu.php';
+        </script>
+        ";
 }
 
 ?>
@@ -56,7 +62,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -104,7 +110,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="chuyenmuc.php" class="header__logo-search__form" method="GET">
+                    <form action="admin_timkiem.php" class="header__logo-search__form" method="GET">
                         <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -120,7 +126,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -239,7 +245,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.hotro.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>

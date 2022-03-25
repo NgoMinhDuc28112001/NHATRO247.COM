@@ -275,17 +275,17 @@ $ret = exec_update($sql);
                         $_POST['title'] = $_POST['code'] = $_POST['description'] = ""; ?>
 
                         <!-- <p class="style-title-text-button"> -->
-                            <a href="./hopdong.php" class="">
-                                <!-- <h4 class="style-title-text-button"></h4> -->
-                                Xác nhận hợp đồng
-                            </a>
+                        <a href="./hopdong.php" class="">
+                            <!-- <h4 class="style-title-text-button"></h4> -->
+                            Xác nhận hợp đồng
+                        </a>
                         <!-- </p> -->
                     <?php } else { ?>
                         <!-- <p class="style-title-text-button"> -->
-                            <a href="./xac-nhan-hop-dong.php" class="">
-                                <!-- <h4 class="style-title-text-button"></h4> -->
-                                Xác nhận hợp đồng
-                            </a>
+                        <a href="./xac-nhan-hop-dong.php" class="">
+                            <!-- <h4 class="style-title-text-button"></h4> -->
+                            Xác nhận hợp đồng
+                        </a>
                         <!-- </p> -->
                     <?php } ?>
             </div>
@@ -314,7 +314,7 @@ $ret = exec_update($sql);
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
                     Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà
-                    Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</br>
+                    Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>

@@ -51,7 +51,7 @@ if (empty($q)) {
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -97,8 +97,8 @@ if (empty($q)) {
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="" class="header__logo-search__form">
-                        <input type="text" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
+                    <form action="admin_timkiem.php" class="header__logo-search__form" method="GET">
+                        <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -113,7 +113,7 @@ if (empty($q)) {
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -137,15 +137,15 @@ if (empty($q)) {
                     <?php foreach ($result as $item) { ?>
                         <div class="content__right__border">
                             <div class="content__right__white">
-                                <a href="trangchitiet.php?id=<?php echo $item["id_chitiet"]; ?>" class="content__right__white__link">
+                                <a href="" class="content__right__white__link">
                                     <img class="content__right__white__link__img" src="./images/<?php echo $item["img"]; ?>" alt="">
 
-                                    <div class="content__right__white__money__adress">
+                                    <div class="content__right__white__money__adress content__right__white__money__adress__search ">
                                         <span class="content__right__white__money__adress__span">
-                                            <a href="./admin_sua.php?id=<?php echo $item["id_chitiet"]; ?>">Sửa</a>
+                                            <a href="./admin_sua.php?id=<?php echo $item["id_chitiet"]; ?>" class="left__white__money__adress__search">Sửa</a>
                                         </span>
                                         <span class="content__right__white__money__adress__span content__right__white__money__adress__span--red">
-                                            <a href="./admin_xoa.php?id=<?php echo $item["id_chitiet"]; ?>">Xóa</a>
+                                            <a href="./admin_xoa.php?id=<?php echo $item["id_chitiet"]; ?>" class="right__white__money__adress__search">Xóa</a>
                                         </span>
                                     </div>
                                 </a>
@@ -179,7 +179,7 @@ if (empty($q)) {
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>

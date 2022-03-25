@@ -49,7 +49,7 @@ $result = select_one($sql);
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -196,7 +196,7 @@ $result = select_one($sql);
                     <input type="text" class="content__form__input" value="Hiện tại bên mình cho thuê phòng trọ mới xây ngay" readonly>
                 </div>
                 <div class="content__form__button">
-                    <a href="./admin_trangchu.php" class="content__form__button__block">
+                    <a href="./admin_xacnhan.php" class="content__form__button__block">
                         Xác nhận
                     </a>
                 </div>
@@ -225,7 +225,7 @@ $result = select_one($sql);
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.hotro.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>

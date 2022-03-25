@@ -154,6 +154,28 @@ a{
     display: flex;
     flex-direction: column;
 }
+.content__right__white__money__adress__search{
+    display: block;
+    flex-direction: column;
+}
+.left__white__money__adress__search{
+    padding: 0 20px;
+}
+.right__white__money__adress__search{
+    padding: 0 20px;
+    float: right;
+}
+.content__bottom__fix__left{
+    padding: 0 20px;
+
+}
+.content__bottom__fix__rigt{
+    padding: 0 20px;
+    float: right;
+}
+
+
+
 .content__right__white__money__adress__span{
     text-align: center;
     font-size: 1.1rem;

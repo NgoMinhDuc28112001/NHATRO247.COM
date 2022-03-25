@@ -98,12 +98,12 @@ if (!empty($id_user) and !empty($id_user)) {
             <!-- end nav -->
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
-                    <a href="./trangchu.php" class="header__logo-search__link">
+                    <a href="./admin_trangchu.php" class="header__logo-search__link">
                         <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="chuyenmuc.php" class="header__logo-search__form" method="GET">
+                    <form action="admin_timkiem.php" class="header__logo-search__form" method="GET">
                         <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -119,7 +119,7 @@ if (!empty($id_user) and !empty($id_user)) {
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -202,7 +202,7 @@ if (!empty($id_user) and !empty($id_user)) {
         </div>
         <!-- end content -->
         <!-- footer -->
-        <footer class="footer">
+        <footer class="footer footer_thieu">
             <div class="footer__top gird">
                 <ul class="footer__list">
                     <li class="footer__items">
@@ -224,7 +224,7 @@ if (!empty($id_user) and !empty($id_user)) {
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.hotro.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>

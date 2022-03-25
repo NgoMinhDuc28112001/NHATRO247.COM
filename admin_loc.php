@@ -14,7 +14,7 @@ $data = mysqli_fetch_assoc($query);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang lọc</title>
+    <title>Admin trang lọc</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@ $data = mysqli_fetch_assoc($query);
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -72,13 +72,13 @@ $data = mysqli_fetch_assoc($query);
             <!-- end nav -->
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
-                    <a href="./trangchu.php" class="header__logo-search__link">
+                    <a href="./admin_trangchu.php" class="header__logo-search__link">
                         <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="" class="header__logo-search__form">
-                        <input type="text" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
+                    <form action="" class="header__logo-search__form" method="GET">
+                        <input type="text" name="q" id="" value="" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -93,7 +93,7 @@ $data = mysqli_fetch_assoc($query);
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -188,6 +188,14 @@ $data = mysqli_fetch_assoc($query);
                                             <?php echo $data["price"]; ?>đ
                                         </span>
                                     </div>
+                                    <div class="content__bottom__fix">
+                                        <a href="./admin_sua.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__left ">
+                                            Sửa
+                                        </a>
+                                        <a href="./admin_xoa.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__rigt">
+                                            Xóa
+                                        </a>
+                                    </div>
 
                                 </a>
                             </div>
@@ -198,7 +206,7 @@ $data = mysqli_fetch_assoc($query);
         </div>
         <!-- end content -->
         <!-- footer -->
-        <footer class="footer">
+        <footer class="footer footer_thieu">
             <div class="footer__top gird">
                 <ul class="footer__list">
                     <li class="footer__items">
@@ -220,7 +228,7 @@ $data = mysqli_fetch_assoc($query);
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>

@@ -7,8 +7,7 @@ $result = select_one($sql);
 $sql = "SELECT * FROM login";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
-$q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
-$qsessionname = "___Q___";
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -84,13 +83,13 @@ $qsessionname = "___Q___";
             <!-- end nav -->
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
-                    <a href="./trangchu.php" class="header__logo-search__link">
+                    <a href="./chutro_trangchu.php" class="header__logo-search__link">
                         <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="chuyenmuc.php" class="header__logo-search__form" method="GET">
-                        <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
+                    <form action="" class="header__logo-search__form" method="GET">
+                        <input type="text" name="q" id="" value="" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -200,7 +199,7 @@ $qsessionname = "___Q___";
             </div>
             <div class="footer__bottom">
                 <span class="footer__bottom__span">
-                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.hotro.vn</br>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà 175 Tây Sơn, số 29 Đống Đa, Quận Đống Đa, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.vn</br>
                     Chịu Trách Nhiệm Quản Lý Nội Dung: Công nghệ Phần mềm - Điện thoại liên hệ: 0123 081221 (ext 4678)
                 </span>
             </div>
