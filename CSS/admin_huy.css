@@ -253,12 +253,23 @@
 .content__bottom__detail__delete{
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 20px 50px;
 }
 .content__bottom__detail,.content__bottom__delete{
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
+}
+.content__bottom__delete{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.wait_confirm{
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 5px auto;
+    width: 220px;
 }
 /* footer */
 .footer{

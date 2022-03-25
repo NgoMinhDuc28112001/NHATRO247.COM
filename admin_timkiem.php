@@ -142,10 +142,10 @@ if (empty($q)) {
 
                                     <div class="content__right__white__money__adress">
                                         <span class="content__right__white__money__adress__span">
-                                            <a href="./"></a>
+                                            <a href="./admin_sua.php?id=<?php echo $item["id_chitiet"]; ?>">Sửa</a>
                                         </span>
                                         <span class="content__right__white__money__adress__span content__right__white__money__adress__span--red">
-                                            <a href="./"></a>
+                                            <a href="./admin_xoa.php?id=<?php echo $item["id_chitiet"]; ?>">Xóa</a>
                                         </span>
                                     </div>
                                 </a>

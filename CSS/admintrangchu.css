@@ -43,6 +43,7 @@
 .header__logo-search{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header__logo-search__input{
     width: 600px;
@@ -55,8 +56,6 @@
     outline: none;
 }
 .header__logo-search__search{
-    transform: translateX(50%);
-    right: 50%;
     position: relative;
     display: flex;
     align-items: center;
@@ -176,6 +175,20 @@
 .slides{
     display: flex;
     margin-top: 125px;
+}
+.my__hotel{
+    background-color: #470bf1;
+    display: flex;
+    width: 160px;
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+}
+.my__hotel a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: auto;
 }
 /* content */
 .content{

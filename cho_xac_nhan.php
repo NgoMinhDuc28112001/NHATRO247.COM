@@ -1,14 +1,19 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
-$sql = "SELECT * FROM chi_tiet WHERE id_chitiet=" . $id;
-$result = select_one($sql);
 $sql = "SELECT * FROM login";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
-$q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
-$qsessionname = "___Q___";
+
+$sql = "select * from chi_tiet left join hop_dong on hop_dong.id_chitiet = chi_tiet.id_chitiet left join users on hop_dong.id_user = users.id_user where users.id_user = (select id_user from users where email = '$data[email]')";
+$result = select_list($sql);
+
+$id_user  = isset($_REQUEST["id_user"]) ? $_REQUEST["id_user"] : 0;
+$id_chitiet = isset($_REQUEST["id_chitiet"]) ? $_REQUEST["id_chitiet"] : 0;
+if (!empty($id_user) and !empty($id_chitiet)) {
+    $sql = "UPDATE hop_dong SET wait = 1 where id_user = $id_user and id_chitiet =$id_chitiet";
+    $ret = exec_update($sql);
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -17,7 +22,7 @@ $qsessionname = "___Q___";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chủ trọ cập nhật thông tin</title>
+    <title>Admin hủy thuê phòng</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
 
     </script>
@@ -26,7 +31,7 @@ $qsessionname = "___Q___";
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="CSS/base.css">
-    <link rel="stylesheet" href="CSS/chutrocapnhattt.css">
+    <link rel="stylesheet" href="CSS/admin_huy.css">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -41,7 +46,7 @@ $qsessionname = "___Q___";
             <nav class="header__nav gird">
                 <div class="header__nav__list-left">
                     <ul class="header__nav__list__list">
-                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào chủ trọ!</a></li>
+                        <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Xin chào admin!</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
                             <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -137,46 +142,44 @@ $qsessionname = "___Q___";
         <div class="content gird">
             <div class="content__top">
                 <span class="content__top__span">
-                    Cập nhật thông tin nhà trọ cho thuê
+                    Hợp đồng đang chờ xác nhận
                 </span>
             </div>
             <div class="content__bottom">
-                <form action="chutro_xacnhan.php" class="content__bottom__form" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
-                    <div class="content__bottom__label__input">
-                        <label for="" class="content__bottom__label">
-                            Tiêu đề bài đăng:
-                        </label>
-                        <input type="text" class="content__bottom__input" name="title" value="<?php echo $result["title"] ?>">
-                    </div>
-                    <div class="content__bottom__label__input">
-                        <label for="" class="content__bottom__label">
-                            Giá phòng:
-                        </label>
-                        <input type="text" class="content__bottom__input" name="price" value="<?php echo $result["price"] ?>">
-                    </div>
-                    <div class="content__bottom__label__input content__bottom__label__input--img--text">
-                        <label for="" class="content__bottom__label">
-                            Ảnh:
-                        </label>
-                        <img src="./images/<?php echo $result["img"] ?>" alt="" class="content__bottom__img">
-                    </div>
-                    <div class="content__bottom__label__input content__bottom__label__input--img--text">
-                        <label for="" class="content__bottom__label">
-                            Mô tả:
-                        </label>
-                        <div class="content__bottom__text">
-                            <input type="text" class="content__bottom__input" name="description" value="<?php echo $result["description"] ?>">
+                <?php foreach ($result as $item) { ?>
+                    <div class="content__bottom__border">
+                        <div class="content__bottom__border__white">
+                            <div class="content__bottom__border__img">
+                                <img src="./images/<?php echo $item["img"]; ?>" alt="" class="content__bottom__img">
+                                <div class="content__bottom__border__img__blur">
+                                </div>
+                                <span class="content__bottom__border__img__span">
+                                    Nhà trọ 247
+                                </span>
+                            </div>
+                            <div class="content__bottom__detail__delete">
+                                <a href="./trangchitiet.php?id=<?php echo $item["id_chitiet"]; ?>" class="content__bottom__detail">
+                                    Chi tiết
+                                </a>
+                                <form action="cho_xac_nhan.php" method="POST">
+                                    <input type="hidden" name="id_user" value="<?php echo $item["id_user"] ?>" />
+                                    <input type="hidden" name="id_chitiet" value="<?php echo $item["id_chitiet"] ?>" />
+                                    <button type="submit" class="content__bottom__delete">
+                                        Hủy thuê phòng
+                                    </button>
+                                </form>
+                            </div>
+                            <?php if ($item["active"] == 0) { ?>
+                                <p class="wait_confirm">Phòng trọ đang chờ xác nhận</p>
+                            <?php } else { ?>
+                                <p class="wait_confirm">Phòng trọ đang được thuê</p>
+                            <?php } ?>
                         </div>
                     </div>
-                    <div class="content__bottom__button__access">
-                        <button type="submit" class="content__bottom__button">
-                            Xác nhận
-                        </button>
-                    </div>
-                </form>
+                <?php } ?>
             </div>
         </div>
+        <!-- end content -->
         <!-- footer -->
         <footer class="footer">
             <div class="footer__top gird">

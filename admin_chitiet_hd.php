@@ -6,9 +6,21 @@ $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
+
+$id_user = isset($_REQUEST["id_user"]) ? $_REQUEST["id_user"] : 0;
+$id_chitiet = isset($_REQUEST["id_chitiet"]) ? $_REQUEST["id_chitiet"] : 0;
+
+echo $id_user;
+
+echo $id_chitiet;
+
+
+$sql = "select * from hop_dong  where id_chitiet = $id_chitiet and id_user = $id_user";
+$result = select_one($sql);
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +42,7 @@ $qsessionname = "___Q___";
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -79,12 +92,12 @@ $qsessionname = "___Q___";
             <!-- end nav -->
             <div class="header__logo-search gird">
                 <div class="header__logo-search__logo">
-                    <a href="./trangchu.php" class="header__logo-search__link">
+                    <a href="./admin_trangchu.php" class="header__logo-search__link">
                         <img src="./images/nt_logo2.png" alt="" class="header__logo-search__imglogo">
                     </a>
                 </div>
                 <div class="header__logo-search__search">
-                    <form action="chuyenmuc.php" class="header__logo-search__form" method="GET">
+                    <form action="admin_timkiem.php" class="header__logo-search__form" method="GET">
                         <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -130,7 +143,7 @@ $qsessionname = "___Q___";
         </div>
         <!-- content -->
         <div class="content gird_content">
-            <form action="" class="content__form">
+            <form action="admin_trangchu.php" class="content__form">
                 <div class="content__title">
                     <h3 class="content__title__h3">
                         Thông tin khách thuê
@@ -138,21 +151,25 @@ $qsessionname = "___Q___";
                 </div>
                 <div class="content__form__label__input">
                     <label for="" class="content__form__label">Họ và tên:</label>
-                    <input type="text" class="content__form__input">
+                    <input type="text" class="content__form__input" value="duc" readonly>
                 </div>
                 <div class="content__form__label__input">
                     <label for="" class="content__form__label">Số CMT/CCCD:</label>
-                    <input type="text" class="content__form__input">
+                    <input type="text" class="content__form__input" value="123456" readonly>
+                </div>
+                <div class="content__form__label__input">
+                    <label for="" class="content__form__label">Số CMT/CCCD:</label>
+                    <input type="text" class="content__form__input" value="456789" readonly>
                 </div>
                 <div class="content__form__label__input">
                     <label for="" class="content__form__label">Tiền cọc:</label>
                     <label for="" class="content__form__label">2.500.000VND</label>
                 </div>
-                <div class="content__form__label__input content__form__label__input--flex-start">
+                <div class="content__form__label__input content__form__label__input--flex-start" readonly>
                     <label for="" class="content__form__label">Ảnh CMT/CCCD:</label>
                     <div class="content__form__label__input__img">
-                        <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__form__img">
-                        <img src="./images/nhatro1_trangchu.jpg" alt="" class="content__form__img">
+                        <img src="./images/1mattruoc.png" alt="" class="content__form__img">
+                        <img src="./images/1matsau.png" alt="" class="content__form__img">
                     </div>
                 </div>
                 <div class="content__title">
@@ -162,11 +179,11 @@ $qsessionname = "___Q___";
                 </div>
                 <div class="content__form__label__input">
                     <label for="" class="content__form__label">Tiêu đề bài đăng:</label>
-                    <input type="text" class="content__form__input">
+                    <input type="text" class="content__form__input" value="Vị trí thuận tiện đi lại" readonly>
                 </div>
                 <div class="content__form__label__input">
                     <label for="" class="content__form__label">Giá phòng:</label>
-                    <input type="text" class="content__form__input">
+                    <input type="text" class="content__form__input" value="1290000đ" readonly>
                 </div>
                 <div class="content__form__label__input content__form__label__input--flex-start">
                     <label for="" class="content__form__label">Ảnh:</label>
@@ -176,12 +193,12 @@ $qsessionname = "___Q___";
                 </div>
                 <div class="content__form__label__input content__form__label__input--flex-start">
                     <label for="" class="content__form__label">Mô tả:</label>
-                    <label for="" class="content__form__label"></label>
+                    <input type="text" class="content__form__input" value="Hiện tại bên mình cho thuê phòng trọ mới xây ngay" readonly>
                 </div>
                 <div class="content__form__button">
-                    <button class="content__form__button__block">
+                    <a href="./admin_trangchu.php" class="content__form__button__block">
                         Xác nhận
-                    </button>
+                    </a>
                 </div>
             </form>
         </div>
@@ -227,4 +244,5 @@ $qsessionname = "___Q___";
         });
     })
 </script>
+
 </html>

@@ -6,9 +6,27 @@ $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
+
+$id_user = isset($_REQUEST["id_user"]) ? $_REQUEST["id_user"] : 0;
+$id_chitiet = isset($_REQUEST["id_chitiet"]) ? $_REQUEST["id_chitiet"] : 0;
+$active = isset($_REQUEST["active"]) ? $_REQUEST["active"] : 0;
+$wait = isset($_REQUEST["wait"]) ? $_REQUEST["wait"] : 0;
+
+if (!empty($id_user) and !empty($id_user)) {
+    if ($active == 0) {
+        $sql = "UPDATE hop_dong SET
+        active = 1  where id_chitiet = $id_chitiet and id_user = $id_user";
+        $ret = exec_update($sql);
+    }
+    if ($wait == 1) {
+        $sql = "delete from hop_dong where id_chitiet = $id_chitiet and id_user = $id_user";
+        $ret = exec_update($sql);
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +48,7 @@ $qsessionname = "___Q___";
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -135,28 +154,51 @@ $qsessionname = "___Q___";
                     Hợp đồng đang chờ xác nhận
                 </span>
             </div>
-            <div class="content__bottom">
-                <div class="content__bottom__border">
-                    <div class="content__bottom__border__white">
-                        <div class="content__bottom__border__img">
-                            <img src="./images/nhatro2_trangchu.jpg" alt="" class="content__bottom__img">
-                            <div class="content__bottom__border__img__blur">
+            <form action="admin_xacnhan.php" method="POST">
+                <div class="content__bottom">
+                    <?php $sql = "select * from hop_dong";
+                    $result = select_list($sql); ?>
+                    <?php foreach ($result as $item) { ?>
+                        <input type="hidden" name="id_user" value="<?php echo $item["id_user"] ?>" />
+                        <input type="hidden" name="id_chitiet" value="<?php echo $item["id_chitiet"] ?>" />
+                        <input type="hidden" name="active" value="<?php echo $item["active"] ?>" />
+                        <input type="hidden" name="wait" value="<?php echo $item["wait"] ?>" />
+                        <div class="content__bottom__border">
+                            <div class="content__bottom__border__white">
+                                <div class="content__bottom__border__img">
+                                    <?php $sql = "select * from chi_tiet where id_chitiet = $item[id_chitiet]";
+                                    $img = select_one($sql); ?>
+                                    <img src="./images/<?php echo $img["img"]; ?>" alt="" class="content__bottom__img">
+                                    <div class="content__bottom__border__img__blur">
+                                    </div>
+                                    <span class="content__bottom__border__img__span">
+                                        Nhà trọ 247
+                                    </span>
+                                </div>
+                                <div class="content__bottom__detail__delete">
+                                    <form action="admin_chitiet_hd.php" method="POST">
+                                        <input type="hidden" name="id_user" value="<?php echo $item["id_user"] ?>" />
+                                        <input type="hidden" name="id_chitiet" value="<?php echo $item["id_chitiet"] ?>" />
+                                        <a href="./admin_chitiet_hd.php?id=<?php echo $item["id_chitiet"] . $item["id_user"]; ?>" class="content__bottom__detail">
+                                            Chi tiết
+                                        </a>
+                                    </form>
+                                    <?php if ($item["active"] == 0) { ?>
+                                        <button type="submit" class="content__bottom__delete">
+                                            Xác nhận cho thuê
+                                        </button>
+                                    <?php } else if ($item["wait"] == 1) { ?>
+                                        <button type="submit" class="content__bottom__delete">
+                                            Xác huỷ thuê phòng
+                                        </button>
+                                    <?php } ?>
+
+                                </div>
                             </div>
-                            <span class="content__bottom__border__img__span">
-                                Nhà trọ 247
-                            </span>
                         </div>
-                        <div class="content__bottom__detail__delete">
-                            <a href="" class="content__bottom__detail">
-                                Chi tiết
-                            </a>
-                            <a href="" class="content__bottom__delete">
-                                Hủy thuê phòng
-                            </a>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
-            </div>
+            </form>
         </div>
         <!-- end content -->
         <!-- footer -->
@@ -201,4 +243,5 @@ $qsessionname = "___Q___";
         });
     })
 </script>
+
 </html>
