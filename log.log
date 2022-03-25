@@ -10372,3 +10372,13 @@
 25.03.2022 03:08:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  9] 
 25.03.2022 03:08:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  10] 
 25.03.2022 03:08:46 sql=[SELECT * FROM chi_tiet LIMIT 1 OFFSET  11] 
+25.03.2022 03:25:43 sql=[SELECT * FROM chi_tiet WHERE id_chitiet=6] 
+25.03.2022 03:25:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+25.03.2022 03:25:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  1] 
+25.03.2022 03:25:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  2] 
+25.03.2022 03:25:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  3] 
+25.03.2022 03:25:43 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  4] 
+25.03.2022 05:47:14 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+25.03.2022 05:50:15 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
+25.03.2022 05:59:21 <!-- sql=[UPDATE chi_tiet SET title = '' , price = '' , description = ''  WHERE id_chitiet =0] --> 
+25.03.2022 06:03:48 sql=[SELECT * FROM theloai LIMIT 1 OFFSET  0] 
