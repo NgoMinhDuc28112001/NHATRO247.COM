@@ -274,17 +274,19 @@ $ret = exec_update($sql);
                     <?php if (empty($_POST['fullname']) or empty($_POST['cmt']) or empty($_POST['sdt']) or empty($mattruoc) or empty($matsau)) {
                         $_POST['title'] = $_POST['code'] = $_POST['description'] = ""; ?>
 
-                        <p class="style-title-text-button">
+                        <!-- <p class="style-title-text-button"> -->
                             <a href="./hopdong.php" class="">
-                                <h4 class="style-title-text-button">Xác nhận hợp đồng</h4>
+                                <!-- <h4 class="style-title-text-button"></h4> -->
+                                Xác nhận hợp đồng
                             </a>
-                        </p>
+                        <!-- </p> -->
                     <?php } else { ?>
-                        <p class="style-title-text-button">
+                        <!-- <p class="style-title-text-button"> -->
                             <a href="./xac-nhan-hop-dong.php" class="">
-                                <h4 class="style-title-text-button">Xác nhận hợp đồng</h4>
+                                <!-- <h4 class="style-title-text-button"></h4> -->
+                                Xác nhận hợp đồng
                             </a>
-                        </p>
+                        <!-- </p> -->
                     <?php } ?>
             </div>
         </div>

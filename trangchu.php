@@ -144,8 +144,10 @@ $qsessionname = "___Q___";
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
                                 <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
+                                    <div class="content__money__number__while__link__img">
+                                        <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+                                        <div class="content__blur"></div>
+                                    </div>
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
                                             <?php echo $data["price"]; ?>đ
@@ -177,8 +179,10 @@ $qsessionname = "___Q___";
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
                                 <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
+                                    <div class="content__money__number__while__link__img">
+                                        <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+                                        <div class="content__blur"></div>
+                                    </div>
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
                                             <?php echo $data["price"]; ?>đ
@@ -205,8 +209,10 @@ $qsessionname = "___Q___";
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
                                 <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
-                                    <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
-
+                                    <div class="content__money__number__while__link__img">
+                                        <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+                                        <div class="content__blur"></div>
+                                    </div>
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
                                             <?php echo $data["price"]; ?>đ

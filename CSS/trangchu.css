@@ -206,6 +206,7 @@
 }
 .content__money__number__img{
     width: 100%;
+    transition: 0.4s;
 }
 .content__money__number__text{
     width: 100%;
@@ -249,7 +250,7 @@
     padding: 10px 0;
 }
 .content__button__show__text{
-    background-color: #6895EB;
+    background-color:#470BF1;
     padding: 10px;
     border-radius: 5px;
     color: white;
@@ -261,7 +262,7 @@
 }
 .content__money__number__block__title{
     color: white;
-    background-color: #6895EB;
+    background-color: black;
     left: 0px;
     right: 0;
     bottom: -100px;
@@ -273,12 +274,39 @@
     transition: 0.4s;
 }
 .content__money__number__border:hover{
-    border: 2px solid #6895EB;
+    border: 2px solid black;
 }
 .content__money__number__border:hover .content__money__number__block__title{
     opacity: 1;
     visibility: visible;
     bottom: 5px;
+}
+.content__blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: visible;
+    background-color: black;
+    transition: 0.4s;
+}
+.content__money__number__while__link__img{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    position: relative;
+    overflow: hidden;
+}
+.content__money__number__while__link__img:hover 
+.content__blur{
+    opacity: 0.5;
+    visibility: visible;
+}
+.content__money__number__while__link__img:hover
+.content__money__number__img{
+    transform: scale(1.5);
 }
 /* footer */
 .footer{

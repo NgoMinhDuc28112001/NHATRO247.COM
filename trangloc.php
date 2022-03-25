@@ -34,21 +34,21 @@ $data = mysqli_fetch_assoc($query);
                         <li class="header__nav__list__items"><a class="header__nav__list-link" href="">Người cho thuê</a></li>
                         <li class="header__nav__list__items">
                             <a class="header__nav__list-link" href="">Kết nối</a>
-                            <a class="header__nav__list-link" href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a class="header__nav__list-link" href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--left" href=""><i class="fa-brands fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="header__nav__list-right">
                     <ul class="header__nav__list__list">
                         <li class="header__nav__list__items">
-                            <a class="header__nav__list-link" href="">
+                            <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--right" href="">
                                 <i class="fa-solid fa-bell"></i>
                             </a>
                             <a class="header__nav__list-link" href="">Thông báo</a>
                         </li>
                         <li class="header__nav__list__items">
-                            <a class="header__nav__list-link" href="">
+                            <a class="header__nav__list-link header__nav__list-link--white header__nav__list-link--right" href="">
                                 <i class="fa-solid fa-circle-question"></i>
                             </a>
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
@@ -178,8 +178,10 @@ $data = mysqli_fetch_assoc($query);
                         <div class="content__right__border">
                             <div class="content__right__white">
                                 <a href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__right__white__link">
-                                    <img class="content__right__white__link__img" src="./images/<?php echo $data["img"]; ?>" alt="">
-
+                                    <div class="content__right__white__link__img__blur">
+                                        <img class="content__right__white__link__img" src="./images/<?php echo $data["img"]; ?>" alt="">
+                                        <div class="content__right__white__link__blur"></div>
+                                    </div>
                                     <div class="content__right__white__money__adress">
                                         <span class="content__right__white__money__adress__span">
                                             <?php echo $data["title"]; ?>
