@@ -202,7 +202,7 @@ if (!empty($id_user) and !empty($id_user)) {
         </div>
         <!-- end content -->
         <!-- footer -->
-        <footer class="footer footer_thieu">
+        <footer class="footer footer_thie">
             <div class="footer__top gird">
                 <ul class="footer__list">
                     <li class="footer__items">

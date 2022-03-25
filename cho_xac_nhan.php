@@ -13,6 +13,12 @@ $id_chitiet = isset($_REQUEST["id_chitiet"]) ? $_REQUEST["id_chitiet"] : 0;
 if (!empty($id_user) and !empty($id_chitiet)) {
     $sql = "UPDATE hop_dong SET wait = 1 where id_user = $id_user and id_chitiet =$id_chitiet";
     $ret = exec_update($sql);
+    echo "
+        <script type='text/javascript'>
+            window.alert('Bạn đã hủy thuê phòng trọ. Chờ admin xác nhận!');
+            window.location.href='./trangchu.php';
+        </script>
+        ";
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -181,7 +187,7 @@ if (!empty($id_user) and !empty($id_chitiet)) {
         </div>
         <!-- end content -->
         <!-- footer -->
-        <footer class="footer footer_thieu">
+        <footer class="footer footer_thie">
             <div class="footer__top gird">
                 <ul class="footer__list">
                     <li class="footer__items">

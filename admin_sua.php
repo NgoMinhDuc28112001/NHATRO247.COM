@@ -161,7 +161,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
         <div class="content gird_content">
             <div class="content__top">
                 <h3 class="content__top__h3">
-                    Thêm bài đăng
+                    Sửa bài đăng
                 </h3>
             </div>
             <div class="content__bottom">
