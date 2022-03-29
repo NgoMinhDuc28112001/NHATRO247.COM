@@ -1,7 +1,7 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 
@@ -13,7 +13,7 @@ $description = isset($_REQUEST["description"]) ? $_REQUEST["description"] : "";
 
 
 //tao sql
-$sql = "UPDATE chi_tiet SET title = '$title' , price = '$price' , description = '$description'  WHERE id_chitiet =$id";
+$sql = "UPDATE BaiDang_PhongTro SET TieuDe = '$title' , GiaPhong = '$price' , MoTa = '$description'  WHERE MaPhong =$id";
 $ret = exec_update($sql);
 
 ?>
@@ -71,7 +71,7 @@ $ret = exec_update($sql);
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
 
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -108,11 +108,11 @@ $ret = exec_update($sql);
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="trangloc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>

@@ -2,7 +2,7 @@
 include("lib_db.php");
 include("connect.php");
 $id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 
@@ -14,15 +14,12 @@ if (!isset($_REQUEST["q"])) {
     $_SESSION[$qsessionname] = $q;
 }
 
-$cond = "";
 if (empty($q)) {
-    $sqlcount = "select * from chi_tiet";
+    $sqlcount = "select * from BaiDang_PhongTro";
     $result = select_list($sqlcount);
 } else {
     $sq = sql_str($q);
-    $cond = "where ";
-    $cond .= " title like '%{$sq}%' ";
-    $sqlcount = "select * from chi_tiet {$cond}";
+    $sqlcount = "select * from BaiDang_PhongTro where GiaPhong like '%{$sq}%' or TieuDe like '%{$sq}%'";
     $result = select_list($sqlcount);
     $search = select_one($sqlcount);
 }
@@ -73,7 +70,7 @@ if (empty($q)) {
                             </a>
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
                             </li>
@@ -109,11 +106,11 @@ if (empty($q)) {
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="admin_loc.php" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="trangloc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -126,10 +123,10 @@ if (empty($q)) {
         <div class="content gird">
             <div class="content__right">
                 <div class="content__title">
-                    <?php if (empty($search["title"])) { ?>
+                    <?php if (empty($search["TieuDe"])) { ?>
                         Tìm kiếm theo: "Tất cả phòng trọ"
                     <?php } else { ?>
-                        Tìm kiếm theo: "<?php echo $search["title"]; ?>"
+                        Tìm kiếm theo: "<?php echo $q ?>"
                     <?php } ?>
                 </div>
                 <div class="content__right__money__adress">
@@ -138,14 +135,14 @@ if (empty($q)) {
                         <div class="content__right__border">
                             <div class="content__right__white">
                                 <a href="" class="content__right__white__link">
-                                    <img class="content__right__white__link__img" src="./images/<?php echo $item["img"]; ?>" alt="">
+                                    <img class="content__right__white__link__img" src="./images/<?php echo $item["Anh"]; ?>" alt="">
 
                                     <div class="content__right__white__money__adress content__right__white__money__adress__search ">
                                         <span class="content__right__white__money__adress__span">
-                                            <a href="./admin_sua.php?id=<?php echo $item["id_chitiet"]; ?>" class="left__white__money__adress__search">Sửa</a>
+                                            <a href="./admin_sua.php?id=<?php echo $item["MaPhong"]; ?>" class="left__white__money__adress__search">Sửa</a>
                                         </span>
                                         <span class="content__right__white__money__adress__span content__right__white__money__adress__span--red">
-                                            <a href="./admin_xoa.php?id=<?php echo $item["id_chitiet"]; ?>" class="right__white__money__adress__search">Xóa</a>
+                                            <a href="./admin_xoa.php?id=<?php echo $item["MaPhong"]; ?>" class="right__white__money__adress__search">Xóa</a>
                                         </span>
                                     </div>
                                 </a>
@@ -157,7 +154,7 @@ if (empty($q)) {
         </div>
         <!-- end content -->
         <!-- footer -->
-        <footer class="footer">
+        <footer class="footer footer_loc">
             <div class="footer__top gird">
                 <ul class="footer__list">
                     <li class="footer__items">

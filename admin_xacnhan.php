@@ -1,31 +1,30 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
 
-$id_user = isset($_REQUEST["id_user"]) ? $_REQUEST["id_user"] : 0;
-$id_chitiet = isset($_REQUEST["id_chitiet"]) ? $_REQUEST["id_chitiet"] : 0;
-$active = isset($_REQUEST["active"]) ? $_REQUEST["active"] : 0;
-$wait = isset($_REQUEST["wait"]) ? $_REQUEST["wait"] : 0;
+$MaHopDong = isset($_REQUEST["MaHopDong"]) ? $_REQUEST["MaHopDong"] : 0;
+$TrangThai = isset($_REQUEST["TrangThai"]) ? $_REQUEST["TrangThai"] : 0;
 
-if (!empty($id_user) and !empty($id_user)) {
-    if ($active == 0) {
-        $sql = "UPDATE hop_dong SET
-        active = 1  where id_chitiet = $id_chitiet and id_user = $id_user";
+if (!empty($MaHopDong)) {
+    if ($TrangThai == 11) {
+        $sql = "UPDATE HopDong SET
+        TrangThai = 22  where MaHopDong = $MaHopDong";
         $ret = exec_update($sql);
     }
-    if ($wait == 1) {
-        $sql = "delete from hop_dong where id_chitiet = $id_chitiet and id_user = $id_user";
+    if ($TrangThai == 13) {
+        $sql = "UPDATE HopDong SET
+        TrangThai = 33  where MaHopDong = $MaHopDong";
         $ret = exec_update($sql);
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -78,7 +77,7 @@ if (!empty($id_user) and !empty($id_user)) {
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
 
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -115,11 +114,11 @@ if (!empty($id_user) and !empty($id_user)) {
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
-                            <?php foreach ($datas as $data) { ?>
-                                <a href="admin_loc.php" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                            <?php foreach ($datas as $item) { ?>
+                                <a href="trangloc.php?id=<?php echo $item["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $item["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -156,19 +155,17 @@ if (!empty($id_user) and !empty($id_user)) {
             </div>
             <form action="admin_xacnhan.php" method="POST">
                 <div class="content__bottom">
-                    <?php $sql = "select * from hop_dong";
+                    <?php $sql = "select * from HopDong";
                     $result = select_list($sql); ?>
                     <?php foreach ($result as $item) { ?>
-                        <input type="hidden" name="id_user" value="<?php echo $item["id_user"] ?>" />
-                        <input type="hidden" name="id_chitiet" value="<?php echo $item["id_chitiet"] ?>" />
-                        <input type="hidden" name="active" value="<?php echo $item["active"] ?>" />
-                        <input type="hidden" name="wait" value="<?php echo $item["wait"] ?>" />
+                        <input type="hidden" name="MaHopDong" value="<?php echo $item["MaHopDong"] ?>" />
+                        <input type="hidden" name="TrangThai" value="<?php echo $item["TrangThai"] ?>" />
                         <div class="content__bottom__border">
                             <div class="content__bottom__border__white">
                                 <div class="content__bottom__border__img">
-                                    <?php $sql = "select * from chi_tiet where id_chitiet = $item[id_chitiet]";
+                                    <?php $sql = "select * from BaiDang_PhongTro where MaPhong = $item[MaPhong]";
                                     $img = select_one($sql); ?>
-                                    <img src="./images/<?php echo $img["img"]; ?>" alt="" class="content__bottom__img">
+                                    <img src="./images/<?php echo $img["Anh"]; ?>" alt="" class="content__bottom__img">
                                     <div class="content__bottom__border__img__blur">
                                     </div>
                                     <span class="content__bottom__border__img__span">
@@ -177,17 +174,16 @@ if (!empty($id_user) and !empty($id_user)) {
                                 </div>
                                 <div class="content__bottom__detail__delete">
                                     <form action="admin_chitiet_hd.php" method="POST">
-                                        <input type="hidden" name="id_user" value="<?php echo $item["id_user"] ?>" />
-                                        <input type="hidden" name="id_chitiet" value="<?php echo $item["id_chitiet"] ?>" />
-                                        <a href="./admin_chitiet_hd.php?id=<?php echo $item["id_chitiet"] . $item["id_user"]; ?>" class="content__bottom__detail">
+                                        <input type="hidden" name="MaHopDong" value="<?php echo $item["MaHopDong"] ?>" />
+                                        <a href="./admin_chitiet_hd.php?id=<?php echo $item["MaHopDong"]; ?>" class="content__bottom__detail">
                                             Chi tiết
                                         </a>
                                     </form>
-                                    <?php if ($item["active"] == 0) { ?>
+                                    <?php if ($item["TrangThai"] == 11) { ?>
                                         <button type="submit" class="content__bottom__delete">
                                             Xác nhận cho thuê
                                         </button>
-                                    <?php } else if ($item["wait"] == 1) { ?>
+                                    <?php } else if ($item["TrangThai"] == 13) { ?>
                                         <button type="submit" class="content__bottom__delete">
                                             Xác huỷ thuê phòng
                                         </button>

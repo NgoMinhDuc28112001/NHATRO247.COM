@@ -34,3 +34,8 @@ html{
     position: absolute;
     width: 100%;
 }
+.footer_loc{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

@@ -2,11 +2,8 @@
 include("lib_db.php");
 include("connect.php");
 $id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
-$sql = "SELECT * FROM chi_tiet WHERE id_chitiet=" . $id;
+$sql = "SELECT * FROM BaiDang_PhongTro WHERE MaPhong=" . $id;
 $result = select_one($sql);
-$sql = "SELECT * FROM login";
-$query = mysqli_query($conn, $sql);
-$data = mysqli_fetch_assoc($query);
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -93,11 +90,11 @@ $data = mysqli_fetch_assoc($query);
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="trangloc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -118,28 +115,28 @@ $data = mysqli_fetch_assoc($query);
                     > Chất lượng cao
                 </span>
                 <span class="content__sequence__span">
-                    > <?php echo $result["title"] ?>
+                    > <?php echo $result["TieuDe"] ?>
                 </span>
             </div>
-            <?php $sql = "SELECT * FROM login";
+            <?php $sql = "SELECT * FROM TaiKhoan where TrangThai=1";
             $query = mysqli_query($conn, $sql);
             $data = mysqli_fetch_assoc($query); ?>
-            <?php if (!empty($data['email'])) { ?>
+            <?php if (!empty($data['Email'])) { ?>
                 <form action="hopdong.php" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result["MaPhong"] ?>" />
                     <div class="content__while">
                         <div class="content__while__left">
                             <a href="" class="content__while__link">
-                                <img src="./images/<?php echo $result["img_chitiet"] ?>" alt="" class="content__while__img">
+                                <img src="./images/<?php echo $result["Anh"] ?>" alt="" class="content__while__img">
                             </a>
                         </div>
                         <div class="content__while__right">
                             <span class="content__while__span">
-                                <?php echo $result["description"] ?>
+                                <?php echo $result["MoTa"] ?>
                             </span>
                             <div class="content__while__money">
                                 <span class="content__while__money__span">
-                                    <?php echo $result["price"] ?>đ
+                                    <?php echo $result["GiaPhong"] ?>đ
                                 </span>
                                 <span class="content__while__money__span content__while__money__span__button">
                                     10% GIẢM
@@ -161,20 +158,20 @@ $data = mysqli_fetch_assoc($query);
                 </form>
             <?php } else { ?>
                 <form action="dangnhap.php" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result["MaPhong"] ?>" />
                     <div class="content__while">
                         <div class="content__while__left">
                             <a href="" class="content__while__link">
-                                <img src="./images/<?php echo $result["img_chitiet"] ?>" alt="" class="content__while__img">
+                                <img src="./images/<?php echo $result["Anh"] ?>" alt="" class="content__while__img">
                             </a>
                         </div>
                         <div class="content__while__right">
                             <span class="content__while__span">
-                                <?php echo $result["description"] ?>
+                                <?php echo $result["MoTa"] ?>
                             </span>
                             <div class="content__while__money">
                                 <span class="content__while__money__span">
-                                    <?php echo $result["price"] ?>đ
+                                    <?php echo $result["GiaPhong"] ?>đ
                                 </span>
                                 <span class="content__while__money__span content__while__money__span__button">
                                     10% GIẢM

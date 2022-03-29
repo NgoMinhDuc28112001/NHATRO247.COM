@@ -1,24 +1,29 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
-$sql = "SELECT * FROM users where email = '$data[email]' ";
-$id_user = select_one($sql);
-
+$email = $data['Email'];
 //get input
-$id_phong = isset($_REQUEST["id"]) ? $_REQUEST["id"] : "";
+$id_phong = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
+if ($id_phong == 0) {
+    session_start();
+    $id_phong = $_SESSION["MaPhong"];
+}
 $fullname = isset($_REQUEST["fullname"]) ? $_REQUEST["fullname"] : "";
 $cmt = isset($_REQUEST["cmt"]) ? $_REQUEST["cmt"] : "";
 $sdt = isset($_REQUEST["sdt"]) ? $_REQUEST["sdt"] : "";
 $mattruoc = isset($_REQUEST["mattruoc"]) ? $_REQUEST["mattruoc"] : "";
 $matsau = isset($_REQUEST["matsau"]) ? $_REQUEST["matsau"] : "";
 
-
+$count = "select * from HopDong where MaHopDong = (select max(MaHopDong) from HopDong);";
+$dem = select_one($count);
+$x = $dem['MaHopDong'] + 1;
 //tao sql
 if (!empty($id_phong) and !empty($fullname) and !empty($cmt) and !empty($sdt) and !empty($mattruoc) and !empty($matsau)) {
-    $sql = "insert into hop_dong(fullname, cmt, sdt, mattruoc, matsau, id_chitiet, id_user) values ('{$fullname}','{$cmt}','{$sdt}','{$mattruoc}','{$matsau}','{$id_phong}', '{$id_user["id_user"]}')";
+    $sql = "insert into HopDong(MaHopDong, Email, MaPhong, Anh, TienCoc, SoDienThoai, CMT_CCCD, HoTen, NoiDung, NgayDang, NgayCapNhat) values 
+    ('{$x}','{$email}','{$id_phong}','{$mattruoc} ;; {$matsau} ','2500000','{$sdt}','{$cmt}', '{$fullname}', 'Thuê phòng',sysdate(), '0')";
 }
 $ret = exec_update($sql);
 
@@ -63,7 +68,7 @@ $ret = exec_update($sql);
                         $_POST['fullname'] = $_POST['cmt'] = $_POST['sdt'] = "";
                     } ?>
                     <div class="content__form__label__input">
-                        <label class="content__form__label" for="">Họ và tên:</label>
+                        <label class="content__form__label" for="">Họ và Tên:</label>
                         <input type="text" class="content__form__input" name="fullname" value="<?php echo $_POST['fullname'] ?>">
                     </div>
                     <div class="content__form__label__input">

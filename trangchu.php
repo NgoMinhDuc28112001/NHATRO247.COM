@@ -1,7 +1,7 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
@@ -61,7 +61,7 @@ $qsessionname = "___Q___";
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
 
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -93,19 +93,24 @@ $qsessionname = "___Q___";
                         </button>
                     </form>
                 </div>
-                <div class="my__hotel">
-                    <a href="./cho_xac_nhan.php">Phòng trọ của bạn</a>
-                </div>
+                <?php if (!empty($data['Email'])) { ?>
+                    <div class="my__hotel">
+                        <a href="./cho_xac_nhan.php">Phòng trọ của bạn</a>
+                    </div>
+                <?php } else { ?>
+                    <div class="my__hotell">
+                    </div>
+                <?php } ?>
             </div>
             <!-- end search -->
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="trangloc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -141,22 +146,22 @@ $qsessionname = "___Q___";
             </div>
             <div class="content__money__number">
                 <?php for ($sl = 0; $sl <= 3; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                    <?php $sql = "SELECT * FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                     <?php $datas = select_list($sql); ?>
                     <div class="content__money__number__border">
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
+                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["MaPhong"]; ?>" class="content__money__number__link">
                                     <div class="content__money__number__while__link__img">
-                                        <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+                                        <img src="images/<?php echo $data["Anh"]; ?>" alt="" class="content__money__number__img">
                                         <div class="content__blur"></div>
                                     </div>
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
+                                            <?php echo $data["GiaPhong"]; ?>đ
                                         </span>
                                         <span class="content__money__number__span">
-                                            Đã thuê: 9
+                                            <?php echo $data["DiaChi"]; ?>
                                         </span>
                                     </div>
                                 </a>
@@ -175,23 +180,23 @@ $qsessionname = "___Q___";
                 </h3>
             </div>
             <div class="content__money__number">
-                <?php for ($sl = 4; $sl <= 7; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                <?php for ($sl = 9; $sl <= 12; $sl++) { ?>
+                    <?php $sql = "SELECT * FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                     <?php $datas = select_list($sql); ?>
                     <div class="content__money__number__border">
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
+                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["MaPhong"]; ?>" class="content__money__number__link">
                                     <div class="content__money__number__while__link__img">
-                                        <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+                                        <img src="images/<?php echo $data["Anh"]; ?>" alt="" class="content__money__number__img">
                                         <div class="content__blur"></div>
                                     </div>
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
+                                            <?php echo $data["GiaPhong"]; ?>đ
                                         </span>
                                         <span class="content__money__number__span">
-                                            Đã thuê: 9
+                                            <?php echo $data["DiaChi"]; ?>
                                         </span>
                                     </div>
                                 </a>
@@ -205,23 +210,23 @@ $qsessionname = "___Q___";
             </div>
             <!-- Nội dung hiển thị thêm -->
             <div class="content__money__number content__money__number--hidden content__money__number--tweenmax">
-                <?php for ($sl = 8; $sl <= 11; $sl++) { ?>
-                    <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                <?php for ($sl = 13; $sl <= 16; $sl++) { ?>
+                    <?php $sql = "SELECT * FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                     <?php $datas = select_list($sql); ?>
                     <div class="content__money__number__border">
                         <div class="content__money__number__while">
                             <?php foreach ($datas as $data) { ?>
-                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__money__number__link">
+                                <a class="content__money__number__while__link" href="trangchitiet.php?id=<?php echo $data["MaPhong"]; ?>" class="content__money__number__link">
                                     <div class="content__money__number__while__link__img">
-                                        <img src="images/<?php echo $data["img"]; ?>" alt="" class="content__money__number__img">
+                                        <img src="images/<?php echo $data["Anh"]; ?>" alt="" class="content__money__number__img">
                                         <div class="content__blur"></div>
                                     </div>
                                     <div class="content__money__number__text">
                                         <span class="content__money__number__span">
-                                            <?php echo $data["price"]; ?>đ
+                                            <?php echo $data["GiaPhong"]; ?>đ
                                         </span>
                                         <span class="content__money__number__span">
-                                            Đã thuê: 9
+                                            <?php echo $data["DiaChi"]; ?>
                                         </span>
                                     </div>
                                 </a>

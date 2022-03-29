@@ -2,7 +2,7 @@
 include("lib_db.php");
 include("connect.php");
 $id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 
@@ -53,7 +53,7 @@ $data = mysqli_fetch_assoc($query);
                             </a>
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
                             </li>
@@ -89,11 +89,11 @@ $data = mysqli_fetch_assoc($query);
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="admin_loc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -167,36 +167,36 @@ $data = mysqli_fetch_assoc($query);
             </div>
             <div class="content__right">
                 <div class="content__title">
-                    <?php $sql = "SELECT * FROM theloai where id_theloai = $id"; ?>
+                    <?php $sql = "SELECT * FROM BaiDang_PhongTro where MaBaiDang = $id"; ?>
                     <?php $data = select_one($sql); ?>
-                    Lọc theo "<?php echo $data["name"]; ?>"
+                    Lọc theo "<?php echo $data["DiaChi"]; ?>"
                 </div>
                 <div class="content__right__money__adress">
                     <?php for ($sl = 0; $sl <= 9; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM chi_tiet where cid = $id LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT * FROM BaiDang_PhongTro where MaBaiDang = $id LIMIT 1 OFFSET  $sl"; ?>
                         <?php $data = select_one($sql); ?>
                         <div class="content__right__border">
                             <div class="content__right__white">
-                                <a href="trangchitiet.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__right__white__link">
-                                    <img class="content__right__white__link__img" src="./images/<?php echo $data["img"]; ?>" alt="">
+                                <a href="trangchitiet.php?id=<?php echo $data["MaPhong"]; ?>" class="content__right__white__link">
+                                    <img class="content__right__white__link__img" src="./images/<?php echo $data["Anh"]; ?>" alt="">
 
                                     <div class="content__right__white__money__adress">
                                         <span class="content__right__white__money__adress__span">
-                                            <?php echo $data["title"]; ?>
+                                            <?php echo $data["TieuDe"]; ?>
                                         </span>
                                         <span class="content__right__white__money__adress__span content__right__white__money__adress__span--red">
-                                            <?php echo $data["price"]; ?>đ
+                                            <?php echo $data["GiaPhong"]; ?>đ
                                         </span>
                                     </div>
+                                    <p></p>
                                     <div class="content__bottom__fix">
-                                        <a href="./admin_sua.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__left ">
+                                        <a href="./admin_sua.php?id=<?php echo $data["MaPhong"]; ?>" class="content__bottom__fix__left ">
                                             Sửa
                                         </a>
-                                        <a href="./admin_xoa.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__rigt">
+                                        <a href="./admin_xoa.php?id=<?php echo $data["MaPhong"]; ?>" class="content__bottom__fix__rigt">
                                             Xóa
                                         </a>
                                     </div>
-
                                 </a>
                             </div>
                         </div>

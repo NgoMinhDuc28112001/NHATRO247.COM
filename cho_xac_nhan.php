@@ -1,17 +1,16 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 
-$sql = "select * from chi_tiet left join hop_dong on hop_dong.id_chitiet = chi_tiet.id_chitiet left join users on hop_dong.id_user = users.id_user where users.id_user = (select id_user from users where email = '$data[email]')";
+$sql = "select * from HopDong left join BaiDang_PhongTro on HopDong.MaPhong = BaiDang_PhongTro.MaPhong where Email like '$data[Email]'";
 $result = select_list($sql);
 
-$id_user  = isset($_REQUEST["id_user"]) ? $_REQUEST["id_user"] : 0;
-$id_chitiet = isset($_REQUEST["id_chitiet"]) ? $_REQUEST["id_chitiet"] : 0;
-if (!empty($id_user) and !empty($id_chitiet)) {
-    $sql = "UPDATE hop_dong SET wait = 1 where id_user = $id_user and id_chitiet =$id_chitiet";
+$MaHopDong  = isset($_REQUEST["MaHopDong"]) ? $_REQUEST["MaHopDong"] : 0;
+if ($MaHopDong != 0) {
+    $sql = "update HopDong set TrangThai = 13 where MaHopDong = $MaHopDong";
     $ret = exec_update($sql);
     echo "
         <script type='text/javascript'>
@@ -75,7 +74,7 @@ if (!empty($id_user) and !empty($id_chitiet)) {
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
 
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -112,11 +111,11 @@ if (!empty($id_user) and !empty($id_chitiet)) {
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
-                            <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                            <?php foreach ($datas as $item) { ?>
+                                <a href="trangloc.php?id=<?php echo $item["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $item["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -156,7 +155,7 @@ if (!empty($id_user) and !empty($id_chitiet)) {
                     <div class="content__bottom__border">
                         <div class="content__bottom__border__white">
                             <div class="content__bottom__border__img">
-                                <img src="./images/<?php echo $item["img"]; ?>" alt="" class="content__bottom__img">
+                                <img src="./images/<?php echo $item["Anh"]; ?>" alt="" class="content__bottom__img">
                                 <div class="content__bottom__border__img__blur">
                                 </div>
                                 <span class="content__bottom__border__img__span">
@@ -164,21 +163,26 @@ if (!empty($id_user) and !empty($id_chitiet)) {
                                 </span>
                             </div>
                             <div class="content__bottom__detail__delete">
-                                <a href="./trangchitiet.php?id=<?php echo $item["id_chitiet"]; ?>" class="content__bottom__detail">
+                                <a href="./trangchitiet.php?id=<?php echo $item["MaPhong"]; ?>" class="content__bottom__detail">
                                     Chi tiết
                                 </a>
                                 <form action="cho_xac_nhan.php" method="POST">
-                                    <input type="hidden" name="id_user" value="<?php echo $item["id_user"] ?>" />
-                                    <input type="hidden" name="id_chitiet" value="<?php echo $item["id_chitiet"] ?>" />
+                                    <input type="hidden" name="MaHopDong" value="<?php echo $item["MaHopDong"] ?>" />
                                     <button type="submit" class="content__bottom__delete">
                                         Hủy thuê phòng
                                     </button>
                                 </form>
                             </div>
-                            <?php if ($item["active"] == 0) { ?>
+                            <?php $sql = "select * from HopDong where Email like '$data[Email]' and MaPhong = $item[MaPhong]";
+                            $result = select_one($sql); ?>
+                            <?php if ($result["TrangThai"] == 11) { ?>
                                 <p class="wait_confirm">Phòng trọ đang chờ xác nhận</p>
-                            <?php } else { ?>
-                                <p class="wait_confirm">Phòng trọ đang được thuê</p>
+                            <?php } elseif ($result["TrangThai"] == 22) { ?>
+                                <p class="wait_confirm">Bạn đã thuê phòng trọ</p>
+                            <?php } elseif ($result["TrangThai"] == 13) { ?>
+                                <p class="wait_confirm">Phòng trọ đang chờ hủy</p>
+                            <?php } elseif ($result["TrangThai"] == 33) { ?>
+                                <p class="wait_confirm">Bạn đã hủy thuê phòng trọ</p>
                             <?php } ?>
                         </div>
                     </div>

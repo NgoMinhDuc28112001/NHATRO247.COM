@@ -1,7 +1,6 @@
     <?php
     include("lib_db.php");
     include("connect.php");
-    session_start();
     $email = $_POST['email'];
     $pass = $_POST['password'];
 
@@ -21,26 +20,36 @@
         </script>
         ";
     }
-
-    $sql = "SELECT * FROM users WHERE email='" . $email . "' AND password = '" . $pass . "' ";
+    $sql = "SELECT * FROM TaiKhoan WHERE Email = '" . $email . "' AND MatKhau = '" . $pass . "'";
     $query = mysqli_query($conn, $sql);
     $data = mysqli_fetch_assoc($query);
-    if (!empty($data['email'])) {
-        $acc = "insert into login (email, password) values('" . $email . "', '" . $pass . "')";
+    if (!empty($data['Email'])) {
+        $acc = "update TaiKhoan set TrangThai = 1 where Email = '" . $email . "' AND MatKhau = '" . $pass . "'";
         $ret = exec_update($acc);
-        $_SESSION["email"] = "$email";
-        if ($data['level'] == 0) {
+        $_SESSION["Email"] = "$email";
+        if ($data['VaiTro'] == 0) {
             echo "
                 <script type='text/javascript'>
                     window.location.href='./admin_trangchu.php';
                 </script>
             ";
-        } else if ($data['level'] == 1) {
-            echo "
+        } else if ($data['VaiTro'] == 1) {
+            $id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
+            if ($id == 0) {
+                echo "
                 <script type='text/javascript'>
                     window.location.href='./trangchu.php';
                 </script>
             ";
+            } else {
+                session_start();
+                $_SESSION["MaPhong"] = $id;
+                echo "
+                <script type='text/javascript'>
+                    window.location.href='./hopdong.php';
+                </script>
+                ";
+            }
         } else {
             echo "
                 <script type='text/javascript'>
@@ -49,3 +58,4 @@
             ";
         }
     }
+    ?>

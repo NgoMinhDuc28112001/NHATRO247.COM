@@ -2,9 +2,9 @@
 include("lib_db.php");
 include("connect.php");
 $id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
-$sql = "SELECT * FROM chi_tiet WHERE id_chitiet=" . $id;
+$sql = "SELECT * FROM BaiDang_PhongTro WHERE MaPhong=" . $id;
 $result = select_one($sql);
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 
@@ -63,7 +63,7 @@ $data = mysqli_fetch_assoc($query);
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
 
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -100,11 +100,11 @@ $data = mysqli_fetch_assoc($query);
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="trangloc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -141,31 +141,31 @@ $data = mysqli_fetch_assoc($query);
             </div>
             <div class="content__bottom">
                 <form action="chutro_xacnhan.php" class="content__bottom__form" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result["MaPhong"] ?>" />
                     <div class="content__bottom__label__input">
                         <label for="" class="content__bottom__label">
                             Tiêu đề bài đăng:
                         </label>
-                        <input type="text" class="content__bottom__input" name="title" value="<?php echo $result["title"] ?>">
+                        <input type="text" class="content__bottom__input" name="title" value="<?php echo $result["TieuDe"] ?>">
                     </div>
                     <div class="content__bottom__label__input">
                         <label for="" class="content__bottom__label">
                             Giá phòng:
                         </label>
-                        <input type="text" class="content__bottom__input" name="price" value="<?php echo $result["price"] ?>">
+                        <input type="text" class="content__bottom__input" name="price" value="<?php echo $result["GiaPhong"] ?>">
                     </div>
                     <div class="content__bottom__label__input content__bottom__label__input--img--text">
                         <label for="" class="content__bottom__label">
                             Ảnh:
                         </label>
-                        <img src="./images/<?php echo $result["img"] ?>" alt="" class="content__bottom__img">
+                        <img src="./images/<?php echo $result["Anh"] ?>" alt="" class="content__bottom__img">
                     </div>
                     <div class="content__bottom__label__input content__bottom__label__input--img--text">
                         <label for="" class="content__bottom__label">
                             Mô tả:
                         </label>
                         <div class="content__bottom__text">
-                            <input type="text" class="content__bottom__input" name="description" value="<?php echo $result["description"] ?>">
+                            <input type="text" class="content__bottom__input" name="description" value="<?php echo $result["MoTa"] ?>">
                         </div>
                     </div>
                     <div class="content__bottom__button__access">

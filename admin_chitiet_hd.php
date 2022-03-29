@@ -1,21 +1,20 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
 
-$id_user = isset($_REQUEST["id_user"]) ? $_REQUEST["id_user"] : 0;
-$id_chitiet = isset($_REQUEST["id_chitiet"]) ? $_REQUEST["id_chitiet"] : 0;
+$MaHopDong = isset($_REQUEST["MaHopDong"]) ? $_REQUEST["MaHopDong"] : 0;
 
 echo $id_user;
 
 echo $id_chitiet;
 
 
-$sql = "select * from hop_dong  where id_chitiet = $id_chitiet and id_user = $id_user";
+$sql = "select * from HopDong  where MaHopDong = $MaHopDong";
 $result = select_one($sql);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -72,7 +71,7 @@ $result = select_one($sql);
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
 
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -109,11 +108,11 @@ $result = select_one($sql);
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="trangloc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="trangloc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -151,7 +150,7 @@ $result = select_one($sql);
                 </div>
                 <div class="content__form__label__input">
                     <label for="" class="content__form__label">Họ và tên:</label>
-                    <input type="text" class="content__form__input" value="duc" readonly>
+                    <input type="text" class="content__form__input" value="Nguyễn Văn Đức" readonly>
                 </div>
                 <div class="content__form__label__input">
                     <label for="" class="content__form__label">Số CMT/CCCD:</label>

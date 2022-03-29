@@ -1,26 +1,29 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
 
-
-$cid = isset($_REQUEST["cid"]) ? $_REQUEST["cid"] : 0;
-$anh_trangchu = isset($_REQUEST["anh_trangchu"]) ? $_REQUEST["anh_trangchu"] : "";
-$anh_chitiet = isset($_REQUEST["anh_chitiet"]) ? $_REQUEST["anh_chitiet"] : "";
-$tieu_de = isset($_REQUEST["tieu_de"]) ? $_REQUEST["tieu_de"] : "";
-$gioi_thieu = isset($_REQUEST["gioi_thieu"]) ? $_REQUEST["gioi_thieu"] : "";
-$mo_ta = isset($_REQUEST["mo_ta"]) ? $_REQUEST["mo_ta"] : "";
-$gia_phong = isset($_REQUEST["gia_phong"]) ? $_REQUEST["gia_phong"] : "";
+$DiaChi = isset($_REQUEST["DiaChi"]) ? $_REQUEST["DiaChi"] : "";
+$Anh = isset($_REQUEST["Anh"]) ? $_REQUEST["Anh"] : "";
+$TieuDe = isset($_REQUEST["TieuDe"]) ? $_REQUEST["TieuDe"] : "";
+$MoTa = isset($_REQUEST["MoTa"]) ? $_REQUEST["MoTa"] : "";
+$GiaPhong = isset($_REQUEST["GiaPhong"]) ? $_REQUEST["GiaPhong"] : "";
+echo $DiaChi;
+echo $Anh;
+echo $TieuDe;
+echo $MoTa;
+echo $GiaPhong;
 //tao sql
-if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($tieu_de) and !empty($gioi_thieu) and !empty($mo_ta) and !empty($gia_phong)) {
-    $sql = "insert into chi_tiet 
-	(cid, img, img_chitiet, title, code, description, body, price) 
+if (!empty($DiaChi) and !empty($Anh) and !empty($TieuDe) and !empty($MoTa) and !empty($GiaPhong)) {
+    echo "hihi";
+    $sql = "insert into BaiDang_PhongTro 
+	(MaBaiDang, MaPhong, DiaChi, GiaPhong, MoTa, Anh, TieuDe) 
     values 
-    ('{$cid}','{$anh_trangchu}','{$anh_chitiet}','{$tieu_de}','','{$gioi_thieu}','{$mo_ta}','{$gia_phong}')";
+    ('6','11','{$DiaChi}','{$GiaPhong}','{$MoTa}','{$Anh}','{$TieuDe}')";
     $ret = exec_update($sql);
     echo "
         <script type='text/javascript'>
@@ -31,8 +34,9 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -85,7 +89,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
 
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -111,7 +115,7 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
                 </div>
                 <div class="header__logo-search__search">
                     <form action="admin_timkiem.php" class="header__logo-search__form" method="GET">
-                        <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
+                        <input type="text" name="q" id="" value="" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -122,11 +126,11 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="admin_loc.php" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -165,17 +169,17 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
                 <form action="admin_them.php" method="POST" class="content__bottom__form">
                     <div class="content__bottom__label__input">
                         <label for="" class="content__bottom__label">
-                            cid:
+                            Khu vực:
                         </label>
 
                         <?php
-                        $sql = "select * from theloai";
+                        $sql = "SELECT distinct DiaChi FROM BaiDang_PhongTro";
                         $cates = exec_select($sql);
                         ?>
-                        <select name="cid">
-                            <option value="">Cho chuyên mục</option>
+                        <select name="DiaChi">
+                            <option value=""></option>
                             <?php foreach ($cates as $item) { ?>
-                                <option name="cid" value="<?php echo $item["id_theloai"] ?>"><?php echo $item["name"] ?></option>
+                                <option name="DiaChi" value="<?php echo $item["DiaChi"] ?>"><?php echo $item["DiaChi"] ?></option>
                             <?php } ?>
                         </select>
 
@@ -184,37 +188,25 @@ if (!empty($cid) and !empty($anh_trangchu) and !empty($anh_chitiet) and !empty($
                         <label for="" class="content__bottom__label">
                             Ảnh:
                         </label>
-                        <input type="file" class="content__bottom__input" name="anh_trangchu">
-                    </div>
-                    <div class="content__bottom__label__input">
-                        <label for="" class="content__bottom__label">
-                            Ảnh chi tiết:
-                        </label>
-                        <input type="file" class="content__bottom__input" name="anh_chitiet">
+                        <input type="file" class="content__bottom__input" name="Anh">
                     </div>
                     <div class="content__bottom__label__input">
                         <label for="" class="content__bottom__label">
                             Tiêu đề:
                         </label>
-                        <input type="text" class="content__bottom__input" name="tieu_de">
-                    </div>
-                    <div class="content__bottom__label__input">
-                        <label for="" class="content__bottom__label">
-                            Giới thiệu:
-                        </label>
-                        <input type="text" class="content__bottom__input" name="gioi_thieu">
+                        <input type="text" class="content__bottom__input" name="TieuDe">
                     </div>
                     <div class="content__bottom__label__input">
                         <label for="" class="content__bottom__label">
                             Mô tả:
                         </label>
-                        <input type="text" class="content__bottom__input" name="mo_ta">
+                        <input type="text" class="content__bottom__input" name="MoTa">
                     </div>
                     <div class="content__bottom__label__input">
                         <label for="" class="content__bottom__label">
                             Giá phòng:
                         </label>
-                        <input type="text" class="content__bottom__input" name="gia_phong">
+                        <input type="text" class="content__bottom__input" name="GiaPhong">
                     </div>
                     <button type="submit" class="content__bottom__button">
                         Xác nhận thêm phòng

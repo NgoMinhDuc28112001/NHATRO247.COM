@@ -31,6 +31,8 @@
             <img class="content__img" src="images/nt_logo2.png" alt="">
             <div class="content__form">
                 <form class="content__form__form" action="kiem-tra_dang-nhap.php" method="POST">
+                    <?php $id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0; ?>
+                    <input type="hidden" name="id" value="<?php echo $id ?>" />
                     <label for="" class="content__form__label">
                         Email:
                     </label>

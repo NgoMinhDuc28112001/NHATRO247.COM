@@ -1,14 +1,14 @@
 <?php
 include("lib_db.php");
 include("connect.php");
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $q = isset($_REQUEST["q"]) ? $_REQUEST["q"] : '';
 $qsessionname = "___Q___";
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -61,7 +61,7 @@ $qsessionname = "___Q___";
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
 
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -101,11 +101,11 @@ $qsessionname = "___Q___";
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="./admin_loc.php?id=<?php echo $data["id_theloai"]; ?>" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -149,19 +149,19 @@ $qsessionname = "___Q___";
             <div class="content__bottom">
                 <div class="content__bottom__img__fix">
                     <?php for ($sl = 0; $sl <= 3; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT * FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <div class="content__bottom__img__fix__border">
                             <div class="content__bottom__img__fix__white">
                                 <?php foreach ($datas as $data) { ?>
                                     <a class="content__bottom__img__link">
-                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
+                                        <img src="./images/<?php echo $data["Anh"]; ?>" alt="" class="content__bottom__img">
                                     </a>
                                     <div class="content__bottom__fix">
-                                        <a href="./admin_sua.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
+                                        <a href="./admin_sua.php?id=<?php echo $data["MaPhong"]; ?>" class="content__bottom__fix__link">
                                             Sửa
                                         </a>
-                                        <a href="./admin_xoa.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
+                                        <a href="./admin_xoa.php?id=<?php echo $data["MaPhong"]; ?>" class="content__bottom__fix__link">
                                             Xóa
                                         </a>
                                     </div>
@@ -172,19 +172,19 @@ $qsessionname = "___Q___";
                 </div>
                 <div class="content__bottom__img__fix">
                     <?php for ($sl = 4; $sl <= 7; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT * FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <div class="content__bottom__img__fix__border">
                             <div class="content__bottom__img__fix__white">
                                 <?php foreach ($datas as $data) { ?>
                                     <a class="content__bottom__img__link">
-                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
+                                        <img src="./images/<?php echo $data["Anh"]; ?>" alt="" class="content__bottom__img">
                                     </a>
                                     <div class="content__bottom__fix">
-                                        <a href="./admin_sua.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
+                                        <a href="./admin_sua.php?id=<?php echo $data["MaPhong"]; ?>" class="content__bottom__fix__link">
                                             Sửa
                                         </a>
-                                        <a href="./admin_xoa.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
+                                        <a href="./admin_xoa.php?id=<?php echo $data["MaPhong"]; ?>" class="content__bottom__fix__link">
                                             Xóa
                                         </a>
                                     </div>
@@ -195,20 +195,20 @@ $qsessionname = "___Q___";
                 </div>
                 <!-- Nội dung hiển thị thêm -->
                 <div class="content__bottom__img__fix content__bottom__img__fix--hidden content__bottom__img__green-sock">
-                    <?php for ($sl = 8; $sl <= 11; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM chi_tiet LIMIT 1 OFFSET  $sl"; ?>
+                    <?php for ($sl = 9; $sl <= 12; $sl++) { ?>
+                        <?php $sql = "SELECT * FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <div class="content__bottom__img__fix__border">
                             <div class="content__bottom__img__fix__white">
                                 <?php foreach ($datas as $data) { ?>
                                     <a class="content__bottom__img__link">
-                                        <img src="./images/<?php echo $data["img"]; ?>" alt="" class="content__bottom__img">
+                                        <img src="./images/<?php echo $data["Anh"]; ?>" alt="" class="content__bottom__img">
                                     </a>
                                     <div class="content__bottom__fix">
-                                        <a href="./admin_sua.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
+                                        <a href="./admin_sua.php?id=<?php echo $data["MaPhong"]; ?>" class="content__bottom__fix__link">
                                             Sửa
                                         </a>
-                                        <a href="./admin_xoa.php?id=<?php echo $data["id_chitiet"]; ?>" class="content__bottom__fix__link">
+                                        <a href="./admin_xoa.php?id=<?php echo $data["MaPhong"]; ?>" class="content__bottom__fix__link">
                                             Xóa
                                         </a>
                                     </div>

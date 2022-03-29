@@ -2,14 +2,14 @@
 include("lib_db.php");
 include("connect.php");
 $id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
-$sql = "SELECT * FROM chi_tiet WHERE id_chitiet= $id";
+$sql = "SELECT * FROM BaiDang_PhongTro WHERE MaPhong= $id";
 $result = select_one($sql);
-$sql = "SELECT * FROM login";
+$sql = "SELECT * FROM TaiKhoan where TrangThai=1";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 $id_xoa = isset($_REQUEST["id_xoa"]) ? $_REQUEST["id_xoa"] : 0;
 if (!empty($id_xoa)) {
-    $sql = "delete from chi_tiet WHERE id_chitiet = $id_xoa";
+    $sql = "delete from BaiDang_PhongTro WHERE MaPhong = $id_xoa";
     $ret = exec_update($sql);
     echo "
         <script type='text/javascript'>
@@ -66,7 +66,7 @@ if (!empty($id_xoa)) {
                             </a>
                             <a class="header__nav__list-link" href="">Hỗ trợ</a>
                         </li>
-                        <?php if (empty($data['email'])) { ?>
+                        <?php if (empty($data['Email'])) { ?>
 
                             <li class="header__nav__list__items">
                                 <a class="header__nav__list-link" href="./dangky.php">Đăng ký</a>
@@ -92,7 +92,7 @@ if (!empty($id_xoa)) {
                 </div>
                 <div class="header__logo-search__search">
                     <form action="admin_timkiem.php" class="header__logo-search__form" method="GET">
-                        <input type="text" name="q" id="" value="<?php echo $q ?>" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
+                        <input type="text" name="q" id="" value="" class="header__logo-search__input" placeholder="Tìm kiến nhanh hơn">
                         <button class="header__logo-search__button">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -103,11 +103,11 @@ if (!empty($id_xoa)) {
             <div class="header__adress__money gird_money_adress">
                 <ul class="header__adress__money__list">
                     <?php for ($sl = 0; $sl <= 4; $sl++) { ?>
-                        <?php $sql = "SELECT * FROM theloai LIMIT 1 OFFSET  $sl"; ?>
+                        <?php $sql = "SELECT distinct MaBaiDang, DiaChi FROM BaiDang_PhongTro LIMIT 1 OFFSET  $sl"; ?>
                         <?php $datas = select_list($sql); ?>
                         <li class="header__adress__money__items">
                             <?php foreach ($datas as $data) { ?>
-                                <a href="admin_loc.php" class="header__adress__money__link"><?php echo $data["name"]; ?></a>
+                                <a href="admin_loc.php?id=<?php echo $data["MaBaiDang"]; ?>" class="header__adress__money__link"><?php echo $data["DiaChi"]; ?></a>
                             <?php } ?>
                         </li>
                     <?php } ?>
@@ -128,28 +128,28 @@ if (!empty($id_xoa)) {
                     > Chất lượng cao
                 </span>
                 <span class="content__sequence__span">
-                    > <?php echo $result["title"] ?>
+                    > <?php echo $result["TieuDe"] ?>
                 </span>
             </div>
-            <?php $sql = "SELECT * FROM login";
+            <?php $sql = "SELECT * FROM TaiKhoan where TrangThai=1";
             $query = mysqli_query($conn, $sql);
             $data = mysqli_fetch_assoc($query); ?>
-            <?php if (!empty($data['email'])) { ?>
+            <?php if (!empty($data['Email'])) { ?>
                 <form action="admin_xoa.php" method="POST">
-                    <input type="hidden" name="id_xoa" value="<?php echo $result["id_chitiet"] ?>" />
+                    <input type="hidden" name="id_xoa" value="<?php echo $result["MaPhong"] ?>" />
                     <div class="content__while">
                         <div class="content__while__left">
                             <a href="" class="content__while__link">
-                                <img src="./images/<?php echo $result["img_chitiet"] ?>" alt="" class="content__while__img">
+                                <img src="./images/<?php echo $result["Anh"] ?>" alt="" class="content__while__img">
                             </a>
                         </div>
                         <div class="content__while__right">
                             <span class="content__while__span">
-                                <?php echo $result["description"] ?>
+                                <?php echo $result["MoTa"] ?>
                             </span>
                             <div class="content__while__money">
                                 <span class="content__while__money__span">
-                                    <?php echo $result["price"] ?>đ
+                                    <?php echo $result["GiaPhong"] ?>đ
                                 </span>
                                 <span class="content__while__money__span content__while__money__span__button">
                                     10% GIẢM
@@ -171,20 +171,20 @@ if (!empty($id_xoa)) {
                 </form>
             <?php } else { ?>
                 <form action="dangnhap.php" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $result["id_chitiet"] ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result["MaPhong"] ?>" />
                     <div class="content__while">
                         <div class="content__while__left">
                             <a href="" class="content__while__link">
-                                <img src="./images/<?php echo $result["img_chitiet"] ?>" alt="" class="content__while__img">
+                                <img src="./images/<?php echo $result["Anh"] ?>" alt="" class="content__while__img">
                             </a>
                         </div>
                         <div class="content__while__right">
                             <span class="content__while__span">
-                                <?php echo $result["description"] ?>
+                                <?php echo $result["MoTa"] ?>
                             </span>
                             <div class="content__while__money">
                                 <span class="content__while__money__span">
-                                    <?php echo $result["price"] ?>đ
+                                    <?php echo $result["GiaPhong"] ?>đ
                                 </span>
                                 <span class="content__while__money__span content__while__money__span__button">
                                     10% GIẢM
